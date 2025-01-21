@@ -71,6 +71,9 @@ ALL_STOPS = sorted(list(set(from_stops) & set(to_stops)))
 
 with gr.Blocks() as demo:
     gr.Markdown("## Optimal Public Transport Stop Finder in Prague")
+    gr.Markdown("Consider you are in Prague and you want to meet with your friends. What is the optimal stop to meet? Now you can find that with this app!")
+    gr.Markdown("Time table data was scraped using IDOS API, IDOS uses PID timetable data. The arrivals are calculated based on the shortest route to the target stop from starting stops so that you all meet on Friday 24.1.2025 20:00 CET.")
+
 
     number_of_stops = gr.Slider(
         minimum=2, 
@@ -139,12 +142,15 @@ with gr.Blocks() as demo:
         outputs=results_table
     )
 
-    # Set initial visibility for the first set of dropdowns
     demo.load(
         lambda: [gr.update(visible=True)] + [gr.update(visible=False) for _ in range(11)],
         inputs=[],
         outputs=dropdowns
     )
+    
+    gr.Markdown("---")
+    gr.Markdown("Created by [Daniel Herman](https://www.hermandaniel.com), check out the code [detrin/najdi-hospodu](https://github.com/detrin/najdi-hospodu).")
+
 
 if __name__ == "__main__":
     demo.launch()
