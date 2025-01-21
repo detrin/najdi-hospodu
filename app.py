@@ -30,7 +30,7 @@ def load_time_table(results_file):
 
     return results
 
-def get_optimal_stop(time_table, method, selected_stops):
+def get_optimal_stop(time_table, method, selected_stops, show_top=20):
     dfs = []
     for si, stop in enumerate(selected_stops):
         df = (
@@ -56,18 +56,17 @@ def get_optimal_stop(time_table, method, selected_stops):
 
     if method == "minimize-worst-case":
         df = df.sort("worst_case_minutes")
-        df_top = df.head(10)
     elif method == "minimize-total":
         df = df.sort("total_minutes")
-        df_top = df.head(10)
 
-    return df_top
+    return df.head(show_top)
 
 results_file = "data/results.json"
 TIME_TABLE = load_time_table(results_file)
 from_stops = TIME_TABLE["from"].unique().sort().to_list()
 to_stops = TIME_TABLE["to"].unique().sort().to_list()
 ALL_STOPS = sorted(list(set(from_stops) & set(to_stops)))
+SHOW_TOP = 20
 
 with gr.Blocks() as demo:
     gr.Markdown("## Optimal Public Transport Stop Finder in Prague")
@@ -126,8 +125,8 @@ with gr.Blocks() as demo:
         else:
             method_key = "minimize-total"
         
-        df_top = get_optimal_stop(TIME_TABLE, method_key, selected_stops)
-        # Convert Polars DataFrame to Pandas for Gradio
+        df_top = get_optimal_stop(TIME_TABLE, method_key, selected_stops, show_top=SHOW_TOP)
+        df_top = df_top.with_row_index("#", offset=1)
         return df_top.to_pandas()
 
     results_table = gr.Dataframe(
