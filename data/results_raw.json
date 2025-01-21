@@ -1,0 +1,912 @@
+[
+    {
+        "from": "Albertov",
+        "to": "Amforová",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 13
+    },
+    {
+        "from": "Albertov",
+        "to": "Archeologická",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Arena Libeň jih",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Argentinská",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Anděl",
+        "total_minutes": 8
+    },
+    {
+        "from": "Albertov",
+        "to": "Baba I",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Baba II",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Bachova",
+        "total_minutes": 37
+    },
+    {
+        "from": "Ametystová",
+        "to": "Albertov",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Antala Staška",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Ametystová",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Apolinářská",
+        "total_minutes": 16
+    },
+    {
+        "from": "Ametystová",
+        "to": "Antala Staška",
+        "total_minutes": 65
+    },
+    {
+        "from": "Ametystová",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 45
+    },
+    {
+        "from": "Ametystová",
+        "to": "Archeologická",
+        "total_minutes": 52
+    },
+    {
+        "from": "Ametystová",
+        "to": "Arena Libeň jih",
+        "total_minutes": 62
+    },
+    {
+        "from": "Albertov",
+        "to": "Avia Letňany",
+        "total_minutes": 44
+    },
+    {
+        "from": "Ametystová",
+        "to": "Apolinářská",
+        "total_minutes": 59
+    },
+    {
+        "from": "Ametystová",
+        "to": "Baba I",
+        "total_minutes": 77
+    },
+    {
+        "from": "Ametystová",
+        "to": "Baba II",
+        "total_minutes": 76
+    },
+    {
+        "from": "Ametystová",
+        "to": "Bachova",
+        "total_minutes": 58
+    },
+    {
+        "from": "Ametystová",
+        "to": "Anděl",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Ametystová",
+        "to": "Amforová",
+        "total_minutes": 53
+    },
+    {
+        "from": "Amforová",
+        "to": "Ametystová",
+        "total_minutes": 46
+    },
+    {
+        "from": "Amforová",
+        "to": "Antala Staška",
+        "total_minutes": 41
+    },
+    {
+        "from": "Amforová",
+        "to": "Apolinářská",
+        "total_minutes": 31
+    },
+    {
+        "from": "Amforová",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 26
+    },
+    {
+        "from": "Ametystová",
+        "to": "Argentinská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Amforová",
+        "to": "Albertov",
+        "total_minutes": 32
+    },
+    {
+        "from": "Ametystová",
+        "to": "Avia Letňany",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Amforová",
+        "to": "Anděl",
+        "total_minutes": 19
+    },
+    {
+        "from": "Amforová",
+        "to": "Baba I",
+        "total_minutes": 51
+    },
+    {
+        "from": "Amforová",
+        "to": "Baba II",
+        "total_minutes": 52
+    },
+    {
+        "from": "Amforová",
+        "to": "Bachova",
+        "total_minutes": 40
+    },
+    {
+        "from": "Amforová",
+        "to": "Archeologická",
+        "total_minutes": 5
+    },
+    {
+        "from": "Amforová",
+        "to": "Argentinská",
+        "total_minutes": 50
+    },
+    {
+        "from": "Anděl",
+        "to": "Amforová",
+        "total_minutes": 20
+    },
+    {
+        "from": "Anděl",
+        "to": "Antala Staška",
+        "total_minutes": 29
+    },
+    {
+        "from": "Anděl",
+        "to": "Apolinářská",
+        "total_minutes": 12
+    },
+    {
+        "from": "Amforová",
+        "to": "Arena Libeň jih",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Anděl",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 1
+    },
+    {
+        "from": "Amforová",
+        "to": "Avia Letňany",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Anděl",
+        "to": "Archeologická",
+        "total_minutes": 19
+    },
+    {
+        "from": "Anděl",
+        "to": "Argentinská",
+        "total_minutes": 30
+    },
+    {
+        "from": "Anděl",
+        "to": "Baba I",
+        "total_minutes": 34
+    },
+    {
+        "from": "Anděl",
+        "to": "Baba II",
+        "total_minutes": 33
+    },
+    {
+        "from": "Anděl",
+        "to": "Albertov",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Anděl",
+        "to": "Bachova",
+        "total_minutes": 23
+    },
+    {
+        "from": "Anděl",
+        "to": "Ametystová",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Albertov",
+        "total_minutes": 22
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Amforová",
+        "total_minutes": 54
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Apolinářská",
+        "total_minutes": 24
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 33
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Archeologická",
+        "total_minutes": 44
+    },
+    {
+        "from": "Anděl",
+        "to": "Arena Libeň jih",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Ametystová",
+        "total_minutes": 57
+    },
+    {
+        "from": "Anděl",
+        "to": "Avia Letňany",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Argentinská",
+        "total_minutes": 34
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Baba I",
+        "total_minutes": 32
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Bachova",
+        "total_minutes": 26
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Albertov",
+        "total_minutes": 12
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Ametystová",
+        "total_minutes": 40
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Anděl",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Amforová",
+        "total_minutes": 28
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Anděl",
+        "total_minutes": 10
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 14
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Archeologická",
+        "total_minutes": 27
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Arena Libeň jih",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Arena Libeň jih",
+        "total_minutes": 33
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Avia Letňany",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Argentinská",
+        "total_minutes": 31
+    },
+    {
+        "from": "Antala Staška",
+        "to": "Baba II",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Baba I",
+        "total_minutes": 42
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Bachova",
+        "total_minutes": 33
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Ametystová",
+        "total_minutes": 35
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Amforová",
+        "total_minutes": 34
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Anděl",
+        "total_minutes": 3
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Antala Staška",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Antala Staška",
+        "total_minutes": 30
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Apolinářská",
+        "total_minutes": 18
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Arena Libeň jih",
+        "total_minutes": 39
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Argentinská",
+        "total_minutes": 35
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Avia Letňany",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Avia Letňany",
+        "total_minutes": 46
+    },
+    {
+        "from": "Apolinářská",
+        "to": "Baba II",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Baba I",
+        "total_minutes": 37
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Albertov",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Bachova",
+        "total_minutes": 29
+    },
+    {
+        "from": "Archeologická",
+        "to": "Ametystová",
+        "total_minutes": 46
+    },
+    {
+        "from": "Archeologická",
+        "to": "Anděl",
+        "total_minutes": 19
+    },
+    {
+        "from": "Archeologická",
+        "to": "Antala Staška",
+        "total_minutes": 42
+    },
+    {
+        "from": "Archeologická",
+        "to": "Apolinářská",
+        "total_minutes": 35
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Archeologická",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Archeologická",
+        "to": "Albertov",
+        "total_minutes": 28
+    },
+    {
+        "from": "Archeologická",
+        "to": "Arena Libeň jih",
+        "total_minutes": 44
+    },
+    {
+        "from": "Archeologická",
+        "to": "Avia Letňany",
+        "total_minutes": 58
+    },
+    {
+        "from": "Archeologická",
+        "to": "Baba I",
+        "total_minutes": 53
+    },
+    {
+        "from": "Arbesovo náměstí",
+        "to": "Baba II",
+        "total_minutes": 36
+    },
+    {
+        "from": "Archeologická",
+        "to": "Bachova",
+        "total_minutes": 36
+    },
+    {
+        "from": "Archeologická",
+        "to": "Amforová",
+        "total_minutes": 6
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Ametystová",
+        "total_minutes": 56
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Amforová",
+        "total_minutes": 45
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Anděl",
+        "total_minutes": 26
+    },
+    {
+        "from": "Archeologická",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 30
+    },
+    {
+        "from": "Archeologická",
+        "to": "Argentinská",
+        "total_minutes": 50
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 41
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Archeologická",
+        "total_minutes": 44
+    },
+    {
+        "from": "Archeologická",
+        "to": "Baba II",
+        "total_minutes": 52
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Antala Staška",
+        "total_minutes": 35
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Albertov",
+        "total_minutes": 38
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Baba II",
+        "total_minutes": 58
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Bachova",
+        "total_minutes": 46
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Argentinská",
+        "total_minutes": 20
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Avia Letňany",
+        "total_minutes": 24
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Apolinářská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Argentinská",
+        "to": "Anděl",
+        "total_minutes": 25
+    },
+    {
+        "from": "Argentinská",
+        "to": "Antala Staška",
+        "total_minutes": 29
+    },
+    {
+        "from": "Argentinská",
+        "to": "Apolinářská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Argentinská",
+        "to": "Ametystová",
+        "total_minutes": 76
+    },
+    {
+        "from": "Arena Libeň jih",
+        "to": "Baba I",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Argentinská",
+        "to": "Amforová",
+        "total_minutes": 61
+    },
+    {
+        "from": "Argentinská",
+        "to": "Avia Letňany",
+        "total_minutes": 37
+    },
+    {
+        "from": "Argentinská",
+        "to": "Baba I",
+        "total_minutes": 48
+    },
+    {
+        "from": "Argentinská",
+        "to": "Albertov",
+        "total_minutes": 34
+    },
+    {
+        "from": "Argentinská",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 26
+    },
+    {
+        "from": "Argentinská",
+        "to": "Archeologická",
+        "total_minutes": 52
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Ametystová",
+        "total_minutes": 74
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Amforová",
+        "total_minutes": 57
+    },
+    {
+        "from": "Argentinská",
+        "to": "Baba II",
+        "total_minutes": 47
+    },
+    {
+        "from": "Argentinská",
+        "to": "Bachova",
+        "total_minutes": 40
+    },
+    {
+        "from": "Argentinská",
+        "to": "Arena Libeň jih",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Albertov",
+        "total_minutes": 48
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 63
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Arena Libeň jih",
+        "total_minutes": 27
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Anděl",
+        "total_minutes": 40
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Antala Staška",
+        "total_minutes": 43
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Apolinářská",
+        "total_minutes": 44
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Archeologická",
+        "total_minutes": 56
+    },
+    {
+        "from": "Baba I",
+        "to": "Albertov",
+        "total_minutes": 30
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Argentinská",
+        "total_minutes": 46
+    },
+    {
+        "from": "Baba I",
+        "to": "Amforová",
+        "total_minutes": 51
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Baba II",
+        "total_minutes": 70
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Bachova",
+        "total_minutes": 54
+    },
+    {
+        "from": "Baba I",
+        "to": "Apolinářská",
+        "total_minutes": 40
+    },
+    {
+        "from": "Baba I",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 40
+    },
+    {
+        "from": "Avia Letňany",
+        "to": "Baba I",
+        "total_minutes": 71
+    },
+    {
+        "from": "Baba I",
+        "to": "Anděl",
+        "total_minutes": 35
+    },
+    {
+        "from": "Baba I",
+        "to": "Antala Staška",
+        "total_minutes": 36
+    },
+    {
+        "from": "Baba I",
+        "to": "Avia Letňany",
+        "total_minutes": 68
+    },
+    {
+        "from": "Baba I",
+        "to": "Ametystová",
+        "total_minutes": 56
+    },
+    {
+        "from": "Baba I",
+        "to": "Bachova",
+        "total_minutes": 49
+    },
+    {
+        "from": "Baba I",
+        "to": "Arena Libeň jih",
+        "total_minutes": 68
+    },
+    {
+        "from": "Baba I",
+        "to": "Argentinská",
+        "total_minutes": 56
+    },
+    {
+        "from": "Baba II",
+        "to": "Amforová",
+        "total_minutes": 52
+    },
+    {
+        "from": "Baba I",
+        "to": "Baba II",
+        "total_minutes": 1
+    },
+    {
+        "from": "Baba I",
+        "to": "Archeologická",
+        "total_minutes": 50
+    },
+    {
+        "from": "Baba II",
+        "to": "Albertov",
+        "total_minutes": 29
+    },
+    {
+        "from": "Baba II",
+        "to": "Ametystová",
+        "total_minutes": 55
+    },
+    {
+        "from": "Baba II",
+        "to": "Archeologická",
+        "total_minutes": 51
+    },
+    {
+        "from": "Baba II",
+        "to": "Arena Libeň jih",
+        "total_minutes": 67
+    },
+    {
+        "from": "Baba II",
+        "to": "Antala Staška",
+        "total_minutes": 35
+    },
+    {
+        "from": "Baba II",
+        "to": "Apolinářská",
+        "total_minutes": 39
+    },
+    {
+        "from": "Baba II",
+        "to": "Baba I",
+        "total_minutes": 1
+    },
+    {
+        "from": "Baba II",
+        "to": "Bachova",
+        "total_minutes": 50
+    },
+    {
+        "from": "Baba II",
+        "to": "Anděl",
+        "total_minutes": 34
+    },
+    {
+        "from": "Bachova",
+        "to": "Ametystová",
+        "total_minutes": 50
+    },
+    {
+        "from": "Baba II",
+        "to": "Avia Letňany",
+        "total_minutes": 67
+    },
+    {
+        "from": "Baba II",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 39
+    },
+    {
+        "from": "Bachova",
+        "to": "Antala Staška",
+        "total_minutes": 25
+    },
+    {
+        "from": "Bachova",
+        "to": "Albertov",
+        "total_minutes": 40
+    },
+    {
+        "from": "Baba II",
+        "to": "Argentinská",
+        "total_minutes": 55
+    },
+    {
+        "from": "Bachova",
+        "to": "Amforová",
+        "total_minutes": 43
+    },
+    {
+        "from": "Bachova",
+        "to": "Anděl",
+        "total_minutes": 23
+    },
+    {
+        "from": "Bachova",
+        "to": "Argentinská",
+        "total_minutes": 50
+    },
+    {
+        "from": "Bachova",
+        "to": "Apolinářská",
+        "total_minutes": 31
+    },
+    {
+        "from": "Bachova",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 28
+    },
+    {
+        "from": "Bachova",
+        "to": "Archeologická",
+        "total_minutes": 37
+    },
+    {
+        "from": "Bachova",
+        "to": "Arena Libeň jih",
+        "total_minutes": 48
+    },
+    {
+        "from": "Bachova",
+        "to": "Avia Letňany",
+        "total_minutes": 54
+    },
+    {
+        "from": "Bachova",
+        "to": "Baba I",
+        "total_minutes": 43
+    },
+    {
+        "from": "Bachova",
+        "to": "Baba II",
+        "total_minutes": 42
+    }
+]
