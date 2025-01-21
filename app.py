@@ -156,7 +156,7 @@ with gr.Blocks() as demo:
     )
     
     gr.Markdown("---")
-    gr.Markdown("Created by [Daniel Herman](https://www.hermandaniel.com), check out the code [detrin/najdi-hospodu](https://github.com/detrin/najdi-hospodu).")
+    gr.Markdown("Created by [Daniel Herman](https://www.hermandaniel.com), check out the code [detrin/pub-finder](https://github.com/detrin/pub-finder).")
 
 
 if __name__ == "__main__":
