@@ -7,8 +7,7 @@ import json
 import time
 import argparse
 from tqdm import tqdm
-from multiprocessing import Pool, cpu_count
-from tqdm import tqdm
+from multiprocessing import Pool
 from itertools import product
 
 def parse_time_to_minutes(time_str: str) -> int:
@@ -34,7 +33,6 @@ def parse_time_to_minutes(time_str: str) -> int:
     Raises:
         ValueError: If the input format is invalid or contains forbidden values.
     """
-    # Regular expression to capture hours and minutes
     pattern = r'^\s*(?:(\d+)\s*hod)?(?:\s*(\d+)\s*min)?\s*$'
     match = re.match(pattern, time_str, re.IGNORECASE)
     
@@ -43,11 +41,9 @@ def parse_time_to_minutes(time_str: str) -> int:
     
     hours_str, minutes_str = match.groups()
     
-    # Convert captured groups to integers, defaulting to 0 if not present
     hours = int(hours_str) if hours_str else 0
     minutes = int(minutes_str) if minutes_str else 0
-    
-    # Validate the extracted values
+
     if hours < 0:
         raise ValueError("Hours cannot be negative.")
     if minutes < 0:
@@ -119,7 +115,7 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
     
     try:
         response = requests.post(url, headers=headers, data=data)
-        response.raise_for_status()  # Raises HTTPError for bad responses (4xx or 5xx)
+        response.raise_for_status() 
     except requests.RequestException as e:
         raise requests.HTTPError(f"Failed to retrieve data from {url}.") from e
 
@@ -166,10 +162,10 @@ def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime.date
 def process_pair(args):
     from_stop, to_stop, meetup_dt = args
     if from_stop == to_stop:
-        return None  # Skip if stops are the same
+        return None 
 
     max_retries = 3
-    retry_delay = 10  # seconds
+    retry_delay = 10
     attempt = 0
 
     while attempt < max_retries:
@@ -198,21 +194,16 @@ def scrape_mode(stops_file, num_processes, output_file):
         print(f"File {stops_file} does not exist.")
         return
 
-    # Read all stops from the file
     with open(stops_file, 'r', encoding='utf-8') as f:
         stops = [line.strip() for line in f if line.strip()]
 
-    stops = stops[:14]  # Limit the number of stops for testing
-    # Generate all unique (from, to) combinations where from != to
+    stops = stops 
     all_pairs = list(product(stops, stops))
     unique_pairs = [pair for pair in all_pairs if pair[0] != pair[1]]
     print(f"Total unique pairs to process: {len(unique_pairs)}")
 
-    # Get the next meetup time
-    meetup_dt = get_next_meetup_time(4, 18)  # Assuming this function is defined
+    meetup_dt = get_next_meetup_time(4, 18)  
     print(f"Next meetup: {meetup_dt}")
-
-    # Prepare arguments for the worker function
     args = [(from_stop, to_stop, meetup_dt) for from_stop, to_stop in unique_pairs]
 
     results = []
@@ -234,11 +225,9 @@ def correcting_mode(results_raw_file, results_output_file, num_processes):
         print(f"File {results_raw_file} does not exist.")
         return
 
-    # Load existing raw results
     with open(results_raw_file, 'r', encoding='utf-8') as f:
         raw_results = json.load(f)
 
-    # Identify entries with errors
     error_entries = [
         (entry["from"], entry["to"], get_next_meetup_time(4, 18))
         for entry in raw_results
@@ -251,20 +240,15 @@ def correcting_mode(results_raw_file, results_output_file, num_processes):
         print("No errors found. Nothing to correct.")
         return
 
-    # Retry scraping for errored entries
     new_results = []
     with Pool(processes=num_processes) as pool:
         for result in tqdm(pool.imap_unordered(process_pair, error_entries), total=len(error_entries), desc="Correcting"):
             if result is not None:
                 new_results.append(result)
 
-    # Filter out the old errored entries
     successful_old_results = [entry for entry in raw_results if "error" not in entry]
-
-    # Combine with new results
     combined_results = successful_old_results + new_results
 
-    # Save to results.json
     with open(results_output_file, 'w', encoding='utf-8') as f:
         json.dump(combined_results, f, ensure_ascii=False, indent=4)
 
