@@ -91,6 +91,7 @@ with gr.Blocks() as demo:
 
     method = gr.Radio(
         choices=["Minimize worst case for each", "Minimize total time"],
+        value="Minimize worst case for each",
         label="Optimization Method"
     )
 
