@@ -123,7 +123,6 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
     connection_head = soup.find(class_='connection-head')
 
     if not connection_head:
-        print(response.text)
         raise ValueError("No elements found with the class 'connection-head'.")
 
     strong_tag = connection_head.find('strong')
@@ -197,7 +196,7 @@ def scrape_mode(stops_file, num_processes, output_file):
     with open(stops_file, 'r', encoding='utf-8') as f:
         stops = [line.strip() for line in f if line.strip()]
 
-    stops = stops 
+    # stops = stops[:100] 
     all_pairs = list(product(stops, stops))
     unique_pairs = [pair for pair in all_pairs if pair[0] != pair[1]]
     print(f"Total unique pairs to process: {len(unique_pairs)}")

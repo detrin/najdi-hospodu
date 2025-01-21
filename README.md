@@ -13,7 +13,7 @@ uv pip install -r requirements.txt
 ```
 
 ```
-python3.12 scraping.py --task scraping 
+python3.12 scraping.py --task scraping --num_processes 50
 python3.12 scraping.py --task correcting 
 # repeat the next step how many times do you want
 python3.12 scraping.py --task correcting --results_raw data/results.json
