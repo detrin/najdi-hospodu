@@ -1,4 +1,7 @@
 # najdi-hospodu
+Find the optimal place where to meet with your friends in Prague.
+
+Try out the [Web demo](https://huggingface.co/spaces/hermanda/najdi-hospodu), integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). 
 
 ## Usage
 
@@ -16,4 +19,6 @@ python3.12 scraping.py --task correcting
 python3.12 scraping.py --task correcting --results_raw data/results.json
 ```
 
-https://pid.cz/zastavky-pid/zastavky-v-praze
+## Sources
+- https://idos.cz/vlakyautobusymhdvse/spojeni/
+- https://pid.cz/zastavky-pid/zastavky-v-praze
