@@ -187,81 +187,9 @@ def process_pair(args):
                     "to": to_stop,
                     "error": str(e)
                 }
-
-def scrape_mode(stops_file, num_processes, output_file):
-    if not os.path.exists(stops_file):
-        print(f"File {stops_file} does not exist.")
-        return
-
-    with open(stops_file, 'r', encoding='utf-8') as f:
-        stops = [line.strip() for line in f if line.strip()]
-
-    # stops = stops[:100] 
-    all_pairs = list(product(stops, stops))
-    unique_pairs = [pair for pair in all_pairs if pair[0] != pair[1]]
-    print(f"Total unique pairs to process: {len(unique_pairs)}")
-
-    meetup_dt = get_next_meetup_time(4, 18)  
-    print(f"Next meetup: {meetup_dt}")
-    args = [(from_stop, to_stop, meetup_dt) for from_stop, to_stop in unique_pairs]
-
-    results = []
-    with Pool(processes=num_processes) as pool:
-        for result in tqdm(pool.imap_unordered(process_pair, args), total=len(args), desc="Processing"):
-            if result is not None:
-                results.append(result)
-            if len(results) % 100 == 0:
-                with open(output_file, 'w', encoding='utf-8') as f:
-                    json.dump(results, f, ensure_ascii=False, indent=4)
-
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=4)
-
-    print(f"Results have been saved to {output_file}")
-
-def correcting_mode(results_raw_file, results_output_file, num_processes):
-    if not os.path.exists(results_raw_file):
-        print(f"File {results_raw_file} does not exist.")
-        return
-
-    with open(results_raw_file, 'r', encoding='utf-8') as f:
-        raw_results = json.load(f)
-
-    error_entries = [
-        (entry["from"], entry["to"], get_next_meetup_time(4, 18))
-        for entry in raw_results
-        if "error" in entry
-    ]
-
-    print(f"Total entries with errors to retry: {len(error_entries)}")
-
-    if not error_entries:
-        print("No errors found. Nothing to correct.")
-        return
-
-    new_results = []
-    with Pool(processes=num_processes) as pool:
-        for result in tqdm(pool.imap_unordered(process_pair, error_entries), total=len(error_entries), desc="Correcting"):
-            if result is not None:
-                new_results.append(result)
-
-    successful_old_results = [entry for entry in raw_results if "error" not in entry]
-    combined_results = successful_old_results + new_results
-
-    with open(results_output_file, 'w', encoding='utf-8') as f:
-        json.dump(combined_results, f, ensure_ascii=False, indent=4)
-
-    print(f"Combined results have been saved to {results_output_file}")
-
+                
 def main():
     parser = argparse.ArgumentParser(description="Scraping and Correcting Script")
-    parser.add_argument(
-        "--task",
-        type=str,
-        choices=["scraping", "correcting"],
-        required=True,
-        help="Task to perform: 'scraping' to perform scraping, 'correcting' to correct errors."
-    )
     parser.add_argument(
         "--stops_file",
         type=str,
@@ -269,15 +197,9 @@ def main():
         help="Path to the stops file."
     )
     parser.add_argument(
-        "--results_raw",
-        type=str,
-        default="data/results_raw.json",
-        help="Path to the raw results file."
-    )
-    parser.add_argument(
         "--results",
         type=str,
-        default="data/results.json",
+        default="results.json",
         help="Path to the final results file."
     )
     parser.add_argument(
@@ -288,13 +210,68 @@ def main():
     )
 
     args = parser.parse_args()
+    results_file = args.results
+    stops_file = args.stops_file
+    num_processes = args.num_processes
+        
+    raw_results = []
+    if os.path.exists(results_file):
+        with open(results_file, 'r', encoding='utf-8') as f:
+            raw_results = json.load(f)
 
-    if args.task == "scraping":
-        scrape_mode(args.stops_file, args.num_processes, args.results_raw)
-    elif args.task == "correcting":
-        correcting_mode(args.results_raw, args.results, args.num_processes)
-    else:
-        print(f"Unknown task: {args.task}")
+    with open(stops_file, 'r', encoding='utf-8') as f:
+        stops = [line.strip() for line in f if line.strip()]
+         
+    meetup_dt = get_next_meetup_time(4, 18)  
+    print(f"Next meetup: {meetup_dt}")
+    
+    all_pairs = list(product(stops, stops))
+    unique_pairs = [pair for pair in all_pairs if pair[0] != pair[1]]
+    print(f"Total unique pairs to process: {len(unique_pairs)}")
+
+    error_entries = [
+        (entry["from"], entry["to"], meetup_dt)
+        for entry in raw_results
+        if "error" in entry
+    ]
+    
+    processed_pairs_ids = {}
+    correct_entries = []
+    error_entries = []
+    for entry in raw_results:
+        if "error" not in entry:
+            processed_pairs_ids.update({(entry["from"], entry["to"]): True})
+            correct_entries.append(entry)
+        else:
+            error_entries.append((entry["from"], entry["to"], meetup_dt))
+        
+    missing_entries = []
+    for entry in tqdm(unique_pairs, desc="Checking"):
+        if entry not in processed_pairs_ids:
+            missing_entries.append((entry[0], entry[1], meetup_dt))
+    print(f"Total missing entries to process: {len(missing_entries)}")
+    print(f"Total entries with errors to retry: {len(error_entries)}")
+    
+    args = error_entries + missing_entries
+
+    if not args:
+        print("No entries to process.")
+        return
+
+    combined_results = correct_entries
+    with Pool(processes=num_processes) as pool:
+        for result in tqdm(pool.imap_unordered(process_pair, args), total=len(args), desc="Correcting"):
+            if result is not None:
+                combined_results.append(result)
+            if len(combined_results) % 100 == 0:
+                with open(results_file, 'w', encoding='utf-8') as f:
+                    json.dump(combined_results, f, ensure_ascii=False, indent=4)
+
+    with open(results_file, 'w', encoding='utf-8') as f:
+        json.dump(combined_results, f, ensure_ascii=False, indent=4)
+
+    print(f"Combined results have been saved to {results_file}")
+
 
 if __name__ == '__main__':
     main()

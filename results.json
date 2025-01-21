@@ -1,0 +1,3502 @@
+[
+    {
+        "from": "Albertov",
+        "to": "Ametystová",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Arbesovo náměstí",
+        "total_minutes": 13
+    },
+    {
+        "from": "Albertov",
+        "to": "Archeologická",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Amforová",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Anděl",
+        "total_minutes": 8
+    },
+    {
+        "from": "Albertov",
+        "to": "Barrandovská",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Avia Letňany",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Basilejské náměstí",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Balkán",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Antala Staška",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Bakovská",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Bazén Hloubětín",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Bečovská",
+        "total_minutes": 56
+    },
+    {
+        "from": "Albertov",
+        "to": "Bazar",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Benice",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Bořislavka",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Boletická",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Braunova",
+        "total_minutes": 12
+    },
+    {
+        "from": "Albertov",
+        "to": "Brodecká",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Bohdalec",
+        "total_minutes": 24
+    },
+    {
+        "from": "Albertov",
+        "to": "Branické náměstí",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Breitcetlova",
+        "total_minutes": 71
+    },
+    {
+        "from": "Albertov",
+        "to": "Bubenská",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Brechtova",
+        "total_minutes": 45
+    },
+    {
+        "from": "Albertov",
+        "to": "Bruselská",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Brusnice",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Bryksova",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Bucharova",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Brumlovka",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Bukovinská",
+        "total_minutes": 59
+    },
+    {
+        "from": "Albertov",
+        "to": "Butovická",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Bulovka",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Budějovická",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Bártlova",
+        "total_minutes": 49
+    },
+    {
+        "from": "Albertov",
+        "to": "Bílá Hora",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Bílenecké náměstí",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Bílá labuť",
+        "total_minutes": 14
+    },
+    {
+        "from": "Albertov",
+        "to": "Břetislavka",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Bílý Beránek",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Břeclavská",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Břevnovská",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Bělocerkevská",
+        "total_minutes": 21
+    },
+    {
+        "from": "Albertov",
+        "to": "Břevnovský klášter",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Běchovice",
+        "total_minutes": 64
+    },
+    {
+        "from": "Albertov",
+        "to": "Březiněveská",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Cementárna Radotín",
+        "total_minutes": 49
+    },
+    {
+        "from": "Albertov",
+        "to": "Březiněves",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Chaplinovo náměstí",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Chmelnice",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Argentinská",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Apolinářská",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Baba II",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Chodovická",
+        "total_minutes": 54
+    },
+    {
+        "from": "Albertov",
+        "to": "Centrum Zahradní Město",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Arena Libeň jih",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Choceradská",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Cholupický hřbitov",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Chodov",
+        "total_minutes": 24
+    },
+    {
+        "from": "Albertov",
+        "to": "Baterie",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Bertramka",
+        "total_minutes": 13
+    },
+    {
+        "from": "Albertov",
+        "to": "Bašteckého",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Bazovského",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Blatiny",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Bachova",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Chodovec",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Bojasova",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Cikánka",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Ciolkovského",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Ctěnický zámek",
+        "total_minutes": 55
+    },
+    {
+        "from": "Albertov",
+        "to": "Ctěnice",
+        "total_minutes": 54
+    },
+    {
+        "from": "Albertov",
+        "to": "Dehtínská",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Cukrovar Modřany",
+        "total_minutes": 24
+    },
+    {
+        "from": "Albertov",
+        "to": "Císařská louka",
+        "total_minutes": 13
+    },
+    {
+        "from": "Albertov",
+        "to": "Brodského",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Budovec",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Depo Zličín",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Depo Hostivař",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Dercsenyiho",
+        "total_minutes": 45
+    },
+    {
+        "from": "Albertov",
+        "to": "Divadlo Gong",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Delta",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Divadlo Horní Počernice",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Divadlo Na Fidlovačce",
+        "total_minutes": 4
+    },
+    {
+        "from": "Albertov",
+        "to": "Divoká Šárka",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Dlouhá třída",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Do Čertous",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Do Lipan",
+        "total_minutes": 62
+    },
+    {
+        "from": "Albertov",
+        "to": "Doležalova",
+        "total_minutes": 68
+    },
+    {
+        "from": "Albertov",
+        "to": "Dobratická",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "Doliny",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolnokrčská",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Chodovská",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolnokřeslická",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolnoměcholupská",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Bohnické údolí",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolnočernošická",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolní Chabry",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Dejvická",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolní Měcholupy",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Diskařská",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolní Černošice",
+        "total_minutes": 49
+    },
+    {
+        "from": "Albertov",
+        "to": "Donatellova",
+        "total_minutes": 74
+    },
+    {
+        "from": "Albertov",
+        "to": "Divadlo pod Palmovkou",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Do Chuchle",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Donovalská",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Do Koutů",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Dobronická",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Drinopol",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Dobročovická",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Baně",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Druhanická",
+        "total_minutes": 58
+    },
+    {
+        "from": "Albertov",
+        "to": "Dubeč",
+        "total_minutes": 49
+    },
+    {
+        "from": "Albertov",
+        "to": "Belárie",
+        "total_minutes": 18
+    },
+    {
+        "from": "Albertov",
+        "to": "Drazdecká",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Blatov sever",
+        "total_minutes": 56
+    },
+    {
+        "from": "Albertov",
+        "to": "Dubečský hřbitov",
+        "total_minutes": 54
+    },
+    {
+        "from": "Albertov",
+        "to": "Cílkova",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Bolevecká",
+        "total_minutes": 49
+    },
+    {
+        "from": "Albertov",
+        "to": "Dukla-Juliska",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolní Šárka",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Dvořákova",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Depo Kačerov",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Dívčí hrady",
+        "total_minutes": 24
+    },
+    {
+        "from": "Albertov",
+        "to": "Dědina",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Dlabačov",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Dělnická",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Dělostřelecká",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Dreyerova",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Dětská nemocnice Karlov",
+        "total_minutes": 21
+    },
+    {
+        "from": "Albertov",
+        "to": "Elišky Přemyslovny",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Drobná",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Důstojnické domy",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Cholupice",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Fashion Arena Štěrboholy",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Blažimská",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Dubeček",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Filmové ateliéry Barrandov",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Cukrovar Čakovice",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Flora",
+        "total_minutes": 21
+    },
+    {
+        "from": "Albertov",
+        "to": "Dvorní",
+        "total_minutes": 49
+    },
+    {
+        "from": "Albertov",
+        "to": "Domov seniorů Ďáblice",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Dyrinka",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Formanská",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Frančíkova",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Fruta",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Dopravní hřiště Vypich",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Do Rybníčků",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Dobeška",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Dřevařská",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "Gercenova",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Habrová",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Farkáň",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Hadovitá",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Chýnovská",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Biskupcova",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Dubečská",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Chodovská tvrz",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Filosofská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Hasičská",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "Haštalské náměstí",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolní Počernice",
+        "total_minutes": 54
+    },
+    {
+        "from": "Albertov",
+        "to": "Franty Kocourka",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Hejtmanská",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Hellichova",
+        "total_minutes": 14
+    },
+    {
+        "from": "Albertov",
+        "to": "Hercovka",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Dostihová",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlavní nádraží",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Geologická",
+        "total_minutes": 21
+    },
+    {
+        "from": "Albertov",
+        "to": "Hloubětín",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Grussova",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlubočepy",
+        "total_minutes": 24
+    },
+    {
+        "from": "Albertov",
+        "to": "Hládkov",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Družná",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Hadovka",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Hněvkovského",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Hanspaulka",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Horky",
+        "total_minutes": 8
+    },
+    {
+        "from": "Albertov",
+        "to": "Betáň",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Florenc",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Hornocholupická",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Dunajecká",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Františka Veselého",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostavice",
+        "total_minutes": 65
+    },
+    {
+        "from": "Albertov",
+        "to": "Děkanka",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Dědinova",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Horčičkova",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Fryčovická",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Goetheho",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostýnská",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Hotel Golf",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlušičkova",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlávkova",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Hradební",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Hrdlořezská",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Balabenka",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Hrnčířský hřbitov",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Holyně",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Hulická",
+        "total_minutes": 49
+    },
+    {
+        "from": "Albertov",
+        "to": "Hasičská stanice Modřany",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Darwinova",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Háje",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Högerova",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Botanická zahrada Troja",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "IKEM",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Invalidovna",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Horní cesta",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlavní",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Chvaly",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Jalodvorská",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Jana Masaryka",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Hájová",
+        "total_minutes": 73
+    },
+    {
+        "from": "Albertov",
+        "to": "Hříbková",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "K Housličkám",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Jakobiho",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "K Vystrkovu",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "K Zelenči",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Janovská",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "K Hájům",
+        "total_minutes": 71
+    },
+    {
+        "from": "Albertov",
+        "to": "K Tuchoměřicům",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Kamenická",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Kamenolom Zbraslav",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Jarníkova",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Holečkova",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Hutmanka",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Botanická zahrada",
+        "total_minutes": 2
+    },
+    {
+        "from": "Albertov",
+        "to": "Hrnčíře",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Hájek",
+        "total_minutes": 58
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařská",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Ferrariho",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlohová",
+        "total_minutes": 69
+    },
+    {
+        "from": "Albertov",
+        "to": "Hutě",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařské náměstí",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Baba I",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Hybšmanka",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Jemnická",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Hasova",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Filadelfie",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Holoubkovská",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Jesenická",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Jenerálka",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Hůrka",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiráskova čtvrť",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Jilemnická",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Horní Lysolaje",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Ježovická",
+        "total_minutes": 55
+    },
+    {
+        "from": "Albertov",
+        "to": "Hřebenka",
+        "total_minutes": 18
+    },
+    {
+        "from": "Albertov",
+        "to": "Jindřišská",
+        "total_minutes": 10
+    },
+    {
+        "from": "Albertov",
+        "to": "Generála Janouška",
+        "total_minutes": 67
+    },
+    {
+        "from": "Albertov",
+        "to": "Jinonice",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Hamplova",
+        "total_minutes": 76
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlavní nádraží (v ul.Opletalova)",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Jitřní",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařský pivovar",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Hradčanská",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Jinonická",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiviny",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Jirčanská",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Hrazanská",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Holešovická tržnice",
+        "total_minutes": 20
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiřího z Poděbrad",
+        "total_minutes": 20
+    },
+    {
+        "from": "Albertov",
+        "to": "Halenkovská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Bohdalecká",
+        "total_minutes": 21
+    },
+    {
+        "from": "Albertov",
+        "to": "Dvorce",
+        "total_minutes": 10
+    },
+    {
+        "from": "Albertov",
+        "to": "Benkova",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolnopočernický hřbitov",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Blatov",
+        "total_minutes": 67
+    },
+    {
+        "from": "Albertov",
+        "to": "Jezerka",
+        "total_minutes": 14
+    },
+    {
+        "from": "Albertov",
+        "to": "K Cikánce",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Chotkovy sady",
+        "total_minutes": 19
+    },
+    {
+        "from": "Albertov",
+        "to": "K Fialce",
+        "total_minutes": 70
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařský hřbitov",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Jižní Město",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Jordánská",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "K Barrandovu",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Cholupický vrch",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Boloňská",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "K Austisu",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiráskovo náměstí",
+        "total_minutes": 11
+    },
+    {
+        "from": "Albertov",
+        "to": "K Horoměřicům",
+        "total_minutes": 61
+    },
+    {
+        "from": "Albertov",
+        "to": "K Holyni",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "K Dubečku",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "K Drsnici",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "K Lesoparku",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "K Chatám",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "K Juliáně",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Botanická zahrada",
+        "total_minutes": 2
+    },
+    {
+        "from": "Albertov",
+        "to": "Jílovská",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Huntířovská",
+        "total_minutes": 45
+    },
+    {
+        "from": "Albertov",
+        "to": "Betonárka",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Bohemians",
+        "total_minutes": 61
+    },
+    {
+        "from": "Albertov",
+        "to": "Dvorce",
+        "total_minutes": 10
+    },
+    {
+        "from": "Albertov",
+        "to": "Botanická zahrada Malešice",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Cholupický vrch",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Cholupické náměstí",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Filadelfie",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Cholupické náměstí",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Bohdalecká",
+        "total_minutes": 21
+    },
+    {
+        "from": "Albertov",
+        "to": "Blatov",
+        "total_minutes": 67
+    },
+    {
+        "from": "Albertov",
+        "to": "Blatnická",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlohová",
+        "total_minutes": 69
+    },
+    {
+        "from": "Albertov",
+        "to": "Boloňská",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Jankovcova",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Horní Lysolaje",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Holešovická tržnice",
+        "total_minutes": 20
+    },
+    {
+        "from": "Albertov",
+        "to": "Holoubkovská",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Baba I",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Ivančická",
+        "total_minutes": 60
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařské náměstí",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Hradčanská",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Halenkovská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Hrazanská",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařská",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Holečkova",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Benkova",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Hybšmanka",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Hutmanka",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařský pivovar",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Hostivařský hřbitov",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Huntířovská",
+        "total_minutes": 45
+    },
+    {
+        "from": "Albertov",
+        "to": "Hůrka",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Jeřická",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "I. P. Pavlova",
+        "total_minutes": 11
+    },
+    {
+        "from": "Albertov",
+        "to": "Italská",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Hrnčíře",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Hutě",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Barvy a laky",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Betonárka",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Hřebenka",
+        "total_minutes": 18
+    },
+    {
+        "from": "Albertov",
+        "to": "Ivančická",
+        "total_minutes": 60
+    },
+    {
+        "from": "Albertov",
+        "to": "Jahodnice",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Blatnická",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Jankovcova",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Hájek",
+        "total_minutes": 58
+    },
+    {
+        "from": "Albertov",
+        "to": "Jenerálka",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Jeřická",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Jemnická",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Jilemnická",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Ferrariho",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Jinonická",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Jizbická",
+        "total_minutes": 55
+    },
+    {
+        "from": "Albertov",
+        "to": "Jindřišská",
+        "total_minutes": 10
+    },
+    {
+        "from": "Albertov",
+        "to": "Jesenická",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiráskova čtvrť",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Jinonice",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Generála Janouška",
+        "total_minutes": 67
+    },
+    {
+        "from": "Albertov",
+        "to": "Italská",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Hasova",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Jezerka",
+        "total_minutes": 14
+    },
+    {
+        "from": "Albertov",
+        "to": "Jahodnice",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Jordánská",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Bohemians",
+        "total_minutes": 61
+    },
+    {
+        "from": "Albertov",
+        "to": "Chotkovy sady",
+        "total_minutes": 19
+    },
+    {
+        "from": "Albertov",
+        "to": "K Chatám",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "K Lesoparku",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Dolnopočernický hřbitov",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "K Letišti",
+        "total_minutes": 54
+    },
+    {
+        "from": "Albertov",
+        "to": "K Barrandovu",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "K Obecním hájovnám",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "K Teplárně",
+        "total_minutes": 60
+    },
+    {
+        "from": "Albertov",
+        "to": "K Austisu",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "K Říčanům",
+        "total_minutes": 69
+    },
+    {
+        "from": "Albertov",
+        "to": "Karenova",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Karlovo náměstí",
+        "total_minutes": 4
+    },
+    {
+        "from": "Albertov",
+        "to": "K Žižkovu",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "K Netlukám",
+        "total_minutes": 56
+    },
+    {
+        "from": "Albertov",
+        "to": "Kamýcká",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Kapitána Stránského",
+        "total_minutes": 69
+    },
+    {
+        "from": "Albertov",
+        "to": "Karlovy lázně",
+        "total_minutes": 12
+    },
+    {
+        "from": "Albertov",
+        "to": "Karlštejnská",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Hamplova",
+        "total_minutes": 76
+    },
+    {
+        "from": "Albertov",
+        "to": "Katovická",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Jílovská",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "K Cikánce",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "K Drsnici",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "K Noskovně",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "K Trninám",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "K Horoměřicům",
+        "total_minutes": 61
+    },
+    {
+        "from": "Albertov",
+        "to": "K Pitkovičkám",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Kabešova",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Kajetánka",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "K Lipanům",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiráskovo náměstí",
+        "total_minutes": 11
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Březině",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Kalinův mlýn",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "K Třebonicům",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Karlínské náměstí",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Ježovická",
+        "total_minutes": 55
+    },
+    {
+        "from": "Albertov",
+        "to": "Kablo",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Hrázi",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Kavalírka",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Kazínu",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Kavčí hory",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Jirčanská",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "K Juliáně",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Schodům",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Smrčině",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Kavkazská",
+        "total_minutes": 20
+    },
+    {
+        "from": "Albertov",
+        "to": "Kbelská",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Hlavní nádraží (v ul.Opletalova)",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Kesnerka",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Klikovka",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Štěrkovně",
+        "total_minutes": 73
+    },
+    {
+        "from": "Albertov",
+        "to": "Khodlova",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Klukovice",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Stírce",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Kbely (ul. Hornopočernická)",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Klánova",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Kloboučnická",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Kaménce",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Klárův ústav",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Klíčov",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Kobrova",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Jitřní",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Kateřinská",
+        "total_minutes": 18
+    },
+    {
+        "from": "Albertov",
+        "to": "Kobylisy",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Kodaňská",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Kolbenova",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Kokořínská",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Koleje Jižní Město",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Kbelský hřbitov",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Kelerka",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Kolovraty",
+        "total_minutes": 58
+    },
+    {
+        "from": "Albertov",
+        "to": "Koleje Strahov",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Koloděje",
+        "total_minutes": 57
+    },
+    {
+        "from": "Albertov",
+        "to": "Kodymova",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Kněžská luka",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Koupaliště Čakovice",
+        "total_minutes": 54
+    },
+    {
+        "from": "Albertov",
+        "to": "Kovářova - KD Mlejn",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Kolonie",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Kukulova",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Křižíkova",
+        "total_minutes": 18
+    },
+    {
+        "from": "Albertov",
+        "to": "Letenské náměstí",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Kovárna",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Levského",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Královka",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Kotorská",
+        "total_minutes": 11
+    },
+    {
+        "from": "Albertov",
+        "to": "Lazarská",
+        "total_minutes": 6
+    },
+    {
+        "from": "Albertov",
+        "to": "Lehovec",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Letňany",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Krymská",
+        "total_minutes": 17
+    },
+    {
+        "from": "Albertov",
+        "to": "Kundratka",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Luka",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Macharovo náměstí",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Letňanská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Malá Ohrada",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Libošovická",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Livornská",
+        "total_minutes": 45
+    },
+    {
+        "from": "Albertov",
+        "to": "Lázeňka",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Libeňský most",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Malá Chuchle",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Mezi Hřbitovy",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Libocká",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Lipnická",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Lohenická",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Boleslavce",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Metodějova",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Michelangelova",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Maniny",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Morseova",
+        "total_minutes": 54
+    },
+    {
+        "from": "Albertov",
+        "to": "Myšlínská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Formance",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Groši",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Mlýnici",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Mládí",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Planině",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Veselí",
+        "total_minutes": 12
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Křečku",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Lysinách",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Nad Havlem",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Míčánkách",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Kovárně",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Šabatce",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Lukách",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Navigátorů",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Nad Klamovkou",
+        "total_minutes": 19
+    },
+    {
+        "from": "Albertov",
+        "to": "Na Petynce",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Nad Pahorkem",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Nad Závistí",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Naskové",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Nad Jetelkou",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Nad Košíkem",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Nové Podolí",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Nemocnice Motol",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Novoštěrboholská",
+        "total_minutes": 55
+    },
+    {
+        "from": "Albertov",
+        "to": "Nové Petrovice",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Nemocnice Bohnice - Divadlo Za plotem",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Nemocnice Bulovka - gynekologie",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Novoměstská radnice",
+        "total_minutes": 5
+    },
+    {
+        "from": "Albertov",
+        "to": "Nové Dvory",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Veleslavín",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Čakovice",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Braník",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Horní Měcholupy",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Kyje",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Nymburská",
+        "total_minutes": 73
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Řeporyje",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Náměstí Míru",
+        "total_minutes": 13
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Cibulka",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Náměstí U Lva",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Velká Chuchle",
+        "total_minutes": 24
+    },
+    {
+        "from": "Albertov",
+        "to": "Ordovická",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Obchodní centrum Sárská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Obchodní centrum Zličín",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Nádraží Zahradní Město",
+        "total_minutes": 20
+    },
+    {
+        "from": "Albertov",
+        "to": "Odlehlá",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Park Rajská zahrada",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Osadní",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Otínská",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Paceřická",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Obchodní centrum Černý Most",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Palouček",
+        "total_minutes": 8
+    },
+    {
+        "from": "Albertov",
+        "to": "Opálová",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Perspektivní",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "Ořechovka",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Ořešská",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Petýrkova",
+        "total_minutes": 34
+    },
+    {
+        "from": "Albertov",
+        "to": "Pod Chodovem",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Pod Kyjovem",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Podnikatelská",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Pod Oborou",
+        "total_minutes": 63
+    },
+    {
+        "from": "Albertov",
+        "to": "Petřiny",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Plynárna Michle",
+        "total_minutes": 14
+    },
+    {
+        "from": "Albertov",
+        "to": "Poliklinika Modřany",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Pod Mezí",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Poštovka",
+        "total_minutes": 22
+    },
+    {
+        "from": "Albertov",
+        "to": "Pod Nouzovem",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Poliklinika Barrandov",
+        "total_minutes": 24
+    },
+    {
+        "from": "Albertov",
+        "to": "Pod Vsí",
+        "total_minutes": 72
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Horní Měcholupy",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Komořany",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Polesná",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Polešovická",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Eden",
+        "total_minutes": 14
+    },
+    {
+        "from": "Albertov",
+        "to": "Poliklinika Mazurská",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Kačerov",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Poštovská",
+        "total_minutes": 37
+    },
+    {
+        "from": "Albertov",
+        "to": "Prunéřovská",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Ruzyně",
+        "total_minutes": 45
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Hlubočepy",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Holyně",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Klánovice",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Podbaba",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Přístav Holešovice",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Průhonský háj",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Průmyslová",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Vysočany",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Praha-Zličín",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Příborská",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Ronešova",
+        "total_minutes": 60
+    },
+    {
+        "from": "Albertov",
+        "to": "Přístaviště",
+        "total_minutes": 12
+    },
+    {
+        "from": "Albertov",
+        "to": "Ruzyňský velkoobchod",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Radlická",
+        "total_minutes": 15
+    },
+    {
+        "from": "Albertov",
+        "to": "Safírová",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Přímské náměstí",
+        "total_minutes": 58
+    },
+    {
+        "from": "Albertov",
+        "to": "Sekeřická",
+        "total_minutes": 50
+    },
+    {
+        "from": "Albertov",
+        "to": "Rtyňská",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Skalka",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Sklářská",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Rembrandtova",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Rooseveltova",
+        "total_minutes": 32
+    },
+    {
+        "from": "Albertov",
+        "to": "Ruzyňská",
+        "total_minutes": 47
+    },
+    {
+        "from": "Albertov",
+        "to": "Sibeliova",
+        "total_minutes": 27
+    },
+    {
+        "from": "Albertov",
+        "to": "Sportovní centrum Řepy",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Rápošovská",
+        "total_minutes": 68
+    },
+    {
+        "from": "Albertov",
+        "to": "Schengenská",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Stará Stodůlecká",
+        "total_minutes": 28
+    },
+    {
+        "from": "Albertov",
+        "to": "Staré Strašnice",
+        "total_minutes": 20
+    },
+    {
+        "from": "Albertov",
+        "to": "Sicherova",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Skládka Ďáblice",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Slatinová",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Služská",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Středočeská",
+        "total_minutes": 16
+    },
+    {
+        "from": "Albertov",
+        "to": "Spojovací",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Bohnice",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Správa sociálního zabezpečení",
+        "total_minutes": 23
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Krč",
+        "total_minutes": 31
+    },
+    {
+        "from": "Albertov",
+        "to": "Strážní",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Sudějovická",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Písnice",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Spořilov",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Stochovská",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Jinonice",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Na Dědině",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Svatoňovická",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Thákurova",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Zahradní Město",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Trutnovská",
+        "total_minutes": 46
+    },
+    {
+        "from": "Albertov",
+        "to": "Sídliště Lhotka",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Tehovičky",
+        "total_minutes": 57
+    },
+    {
+        "from": "Albertov",
+        "to": "U Belárie",
+        "total_minutes": 26
+    },
+    {
+        "from": "Albertov",
+        "to": "Toufarova",
+        "total_minutes": 35
+    },
+    {
+        "from": "Albertov",
+        "to": "Trojská",
+        "total_minutes": 29
+    },
+    {
+        "from": "Albertov",
+        "to": "Tuháňská",
+        "total_minutes": 60
+    },
+    {
+        "from": "Albertov",
+        "to": "Barvy a laky",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Jižní Město",
+        "total_minutes": 38
+    },
+    {
+        "from": "Albertov",
+        "to": "Kateřinky",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Krahulčí",
+        "total_minutes": 45
+    },
+    {
+        "from": "Albertov",
+        "to": "Krystalová",
+        "total_minutes": 52
+    },
+    {
+        "from": "Albertov",
+        "to": "Botanická zahrada Malešice",
+        "total_minutes": 36
+    },
+    {
+        "from": "Albertov",
+        "to": "Klánovice",
+        "total_minutes": 59
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Kříži",
+        "total_minutes": 51
+    },
+    {
+        "from": "Albertov",
+        "to": "Kbelský pivovar",
+        "total_minutes": 53
+    },
+    {
+        "from": "Albertov",
+        "to": "Kuliška",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Kazín",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kardausova",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kostrounek",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Koh-i-noor",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kolodějská obora",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Knovízská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Korandova",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Konvářka",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Bludovická",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Bludovická",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kačerov",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kbely",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Komořany",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Koleje Větrník",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kazínská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Koulce",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kovošrot",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Korunovační",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "I. P. Pavlova",
+        "total_minutes": 11
+    },
+    {
+        "from": "Albertov",
+        "to": "Kolová",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Xaverovu",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "K Letňanům",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Komárovská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Krčská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "K Holyni",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Krňovická",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Klamovka",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Klášterecká",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kobyliská střelnice",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kazanka",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Korek",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Jizbická",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Klíčovská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Klíčovu",
+        "total_minutes": 30
+    },
+    {
+        "from": "Albertov",
+        "to": "Kotevní",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Královická",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Korytná",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Ke Kateřinkám",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiřího z Poděbrad",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kbelský lesopark",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Jiviny",
+        "total_minutes": 41
+    },
+    {
+        "from": "Albertov",
+        "to": "Kotlářka",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "K Fialce",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Královice",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "K Dubečku",
+        "total_minutes": 48
+    },
+    {
+        "from": "Albertov",
+        "to": "Lomnická",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Krejcárek",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lnářská",
+        "total_minutes": 39
+    },
+    {
+        "from": "Albertov",
+        "to": "Krematorium Strašnice",
+        "total_minutes": 20
+    },
+    {
+        "from": "Albertov",
+        "to": "Královský letohrádek",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kyje",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Krakov",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kubánské náměstí",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Limuzská",
+        "total_minutes": 25
+    },
+    {
+        "from": "Albertov",
+        "to": "Lánská",
+        "total_minutes": 42
+    },
+    {
+        "from": "Albertov",
+        "to": "Lysolaje",
+        "total_minutes": 43
+    },
+    {
+        "from": "Albertov",
+        "to": "Kuchyňka",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kunratická škola",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kutvirtova",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Krematorium Motol",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Krocínka",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kvasinská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kunratice",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kusá",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Květnová",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kutnohorská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lahovický most",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Labe",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kudrnova",
+        "total_minutes": 33
+    },
+    {
+        "from": "Albertov",
+        "to": "Kyselova",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Květinková",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Křížová",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kyjský hřbitov",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Krčský hřbitov",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lahovice",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lahovičky",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Letecké muzeum",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Kublov",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lešanská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lahovská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Laurová",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Libeňská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lhotecký les",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lhotka",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Libuš",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Liběchovská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Libeňský zámek",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lehárova",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Křeslice",
+        "total_minutes": 44
+    },
+    {
+        "from": "Albertov",
+        "to": "Lipanská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lipence",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lihovar",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Litovický potok",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lidečská",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Litochlebské náměstí",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Lipany",
+        "error": "No elements found with the class 'connection-head'."
+    },
+    {
+        "from": "Albertov",
+        "to": "Matějská",
+        "total_minutes": 40
+    },
+    {
+        "from": "Albertov",
+        "to": "Logistická zóna Horní Počernice",
+        "total_minutes": 49
+    }
+]
