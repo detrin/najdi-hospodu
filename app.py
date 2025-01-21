@@ -2,11 +2,13 @@ import gradio as gr
 import polars as pl
 import json
 import pandas as pd
+from tqdm import tqdm
 
 def load_time_table(results_file):
     with open(results_file, 'r', encoding='utf-8') as f:
         results = json.load(f)
 
+    print("Loading time table file ...")
     results = pl.DataFrame(results, infer_schema_length=10000)
     if "error" in results.columns:
         results = results.filter(pl.col("err").is_null()).drop("err")
@@ -14,10 +16,12 @@ def load_time_table(results_file):
     from_stops = results["from"].unique().sort().to_list()
     to_stops = results["to"].unique().sort().to_list()  # Fixed to_stops to use "to" column
     common_stops = list(set(from_stops) & set(to_stops))
+    print("Common stops:", common_stops)
     results = results.filter(results["from"].is_in(common_stops) & results["to"].is_in(common_stops))
 
     diagonal_pairs = []
-    for stop in common_stops:
+    print("Checking for diagonal pairs ...")
+    for stop in tqdm(common_stops):
         if results.filter(pl.col("from") == stop).filter(pl.col("to") == stop).height == 0:
             diagonal_pairs.append({
                 "from": stop,
@@ -32,7 +36,7 @@ def load_time_table(results_file):
 
 def get_optimal_stop(time_table, method, selected_stops, show_top=20):
     dfs = []
-    for si, stop in enumerate(selected_stops):
+    for si, stop in tqdm(enumerate(selected_stops), desc="Calculating optimal stops", total=len(selected_stops)):
         df = (
             time_table
             .filter(pl.col("from") == stop)
@@ -45,10 +49,12 @@ def get_optimal_stop(time_table, method, selected_stops, show_top=20):
         )
         dfs.append(df)
 
+    print("Joining dataframes ...")
     df = dfs[0]
     for i in range(1, len(dfs)):
         df = df.join(dfs[i], on="target_stop")
 
+    print("Calculating worst case and total minutes ...")
     df = df.with_columns(
         pl.max_horizontal(*[f"total_minutes_{si}" for si in range(len(selected_stops))]).alias("worst_case_minutes"),
         pl.sum_horizontal(*[f"total_minutes_{si}" for si in range(len(selected_stops))]).alias("total_minutes")
@@ -62,6 +68,7 @@ def get_optimal_stop(time_table, method, selected_stops, show_top=20):
     return df.head(show_top)
 
 results_file = "data/results.json"
+print("Loading time table...")
 TIME_TABLE = load_time_table(results_file)
 from_stops = TIME_TABLE["from"].unique().sort().to_list()
 to_stops = TIME_TABLE["to"].unique().sort().to_list()
@@ -142,7 +149,7 @@ with gr.Blocks() as demo:
     )
 
     demo.load(
-        lambda: [gr.update(visible=True)] + [gr.update(visible=False) for _ in range(11)],
+        lambda: [gr.update(visible=True) for _ in range(3)] + [gr.update(visible=False) for _ in range(9)],
         inputs=[],
         outputs=dropdowns
     )
