@@ -3,3 +3,4 @@ beautifulsoup4
 tqdm
 gradio
 ipykernel
+polars
