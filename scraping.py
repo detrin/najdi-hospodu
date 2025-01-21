@@ -9,6 +9,9 @@ import argparse
 from tqdm import tqdm
 from multiprocessing import Pool
 from itertools import product
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def parse_time_to_minutes(time_str: str) -> int:
     """
@@ -56,11 +59,12 @@ def parse_time_to_minutes(time_str: str) -> int:
 
 def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> int:
     """
-    Sends a POST request to the specified URL and parses the response to extract time in minutes.
+    Sends a POST request to the specified URL using Webshare's rotating proxy and parses the response to extract time in minutes.
 
     Args:
-        headers (dict): The headers to include in the POST request.
-        data (dict): The form data to include in the POST request.
+        from_stop (str): The departure stop.
+        to_stop (str): The arrival stop.
+        dt (datetime.datetime): The date and time for the query.
 
     Returns:
         int: The total time in minutes extracted from the response.
@@ -113,8 +117,24 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
 
     url = 'https://idos.cz/pid/spojeni/'
     
+    proxy_domain = os.getenv("PROXY_DOMAIN")
+    proxy_port = os.getenv("PROXY_PORT")
+    proxy_username = os.getenv("PROXY_USERNAME")
+    proxy_password = os.getenv("PROXY_PASSWORD")
+
+    # Construct the proxy URL with authentication
+    proxy_url = f"http://{proxy_username}:{proxy_password}@{proxy_domain}:{proxy_port}"
+    
+    proxies = {
+        'http': proxy_url,
+        'https': proxy_url,
+    }
+
     try:
-        response = requests.post(url, headers=headers, data=data)
+        if proxy_domain is None:
+            response = requests.post(url, headers=headers, data=data, timeout=30)
+        else:
+            response = requests.post(url, headers=headers, data=data, proxies=proxies, timeout=30)
         response.raise_for_status() 
     except requests.RequestException as e:
         raise requests.HTTPError(f"Failed to retrieve data from {url}.") from e
@@ -130,8 +150,8 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
     if not strong_tag:
         raise ValueError("No <strong> tag found within the first 'connection-head' element.")
 
-    time_str = strong_tag.get_text(strip=True)
-    total_minutes = parse_time_to_minutes(time_str)
+    time_str_response = strong_tag.get_text(strip=True)
+    total_minutes = parse_time_to_minutes(time_str_response)
     return total_minutes
 
 def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime.datetime:
@@ -163,7 +183,7 @@ def process_pair(args):
     if from_stop == to_stop:
         return None 
 
-    max_retries = 3
+    max_retries = 1
     retry_delay = 10
     attempt = 0
 
@@ -203,7 +223,7 @@ def main():
         help="Path to the final results file."
     )
     parser.add_argument(
-        "--num_processes",
+        "--num-processes",
         type=int,
         default=5,
         help="Number of parallel processes."
@@ -249,8 +269,11 @@ def main():
     for entry in tqdm(unique_pairs, desc="Checking"):
         if entry not in processed_pairs_ids:
             missing_entries.append((entry[0], entry[1], meetup_dt))
-    print(f"Total missing entries to process: {len(missing_entries)}")
+            
+    print(f"Total correct entries: {len(correct_entries)}")
     print(f"Total entries with errors to retry: {len(error_entries)}")
+    print(f"Total missing entries to process: {len(missing_entries)}")
+    
     
     args = error_entries + missing_entries
 

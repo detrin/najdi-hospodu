@@ -5,3 +5,4 @@ gradio
 ipykernel
 polars
 pyarrow
+python-dotenv
