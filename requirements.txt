@@ -4,3 +4,4 @@ tqdm
 gradio
 ipykernel
 polars
+pyarrow
