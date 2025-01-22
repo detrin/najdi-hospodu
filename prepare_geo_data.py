@@ -2,6 +2,7 @@ import json
 import glob
 from typing import List, Dict
 import polars as pl
+import geopy.distance
 
 def extract_unique_stops(json_directory: str) -> pl.DataFrame:
     """
