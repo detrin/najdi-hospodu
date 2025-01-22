@@ -1,3 +1,6 @@
+from typing import List, Dict, Any
+from typing import Tuple
+
 import gradio as gr
 import polars as pl
 import time
@@ -18,7 +21,24 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 
-def get_geo_optimal_stop(method, selected_stops, show_top=20):
+def get_geo_optimal_stop(
+    method: str, selected_stops: List[str], show_top: int = 20
+) -> pl.DataFrame:
+    """
+    Calculate and return the top optimal geographic stops based on a specified method.
+
+    Args:
+        method (str): Optimization method, either "minimize-worst-case" or "minimize-total".
+        selected_stops (List[str]): A list of selected stop identifiers.
+        show_top (int, optional): Number of top results to return. Defaults to 20.
+
+    Returns:
+        DataFrame: A DataFrame containing the top optimal stops with calculated distances.
+    
+    Raises:
+        ValueError: If the method is not recognized.
+
+    """
     global DISTANCE_TABLE
     
     dfs = []
@@ -52,36 +72,18 @@ def get_geo_optimal_stop(method, selected_stops, show_top=20):
         df = df.sort("total_km")
 
     return df.head(show_top)
-
-def validate_date(date_str):
-    """
-    Validates that the date string is in DD/MM/YYYY format and represents a valid date.
-    """
-    try:
-        datetime.strptime(date_str, "%d/%m/%Y")
-        return True
-    except ValueError:
-        return False
-
-def validate_time(time_str):
-    """
-    Validates that the time string is in HH:MM format and represents a valid time.
-    """
-    try:
-        datetime.strptime(time_str, "%H:%M")
-        return True
-    except ValueError:
-        return False
     
-def validate_date_time(date_str, time_str):
+def validate_date_time(date_str: str, time_str: str) -> Tuple[bool, str]:
     """
-    Validates that:
-    1. The date string is in DD/MM/YYYY format and represents a valid date.
-    2. The time string is in HH:MM format and represents a valid time.
-    3. The combined datetime is in the future and not more than 3 months ahead.
-    
+    Validates a date and time string against specific criteria.
+
+    Args:
+        date_str (str): The date string to validate, in the format 'DD/MM/YYYY'.
+        time_str (str): The time string to validate, in the format 'HH:MM'.
+
     Returns:
-        Tuple[bool, str]: (is_valid, error_message)
+        Tuple[bool, str]: A tuple containing a boolean indicating if the input is valid,
+                          and a string message indicating the error if invalid, or an empty string if valid.
     """
     try:
         event_datetime = datetime.strptime(f"{date_str} {time_str}", "%d/%m/%Y %H:%M")
@@ -101,10 +103,20 @@ def validate_date_time(date_str, time_str):
 
 def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime:
     """
-    Returns the next meetup datetime.
+    Calculate the next occurrence of a meetup based on the target weekday and hour.
+
+    Args:
+        target_weekday (int): The day of the week for the meetup, where Monday is 0 
+                              and Sunday is 6.
+        target_hour (int): The hour of the day for the meetup (24-hour format).
+
+    Returns:
+        datetime: A datetime object representing the next occurrence of the meetup 
+                  with the specified weekday and hour.
     
-    :param target_weekday: The target weekday (0 = Monday, 1 = Tuesday, ..., 6 = Sunday).
-    :param target_hour: The target hour (0-23).
+    Raises:
+        ValueError: If `target_hour` is not between 0 and 23 inclusive.
+    
     """
     start_dt = datetime.now()
 
@@ -126,26 +138,17 @@ def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime:
 
 def parse_time_to_minutes(time_str: str) -> int:
     """
-    Parses a time string and returns the total number of minutes as an integer.
-
-    Supported formats:
-        - "X hod Y min" (e.g., "1 hod 1 min")
-        - "X hod" (e.g., "2 hod")
-        - "Y min" (e.g., "20 min")
-    
-    Forbidden inputs:
-        - Negative minutes or hours (e.g., "-1 min")
-        - Minutes equal to or exceeding 60 (e.g., "61 min")
-        - Incorrect formats
+    Parses a time string and converts it to a total number of minutes.
 
     Args:
-        time_str (str): The time string to parse.
+        time_str (str): A string representing the time in hours and/or minutes.
 
     Returns:
-        int: Total number of minutes.
+        int: The total number of minutes calculated from the given time string.
 
     Raises:
-        ValueError: If the input format is invalid or contains forbidden values.
+        ValueError: If the time string is in an invalid format, or if negative values
+                    or invalid values for hours or minutes are provided.
     """
     pattern = r'^\s*(?:(\d+)\s*hod)?(?:\s*(\d+)\s*min)?\s*$'
     match = re.match(pattern, time_str, re.IGNORECASE)
@@ -237,7 +240,6 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
     proxy_username = os.getenv("PROXY_USERNAME")
     proxy_password = os.getenv("PROXY_PASSWORD")
 
-    # Construct the proxy URL with authentication
     proxy_url = f"http://{proxy_username}:{proxy_password}@{proxy_domain}:{proxy_port}"
     
     proxies = {
@@ -270,9 +272,20 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
     return total_minutes
 
 @cached(cache=TTLCache(maxsize=10**6, ttl=24*60*60))
-def get_total_minutes_with_retries(from_stop: str, to_stop: str, dt: datetime) -> int:
-    max_retries = 3
-    retry_delay = 2
+def get_total_minutes_with_retries(from_stop: str, to_stop: str, dt: datetime, max_retries: int = 3, retry_delay: int = 2) -> int:
+    """
+    Calculate the total travel time in minutes between two stops with retry functionality.
+
+    Parameters:
+    from_stop (str): The name of the starting stop.
+    to_stop (str): The name of the destination stop.
+    dt (datetime): The date and time for which the travel time is being calculated.
+    max_retries (int, optional): Maximum number of retry attempts if an error occurs. Default is 3.
+    retry_delay (int, optional): Delay in seconds between retry attempts. Default is 2 seconds.
+
+    Returns:
+    int: The total travel time in minutes if successful, or `None` if all attempts fail.
+    """
     attempt = 0
 
     while attempt < max_retries:
@@ -287,8 +300,31 @@ def get_total_minutes_with_retries(from_stop: str, to_stop: str, dt: datetime) -
             else:
                 print(f"Failed to process pair ({from_stop}, {to_stop}) after {max_retries} attempts.")
                 return None
+    return None
 
-def get_time_optimal_stop(method, selected_stops, target_stops, event_datetime, show_top=20):
+def get_time_optimal_stop(
+    method: str,
+    selected_stops: List[str],
+    target_stops: List[str],
+    event_datetime: datetime,
+    show_top: int = 20
+) -> pl.DataFrame:
+    """Calculate optimal stop times for a list of target stops.
+
+    Args:
+        method (str): The method for optimization. Can be 'minimize-worst-case' or 'minimize-total'.
+        selected_stops (List[str]): A list of selected stops to calculate travel times from.
+        target_stops (List[str]): A list of target stops to calculate travel times to.
+        event_datetime (datetime.datetime): The date and time of the event for which travel times are calculated.
+        show_top (int, optional): The number of top optimal stops to display, defaults to 20.
+
+    Returns:
+        polars.DataFrame: A DataFrame containing the calculated stop times, sorted according to the selected method.
+
+    Raises:
+        Exception: If there's an error processing any stop pair, it's logged, and the function continues.
+
+    """
     def process_target_stop(args):
         target_stop, selected_stops, event_datetime = args
         row = {"target_stop": target_stop}
@@ -342,7 +378,6 @@ def cerate_app():
         
         Time table data are being scraped from IDOS API, IDOS uses PID timetable data.""")
 
-        # Slider to select the number of people
         number_of_stops = gr.Slider(
             minimum=2, 
             maximum=12, 
@@ -351,7 +386,6 @@ def cerate_app():
             label="Number of People"
         )
 
-        # Radio buttons to select the optimization method
         method = gr.Radio(
             choices=["Minimize worst case for each", "Minimize total time"],
             value="Minimize worst case for each",
@@ -361,27 +395,24 @@ def cerate_app():
         next_dt = get_next_meetup_time(4, 20)  # Friday 20:00
         next_date = next_dt.strftime("%d/%m/%Y")
         next_time = next_dt.strftime("%H:%M")
-        # Date input in DD/MM/YYYY format
         date_input = gr.Textbox(
             label="Date (DD/MM/YYYY)",
             placeholder=f"e.g., {next_date}",
             value=next_date
         )
 
-        # Time input in HH:MM format
         time_input = gr.Textbox(
             label="Time (HH:MM)",
             placeholder=f"e.g., {next_time}",
             value=next_time
         )
 
-        # Dropdowns for selecting starting stops, initially hidden
         dropdowns = []
         for i in range(12):
             dd = gr.Dropdown(
                 choices=ALL_STOPS, 
                 label=f"Choose Starting Stop #{i+1}",
-                visible=False  # Start hidden; we will unhide as needed
+                visible=False 
             )
             dropdowns.append(dd)
 
@@ -394,23 +425,19 @@ def cerate_app():
                     updates.append(gr.update(visible=False))
             return updates
 
-        # Update the visibility of dropdowns based on the number of stops selected
         number_of_stops.change(
             fn=update_dropdowns,
             inputs=number_of_stops,
             outputs=dropdowns 
         )
 
-        # Search button to trigger the optimization
         search_button = gr.Button("Search")
 
         def search_optimal_stop(num_stops, chosen_method, date_str, time_str, *all_stops):
-            # Validate Date
             is_valid, error_message = validate_date_time(date_str, time_str)
             if not is_valid:
                 raise gr.Error(error_message)
             
-            # Extract selected stops based on the number of stops
             selected_stops = [stop for stop in all_stops[:num_stops] if stop]
             print("Number of stops:", num_stops)
             print("Method selected:", chosen_method)
@@ -423,14 +450,10 @@ def cerate_app():
             else:
                 method = "minimize-total"
             
-            # Here, you can modify how date_str and time_str are used in your logic
-            # For example, you might want to convert them to datetime objects
             try:
-                # Optionally parse date and time to datetime objects
                 event_datetime = datetime.strptime(f"{date_str} {time_str}", "%d/%m/%Y %H:%M")
                 print("Event DateTime:", event_datetime)
             except ValueError as e:
-                # This should not happen due to prior validation, but added for safety
                 raise gr.Error(f"Error parsing date and time: {e}")
             
             df_top = get_geo_optimal_stop(method, selected_stops, show_top=SHOW_TOP+5)
@@ -440,21 +463,18 @@ def cerate_app():
             
             return df_times
 
-        # Dataframe to display the results
         results_table = gr.Dataframe(
             headers=["Target Stop", "Worst Case Minutes", "Total Minutes"],
             datatype=["str", "number", "str"],
             label="Optimal Stops"
         )
 
-        # Configure the search button to call the callback with the new inputs
         search_button.click(
             fn=search_optimal_stop,
             inputs=[number_of_stops, method, date_input, time_input] + dropdowns,
             outputs=results_table
         )
 
-        # On load, display the first 3 dropdowns and hide the rest
         app.load(
             lambda: [gr.update(visible=True) for _ in range(3)] + [gr.update(visible=False) for _ in range(9)],
             inputs=[],
@@ -481,16 +501,13 @@ stops_geo_dist = (
     .rename({"name": "from", "name_right": "to"})
     .select(["from", "to", "distance_in_km"])
 )
-# stops_geo_dist = pl.read_csv("Prague_stops_geo_dist.csv")
 DISTANCE_TABLE = stops_geo_dist
 from_stops = DISTANCE_TABLE["from"].unique().sort().to_list()
 to_stops = DISTANCE_TABLE["to"].unique().sort().to_list()
 ALL_STOPS = sorted(list(set(from_stops) & set(to_stops)))
 SHOW_TOP = 15
-# DISTANCE_TABLE = None
-# ALL_STOPS = None
 
 if __name__ == "__main__":    
     app = cerate_app()
-    print("starting app ...")
+    print("Starting app ...")
     app.launch()
