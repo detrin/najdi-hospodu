@@ -340,8 +340,7 @@ def cerate_app():
         gr.Markdown("""
         Consider you are in Prague and you want to meet with your friends. What is the optimal stop to meet? Now you can find that with this app!
         
-        Time table data was scraped using IDOS API, IDOS uses PID timetable data. The arrivals are calculated based on the shortest route to the target stop from starting stops so that you all meet on Friday 24.1.2025 20:00 CET.
-        """)
+        Time table data are being scraped from IDOS API, IDOS uses PID timetable data.""")
 
         # Slider to select the number of people
         number_of_stops = gr.Slider(
