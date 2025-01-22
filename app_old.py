@@ -4,8 +4,9 @@ import json
 import pandas as pd
 from tqdm import tqdm
 
+
 def load_time_table(results_file):
-    with open(results_file, 'r', encoding='utf-8') as f:
+    with open(results_file, "r", encoding="utf-8") as f:
         results = json.load(f)
 
     print("Loading time table file ...")
@@ -14,36 +15,43 @@ def load_time_table(results_file):
         results = results.filter(pl.col("err").is_null()).drop("err")
 
     from_stops = results["from"].unique().sort().to_list()
-    to_stops = results["to"].unique().sort().to_list()  # Fixed to_stops to use "to" column
+    to_stops = (
+        results["to"].unique().sort().to_list()
+    )  # Fixed to_stops to use "to" column
     common_stops = list(set(from_stops) & set(to_stops))
     print("Common stops:", common_stops)
-    results = results.filter(results["from"].is_in(common_stops) & results["to"].is_in(common_stops))
+    results = results.filter(
+        results["from"].is_in(common_stops) & results["to"].is_in(common_stops)
+    )
 
     diagonal_pairs = []
     print("Checking for diagonal pairs ...")
     for stop in tqdm(common_stops):
-        if results.filter(pl.col("from") == stop).filter(pl.col("to") == stop).height == 0:
-            diagonal_pairs.append({
-                "from": stop,
-                "to": stop,
-                "total_minutes": 0
-            })
+        if (
+            results.filter(pl.col("from") == stop).filter(pl.col("to") == stop).height
+            == 0
+        ):
+            diagonal_pairs.append({"from": stop, "to": stop, "total_minutes": 0})
     if len(diagonal_pairs) > 0:
         diagonal_pairs = pl.DataFrame(diagonal_pairs)
         results = pl.concat([results, diagonal_pairs])
 
     return results
 
+
 def get_optimal_stop(time_table, method, selected_stops, show_top=20):
     dfs = []
-    for si, stop in tqdm(enumerate(selected_stops), desc="Calculating optimal stops", total=len(selected_stops)):
+    for si, stop in tqdm(
+        enumerate(selected_stops),
+        desc="Calculating optimal stops",
+        total=len(selected_stops),
+    ):
         df = (
-            time_table
-            .filter(pl.col("from") == stop)
+            time_table.filter(pl.col("from") == stop)
             .drop("from")
             .with_columns(
                 pl.col("to").alias("target_stop"),
-                pl.col("total_minutes").alias(f"total_minutes_{si}")
+                pl.col("total_minutes").alias(f"total_minutes_{si}"),
             )
             .select("target_stop", f"total_minutes_{si}")
         )
@@ -56,8 +64,12 @@ def get_optimal_stop(time_table, method, selected_stops, show_top=20):
 
     print("Calculating worst case and total minutes ...")
     df = df.with_columns(
-        pl.max_horizontal(*[f"total_minutes_{si}" for si in range(len(selected_stops))]).alias("worst_case_minutes"),
-        pl.sum_horizontal(*[f"total_minutes_{si}" for si in range(len(selected_stops))]).alias("total_minutes")
+        pl.max_horizontal(
+            *[f"total_minutes_{si}" for si in range(len(selected_stops))]
+        ).alias("worst_case_minutes"),
+        pl.sum_horizontal(
+            *[f"total_minutes_{si}" for si in range(len(selected_stops))]
+        ).alias("total_minutes"),
     )
 
     if method == "minimize-worst-case":
@@ -66,6 +78,7 @@ def get_optimal_stop(time_table, method, selected_stops, show_top=20):
         df = df.sort("total_minutes")
 
     return df.head(show_top)
+
 
 results_file = "data/results.json"
 print("Loading time table...")
@@ -77,30 +90,29 @@ SHOW_TOP = 20
 
 with gr.Blocks() as demo:
     gr.Markdown("## Optimal Public Transport Stop Finder in Prague")
-    gr.Markdown("Consider you are in Prague and you want to meet with your friends. What is the optimal stop to meet? Now you can find that with this app!")
-    gr.Markdown("Time table data was scraped using IDOS API, IDOS uses PID timetable data. The arrivals are calculated based on the shortest route to the target stop from starting stops so that you all meet on Friday 24.1.2025 20:00 CET.")
-
+    gr.Markdown(
+        "Consider you are in Prague and you want to meet with your friends. What is the optimal stop to meet? Now you can find that with this app!"
+    )
+    gr.Markdown(
+        "Time table data was scraped using IDOS API, IDOS uses PID timetable data. The arrivals are calculated based on the shortest route to the target stop from starting stops so that you all meet on Friday 24.1.2025 20:00 CET."
+    )
 
     number_of_stops = gr.Slider(
-        minimum=2, 
-        maximum=12, 
-        step=1, 
-        value=3, 
-        label="Number of People"
+        minimum=2, maximum=12, step=1, value=3, label="Number of People"
     )
 
     method = gr.Radio(
         choices=["Minimize worst case for each", "Minimize total time"],
         value="Minimize worst case for each",
-        label="Optimization Method"
+        label="Optimization Method",
     )
 
     dropdowns = []
     for i in range(12):
         dd = gr.Dropdown(
-            choices=ALL_STOPS, 
+            choices=ALL_STOPS,
             label=f"Choose Starting Stop #{i+1}",
-            visible=False  # Start hidden; we will unhide as needed
+            visible=False,  # Start hidden; we will unhide as needed
         )
         dropdowns.append(dd)
 
@@ -114,9 +126,7 @@ with gr.Blocks() as demo:
         return updates
 
     number_of_stops.change(
-        fn=update_dropdowns,
-        inputs=number_of_stops,
-        outputs=dropdowns 
+        fn=update_dropdowns, inputs=number_of_stops, outputs=dropdowns
     )
 
     search_button = gr.Button("Search")
@@ -127,36 +137,41 @@ with gr.Blocks() as demo:
         print("Number of stops:", num_stops)
         print("Method selected:", chosen_method)
         print("Selected stops:", selected_stops)
-        
+
         if chosen_method == "Minimize worst case for each":
             method_key = "minimize-worst-case"
         else:
             method_key = "minimize-total"
-        
-        df_top = get_optimal_stop(TIME_TABLE, method_key, selected_stops, show_top=SHOW_TOP)
+
+        df_top = get_optimal_stop(
+            TIME_TABLE, method_key, selected_stops, show_top=SHOW_TOP
+        )
         df_top = df_top.with_row_index("#", offset=1)
         return df_top.to_pandas()
 
     results_table = gr.Dataframe(
         headers=["Target Stop", "Worst Case Minutes", "Total Minutes"],
         datatype=["str", "number", "str"],
-        label="Optimal Stops"
+        label="Optimal Stops",
     )
 
     search_button.click(
         fn=search_optimal_stop,
         inputs=[number_of_stops, method] + dropdowns,
-        outputs=results_table
+        outputs=results_table,
     )
 
     demo.load(
-        lambda: [gr.update(visible=True) for _ in range(3)] + [gr.update(visible=False) for _ in range(9)],
+        lambda: [gr.update(visible=True) for _ in range(3)]
+        + [gr.update(visible=False) for _ in range(9)],
         inputs=[],
-        outputs=dropdowns
+        outputs=dropdowns,
     )
-    
+
     gr.Markdown("---")
-    gr.Markdown("Created by [Daniel Herman](https://www.hermandaniel.com), check out the code [detrin/pub-finder](https://github.com/detrin/pub-finder).")
+    gr.Markdown(
+        "Created by [Daniel Herman](https://www.hermandaniel.com), check out the code [detrin/pub-finder](https://github.com/detrin/pub-finder)."
+    )
 
 
 if __name__ == "__main__":

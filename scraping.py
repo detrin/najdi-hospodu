@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 def parse_time_to_minutes(time_str: str) -> int:
     """
     Parses a time string and returns the total number of minutes as an integer.
@@ -22,7 +23,7 @@ def parse_time_to_minutes(time_str: str) -> int:
         - "X hod Y min" (e.g., "1 hod 1 min")
         - "X hod" (e.g., "2 hod")
         - "Y min" (e.g., "20 min")
-    
+
     Forbidden inputs:
         - Negative minutes or hours (e.g., "-1 min")
         - Minutes equal to or exceeding 60 (e.g., "61 min")
@@ -37,14 +38,14 @@ def parse_time_to_minutes(time_str: str) -> int:
     Raises:
         ValueError: If the input format is invalid or contains forbidden values.
     """
-    pattern = r'^\s*(?:(\d+)\s*hod)?(?:\s*(\d+)\s*min)?\s*$'
+    pattern = r"^\s*(?:(\d+)\s*hod)?(?:\s*(\d+)\s*min)?\s*$"
     match = re.match(pattern, time_str, re.IGNORECASE)
-    
+
     if not match:
         raise ValueError(f"Invalid time format: '{time_str}'")
-    
+
     hours_str, minutes_str = match.groups()
-    
+
     hours = int(hours_str) if hours_str else 0
     minutes = int(minutes_str) if minutes_str else 0
 
@@ -54,9 +55,10 @@ def parse_time_to_minutes(time_str: str) -> int:
         raise ValueError("Minutes cannot be negative.")
     if minutes >= 60:
         raise ValueError("Minutes must be less than 60.")
-    
+
     total_minutes = hours * 60 + minutes
     return total_minutes
+
 
 def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> int:
     """
@@ -75,49 +77,48 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
         ValueError: If expected HTML elements are not found in the response.
     """
     day_abbreviations = {
-        0: 'po',  # Monday -> po
-        1: 'út',  # Tuesday -> út
-        2: 'st',  # Wednesday -> st
-        3: 'čt',  # Thursday -> čt
-        4: 'pá',  # Friday -> pá
-        5: 'so',  # Saturday -> so
-        6: 'ne'   # Sunday -> ne
+        0: "po",  # Monday -> po
+        1: "út",  # Tuesday -> út
+        2: "st",  # Wednesday -> st
+        3: "čt",  # Thursday -> čt
+        4: "pá",  # Friday -> pá
+        5: "so",  # Saturday -> so
+        6: "ne",  # Sunday -> ne
     }
-    
+
     day = dt.day
     month = dt.month
     year = dt.year
-    weekday = dt.weekday() 
-    abbreviation = day_abbreviations.get(weekday, '')
+    weekday = dt.weekday()
+    abbreviation = day_abbreviations.get(weekday, "")
     date_str = f"{day}.{month}.{year} {abbreviation}"
-    time_str = dt.strftime('%H:%M')
-    
-    
+    time_str = dt.strftime("%H:%M")
+
     headers = {
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'accept-language': 'en-US,en;q=0.9',
-        'cache-control': 'max-age=0',
-        'content-type': 'application/x-www-form-urlencoded',
-        'dnt': '1',
-        'origin': 'https://idos.cz',
-        'priority': 'u=0, i',
-        'referer': 'https://idos.cz/pid/spojeni/',
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "accept-language": "en-US,en;q=0.9",
+        "cache-control": "max-age=0",
+        "content-type": "application/x-www-form-urlencoded",
+        "dnt": "1",
+        "origin": "https://idos.cz",
+        "priority": "u=0, i",
+        "referer": "https://idos.cz/pid/spojeni/",
     }
 
     data = [
-        ('From', from_stop),
-        ('positionACPosition', ''),
-        ('To', to_stop),
-        ('positionACPosition', ''),
-        ('AdvancedForm.Via[0]', ''),
-        ('AdvancedForm.ViaHidden[0]', ''),
-        ('Date', date_str),
-        ('Time', time_str),
-        ('IsArr', 'True'),
+        ("From", from_stop),
+        ("positionACPosition", ""),
+        ("To", to_stop),
+        ("positionACPosition", ""),
+        ("AdvancedForm.Via[0]", ""),
+        ("AdvancedForm.ViaHidden[0]", ""),
+        ("Date", date_str),
+        ("Time", time_str),
+        ("IsArr", "True"),
     ]
 
-    url = 'https://idos.cz/pid/spojeni/'
-    
+    url = "https://idos.cz/pid/spojeni/"
+
     proxy_domain = os.getenv("PROXY_DOMAIN")
     proxy_port = os.getenv("PROXY_PORT")
     proxy_username = os.getenv("PROXY_USERNAME")
@@ -125,40 +126,45 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
 
     # Construct the proxy URL with authentication
     proxy_url = f"http://{proxy_username}:{proxy_password}@{proxy_domain}:{proxy_port}"
-    
+
     proxies = {
-        'http': proxy_url,
-        'https': proxy_url,
+        "http": proxy_url,
+        "https": proxy_url,
     }
 
     try:
         if proxy_domain is None:
             response = requests.post(url, headers=headers, data=data, timeout=30)
         else:
-            response = requests.post(url, headers=headers, data=data, proxies=proxies, timeout=30)
-        response.raise_for_status() 
+            response = requests.post(
+                url, headers=headers, data=data, proxies=proxies, timeout=30
+            )
+        response.raise_for_status()
     except requests.RequestException as e:
         raise requests.HTTPError(f"Failed to retrieve data from {url}.") from e
 
-    soup = BeautifulSoup(response.content, 'html.parser')
-    connection_head = soup.find(class_='connection-head')
+    soup = BeautifulSoup(response.content, "html.parser")
+    connection_head = soup.find(class_="connection-head")
 
     if not connection_head:
         raise ValueError("No elements found with the class 'connection-head'.")
 
-    strong_tag = connection_head.find('strong')
+    strong_tag = connection_head.find("strong")
 
     if not strong_tag:
-        raise ValueError("No <strong> tag found within the first 'connection-head' element.")
+        raise ValueError(
+            "No <strong> tag found within the first 'connection-head' element."
+        )
 
     time_str_response = strong_tag.get_text(strip=True)
     total_minutes = parse_time_to_minutes(time_str_response)
     return total_minutes
 
+
 def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime.datetime:
     """
     Returns the next meetup datetime.
-    
+
     :param target_weekday: The target weekday (0 = Monday, 1 = Tuesday, ..., 6 = Sunday).
     :param target_hour: The target hour (0-23).
     """
@@ -169,20 +175,23 @@ def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime.date
 
     if days_ahead == 0:
         if start_dt.time() >= datetime.time(target_hour, 0):
-            days_ahead = 7  
+            days_ahead = 7
         else:
-            days_ahead = 0 
+            days_ahead = 0
     elif days_ahead < 0:
-        days_ahead += 7 
+        days_ahead += 7
 
     next_friday_date = start_dt + datetime.timedelta(days=days_ahead)
-    next_friday_20 = next_friday_date.replace(hour=target_hour, minute=0, second=0, microsecond=0)
+    next_friday_20 = next_friday_date.replace(
+        hour=target_hour, minute=0, second=0, microsecond=0
+    )
     return next_friday_20
+
 
 def process_pair(args):
     from_stop, to_stop, meetup_dt = args
     if from_stop == to_stop:
-        return None 
+        return None
 
     max_retries = 1
     retry_delay = 10
@@ -191,61 +200,55 @@ def process_pair(args):
     while attempt < max_retries:
         try:
             total_minutes = get_total_minutes(from_stop, to_stop, meetup_dt)
-            return {
-                "from": from_stop,
-                "to": to_stop,
-                "total_minutes": total_minutes
-            }
+            return {"from": from_stop, "to": to_stop, "total_minutes": total_minutes}
         except Exception as e:
             attempt += 1
             if attempt < max_retries:
-                print(f"Error processing pair ({from_stop}, {to_stop}): {e}. Retrying in {retry_delay} seconds... (Attempt {attempt}/{max_retries})")
+                print(
+                    f"Error processing pair ({from_stop}, {to_stop}): {e}. Retrying in {retry_delay} seconds... (Attempt {attempt}/{max_retries})"
+                )
                 time.sleep(retry_delay)
             else:
-                print(f"Failed to process pair ({from_stop}, {to_stop}) after {max_retries} attempts.")
-                return {
-                    "from": from_stop,
-                    "to": to_stop,
-                    "error": str(e)
-                }
-                
+                print(
+                    f"Failed to process pair ({from_stop}, {to_stop}) after {max_retries} attempts."
+                )
+                return {"from": from_stop, "to": to_stop, "error": str(e)}
+
+
 def main():
     parser = argparse.ArgumentParser(description="Scraping and Correcting Script")
     parser.add_argument(
         "--stops_file",
         type=str,
         default="Prague_stops.txt",
-        help="Path to the stops file."
+        help="Path to the stops file.",
     )
     parser.add_argument(
         "--results",
         type=str,
         default="results.json",
-        help="Path to the final results file."
+        help="Path to the final results file.",
     )
     parser.add_argument(
-        "--num-processes",
-        type=int,
-        default=5,
-        help="Number of parallel processes."
+        "--num-processes", type=int, default=5, help="Number of parallel processes."
     )
 
     args = parser.parse_args()
     results_file = args.results
     stops_file = args.stops_file
     num_processes = args.num_processes
-        
+
     raw_results = []
     if os.path.exists(results_file):
-        with open(results_file, 'r', encoding='utf-8') as f:
+        with open(results_file, "r", encoding="utf-8") as f:
             raw_results = json.load(f)
 
-    with open(stops_file, 'r', encoding='utf-8') as f:
+    with open(stops_file, "r", encoding="utf-8") as f:
         stops = [line.strip() for line in f if line.strip()]
-         
-    meetup_dt = get_next_meetup_time(4, 18)  
+
+    meetup_dt = get_next_meetup_time(4, 18)
     print(f"Next meetup: {meetup_dt}")
-    
+
     all_pairs = list(product(stops, stops))
     unique_pairs = [pair for pair in all_pairs if pair[0] != pair[1]]
     print(f"Total unique pairs to process: {len(unique_pairs)}")
@@ -255,7 +258,7 @@ def main():
         for entry in raw_results
         if "error" in entry
     ]
-    
+
     processed_pairs_ids = {}
     correct_entries = []
     error_entries = []
@@ -267,17 +270,16 @@ def main():
         else:
             error_entries.append(entry)
             error_entries_to_process.append((entry["from"], entry["to"], meetup_dt))
-        
+
     missing_entries_to_process = []
     for entry in tqdm(unique_pairs, desc="Checking"):
         if entry not in processed_pairs_ids:
             missing_entries_to_process.append((entry[0], entry[1], meetup_dt))
-            
+
     print(f"Total correct entries: {len(correct_entries)}")
     print(f"Total entries with errors to retry: {len(error_entries_to_process)}")
     print(f"Total missing entries to process: {len(missing_entries_to_process)}")
-    
-    
+
     # args = error_entries_to_process + missing_entries
     args = missing_entries_to_process
     random.shuffle(args)
@@ -289,18 +291,20 @@ def main():
     # combined_results = correct_entries
     combined_results = correct_entries + error_entries
     with Pool(processes=num_processes) as pool:
-        for result in tqdm(pool.imap_unordered(process_pair, args), total=len(args), desc="Correcting"):
+        for result in tqdm(
+            pool.imap_unordered(process_pair, args), total=len(args), desc="Correcting"
+        ):
             if result is not None:
                 combined_results.append(result)
             if len(combined_results) % 100 == 0:
-                with open(results_file, 'w', encoding='utf-8') as f:
+                with open(results_file, "w", encoding="utf-8") as f:
                     json.dump(combined_results, f, ensure_ascii=False, indent=4)
 
-    with open(results_file, 'w', encoding='utf-8') as f:
+    with open(results_file, "w", encoding="utf-8") as f:
         json.dump(combined_results, f, ensure_ascii=False, indent=4)
 
     print(f"Combined results have been saved to {results_file}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
