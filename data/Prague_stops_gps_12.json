@@ -1,0 +1,463 @@
+{
+    "group_stops": [
+        {
+            "name": "Jene\u010d,vys\u00edlac\u00ed st\u0159edisko",
+            "fullName": "Jene\u010d,vys\u00edlac\u00ed st\u0159edisko",
+            "lat": "50.088024",
+            "lon": "14.198599",
+            "node": "12987",
+            "gtfs_node": "2117",
+            "lineType": "bus"
+        },
+        {
+            "name": "Hostou\u0148,Na Poho\u0159\u00ed",
+            "fullName": "Hostou\u0148,Na Poho\u0159\u00ed",
+            "lat": "50.114250",
+            "lon": "14.201916",
+            "node": "58902",
+            "gtfs_node": "4119",
+            "lineType": "bus"
+        },
+        {
+            "name": "Hostou\u0148",
+            "fullName": "Hostou\u0148",
+            "lat": "50.116220",
+            "lon": "14.202181",
+            "node": "10314",
+            "gtfs_node": "2120",
+            "lineType": "bus"
+        },
+        {
+            "name": "Hostou\u0148,u h\u0159i\u0161t\u011b",
+            "fullName": "Hostou\u0148,u h\u0159i\u0161t\u011b",
+            "lat": "50.110940",
+            "lon": "14.203600",
+            "node": "46965",
+            "gtfs_node": "2132",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jene\u010d,Komer\u010dn\u00ed z\u00f3na",
+            "fullName": "Jene\u010d,Komer\u010dn\u00ed z\u00f3na",
+            "lat": "50.092630",
+            "lon": "14.206406",
+            "node": "59623",
+            "gtfs_node": "4127",
+            "lineType": "bus"
+        },
+        {
+            "name": "Hostou\u0148 u Prahy",
+            "fullName": "Hostou\u0148 u Prahy",
+            "lat": "50.104893",
+            "lon": "14.209313",
+            "node": "5454076",
+            "gtfs_node": "2809",
+            "lineType": "train"
+        },
+        {
+            "name": "Jene\u010d",
+            "fullName": "Jene\u010d",
+            "lat": "50.094227",
+            "lon": "14.211914",
+            "node": "5453636",
+            "gtfs_node": "2118",
+            "lineType": "train"
+        },
+        {
+            "name": "Jene\u010d,N\u00e1dra\u017e\u00ed",
+            "fullName": "Jene\u010d,N\u00e1dra\u017e\u00ed",
+            "lat": "50.093900",
+            "lon": "14.212476",
+            "node": "12988",
+            "gtfs_node": "2118",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jene\u010d zast.",
+            "fullName": "Jene\u010d zast\u00e1vka",
+            "lat": "50.094647",
+            "lon": "14.213327",
+            "node": "5454066",
+            "gtfs_node": "2118",
+            "lineType": "train"
+        },
+        {
+            "name": "Dobrov\u00edz,Komer\u010dn\u00ed z\u00f3na",
+            "fullName": "Dobrov\u00edz,Komer\u010dn\u00ed z\u00f3na",
+            "lat": "50.107285",
+            "lon": "14.213337",
+            "node": "58650",
+            "gtfs_node": "4103",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dobrov\u00edz-Amazon",
+            "fullName": "Dobrov\u00edz-Amazon",
+            "lat": "50.107470",
+            "lon": "14.214047",
+            "node": "5454061",
+            "gtfs_node": "4103",
+            "lineType": "train"
+        },
+        {
+            "name": "Jene\u010d,Lidick\u00e1",
+            "fullName": "Jene\u010d,Lidick\u00e1",
+            "lat": "50.089394",
+            "lon": "14.214396",
+            "node": "51622",
+            "gtfs_node": "1216",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jene\u010d",
+            "fullName": "Jene\u010d",
+            "lat": "50.087334",
+            "lon": "14.215284",
+            "node": "12985",
+            "gtfs_node": "1215",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dobrov\u00edz",
+            "fullName": "Dobrov\u00edz",
+            "lat": "50.114605",
+            "lon": "14.216805",
+            "node": "6056",
+            "gtfs_node": "2133",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dobrov\u00edz",
+            "fullName": "Dobrov\u00edz",
+            "lat": "50.110580",
+            "lon": "14.219499",
+            "node": "5454056",
+            "gtfs_node": "2810",
+            "lineType": "train"
+        },
+        {
+            "name": "Dobrov\u00edz,Obecn\u00ed \u00fa\u0159ad",
+            "fullName": "Dobrov\u00edz,Obecn\u00ed \u00fa\u0159ad",
+            "lat": "50.113854",
+            "lon": "14.219551",
+            "node": "46951",
+            "gtfs_node": "2124",
+            "lineType": "bus"
+        },
+        {
+            "name": "B\u011bloky",
+            "fullName": "B\u011bloky",
+            "lat": "50.132275",
+            "lon": "14.220736",
+            "node": "63924",
+            "gtfs_node": "4204",
+            "lineType": "bus"
+        },
+        {
+            "name": "St\u0159edokluky,Nad B\u011bloky",
+            "fullName": "St\u0159edokluky,Nad B\u011bloky",
+            "lat": "50.131650",
+            "lon": "14.228642",
+            "node": "33607",
+            "gtfs_node": "4394",
+            "lineType": "bus"
+        },
+        {
+            "name": "St\u0159edokluky",
+            "fullName": "St\u0159edokluky",
+            "lat": "50.130500",
+            "lon": "14.237009",
+            "node": "33606",
+            "gtfs_node": "4203",
+            "lineType": "bus"
+        },
+        {
+            "name": "St\u0159edokluky,U \u0160koly",
+            "fullName": "St\u0159edokluky,U \u0160koly",
+            "lat": "50.132248",
+            "lon": "14.237114",
+            "node": "33609",
+            "gtfs_node": "4396",
+            "lineType": "bus"
+        },
+        {
+            "name": "St\u0159edokluky,rozc.\u010cernovi\u010dky",
+            "fullName": "St\u0159edokluky,rozcest\u00ed \u010cernovi\u010dky",
+            "lat": "50.137760",
+            "lon": "14.245420",
+            "node": "33608",
+            "gtfs_node": "4400",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kn\u011b\u017eeves,U N\u00e1dra\u017e\u00ed",
+            "fullName": "Kn\u011b\u017eeves,U N\u00e1dra\u017e\u00ed",
+            "lat": "50.122170",
+            "lon": "14.254479",
+            "node": "43390",
+            "gtfs_node": "2134",
+            "lineType": "bus"
+        },
+        {
+            "name": "St\u0159edokluky",
+            "fullName": "St\u0159edokluky",
+            "lat": "50.125195",
+            "lon": "14.255020",
+            "node": "5454026",
+            "gtfs_node": "1740",
+            "lineType": "train"
+        },
+        {
+            "name": "Kn\u011b\u017eeves",
+            "fullName": "Kn\u011b\u017eeves",
+            "lat": "50.121254",
+            "lon": "14.258875",
+            "node": "14746",
+            "gtfs_node": "2135",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Komer\u010dn\u00ed z\u00f3na",
+            "fullName": "Tuchom\u011b\u0159ice,Komer\u010dn\u00ed z\u00f3na",
+            "lat": "50.135680",
+            "lon": "14.261027",
+            "node": "62316",
+            "gtfs_node": "2140",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kn\u011b\u017eeves,Star\u00e1 hospoda",
+            "fullName": "Kn\u011b\u017eeves,Star\u00e1 hospoda",
+            "lat": "50.118477",
+            "lon": "14.261726",
+            "node": "47743",
+            "gtfs_node": "1970",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kn\u011b\u017eeves,U \u0160koly",
+            "fullName": "Kn\u011b\u017eeves,U \u0160koly",
+            "lat": "50.119526",
+            "lon": "14.262073",
+            "node": "14747",
+            "gtfs_node": "4395",
+            "lineType": "bus"
+        },
+        {
+            "name": "Termin\u00e1l 2",
+            "fullName": "Termin\u00e1l 2",
+            "lat": "50.105064",
+            "lon": "14.268054",
+            "node": "52914",
+            "gtfs_node": "629",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice",
+            "fullName": "Tuchom\u011b\u0159ice",
+            "lat": "50.136383",
+            "lon": "14.268350",
+            "node": "5454036",
+            "gtfs_node": "2820",
+            "lineType": "train"
+        },
+        {
+            "name": "Termin\u00e1l 1",
+            "fullName": "Termin\u00e1l 1",
+            "lat": "50.107456",
+            "lon": "14.268614",
+            "node": "52913",
+            "gtfs_node": "628",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Kn\u011b\u017eeves,Skladov\u00fd are\u00e1l",
+            "fullName": "Kn\u011b\u017eeves,Skladov\u00fd are\u00e1l",
+            "lat": "50.118080",
+            "lon": "14.268925",
+            "node": "44727",
+            "gtfs_node": "1969",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Rozc.",
+            "fullName": "Tuchom\u011b\u0159ice,Rozcest\u00ed",
+            "lat": "50.124294",
+            "lon": "14.269280",
+            "node": "37009",
+            "gtfs_node": "1363",
+            "lineType": "bus"
+        },
+        {
+            "name": "Leti\u0161t\u011b",
+            "fullName": "Leti\u0161t\u011b",
+            "lat": "50.106087",
+            "lon": "14.271953",
+            "node": "59618",
+            "gtfs_node": "1090",
+            "lineType": ""
+        },
+        {
+            "name": "Schengensk\u00e1",
+            "fullName": "Schengensk\u00e1",
+            "lat": "50.105827",
+            "lon": "14.272376",
+            "node": "59619",
+            "gtfs_node": "1090",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,U Dvora",
+            "fullName": "Tuchom\u011b\u0159ice,U Dvora",
+            "lat": "50.127170",
+            "lon": "14.273076",
+            "node": "47254",
+            "gtfs_node": "1310",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,\u0160pejchar",
+            "fullName": "Tuchom\u011b\u0159ice,\u0160pejchar",
+            "lat": "50.136270",
+            "lon": "14.273691",
+            "node": "47252",
+            "gtfs_node": "1364",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Ke Kopanin\u011b",
+            "fullName": "Tuchom\u011b\u0159ice,Ke Kopanin\u011b",
+            "lat": "50.126130",
+            "lon": "14.273720",
+            "node": "66899",
+            "gtfs_node": "3246",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Kn\u011b\u017e\u00edvka",
+            "fullName": "Tuchom\u011b\u0159ice,Kn\u011b\u017e\u00edvka",
+            "lat": "50.130430",
+            "lon": "14.275522",
+            "node": "37003",
+            "gtfs_node": "1317",
+            "lineType": "bus"
+        },
+        {
+            "name": "U Hang\u00e1ru",
+            "fullName": "U Hang\u00e1ru",
+            "lat": "50.108300",
+            "lon": "14.277419",
+            "node": "27993",
+            "gtfs_node": "776",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Obecn\u00ed \u00fa\u0159ad",
+            "fullName": "Tuchom\u011b\u0159ice,Obecn\u00ed \u00fa\u0159ad",
+            "lat": "50.132760",
+            "lon": "14.279234",
+            "node": "62959",
+            "gtfs_node": "1318",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Z\u00e1mek",
+            "fullName": "Tuchom\u011b\u0159ice,Z\u00e1mek",
+            "lat": "50.135700",
+            "lon": "14.279917",
+            "node": "47255",
+            "gtfs_node": "1319",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Outlet",
+            "fullName": "Tuchom\u011b\u0159ice,Outlet",
+            "lat": "50.124973",
+            "lon": "14.280243",
+            "node": "66104",
+            "gtfs_node": "4259",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,AIR DEPO",
+            "fullName": "Tuchom\u011b\u0159ice,AIR DEPO",
+            "lat": "50.123500",
+            "lon": "14.282572",
+            "node": "68741",
+            "gtfs_node": "5971",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,U H\u0159i\u0161t\u011b",
+            "fullName": "Tuchom\u011b\u0159ice,U H\u0159i\u0161t\u011b",
+            "lat": "50.134266",
+            "lon": "14.283932",
+            "node": "62960",
+            "gtfs_node": "4181",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Statenick\u00e1",
+            "fullName": "Tuchom\u011b\u0159ice,Statenick\u00e1",
+            "lat": "50.132546",
+            "lon": "14.283943",
+            "node": "63495",
+            "gtfs_node": "4205",
+            "lineType": "bus"
+        },
+        {
+            "name": "Termin\u00e1l 3",
+            "fullName": "Termin\u00e1l 3",
+            "lat": "50.099056",
+            "lon": "14.288720",
+            "node": "51038",
+            "gtfs_node": "698",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Na Pades\u00e1tn\u00edku",
+            "fullName": "Na Pades\u00e1tn\u00edku",
+            "lat": "50.102158",
+            "lon": "14.289379",
+            "node": "58821",
+            "gtfs_node": "416",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tuchom\u011b\u0159ice,Pastvi\u0161\u0165ata",
+            "fullName": "Tuchom\u011b\u0159ice,Pastvi\u0161\u0165ata",
+            "lat": "50.133000",
+            "lon": "14.290755",
+            "node": "37007",
+            "gtfs_node": "1321",
+            "lineType": "bus"
+        },
+        {
+            "name": "K Tuchom\u011b\u0159ic\u016fm",
+            "fullName": "K Tuchom\u011b\u0159ic\u016fm",
+            "lat": "50.115990",
+            "lon": "14.291384",
+            "node": "47146",
+            "gtfs_node": "223",
+            "lineType": "bus"
+        },
+        {
+            "name": "Obchodn\u00ed centrum Ruzyn\u011b",
+            "fullName": "Obchodn\u00ed centrum Ruzyn\u011b",
+            "lat": "50.093060",
+            "lon": "14.292261",
+            "node": "58919",
+            "gtfs_node": "1295",
+            "lineType": "bus"
+        },
+        {
+            "name": "K Leti\u0161ti",
+            "fullName": "K Leti\u0161ti",
+            "lat": "50.096146",
+            "lon": "14.292705",
+            "node": "27991",
+            "gtfs_node": "218",
+            "lineType": "trolleybus"
+        }
+    ]
+}

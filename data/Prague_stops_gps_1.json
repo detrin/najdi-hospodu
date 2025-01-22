@@ -1,0 +1,256 @@
+{
+    "group_stops": [
+        {
+            "name": "Svrkyn\u011b",
+            "fullName": "Svrkyn\u011b",
+            "lat": "50.171510",
+            "lon": "14.295982",
+            "node": "34481",
+            "gtfs_node": "1670",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 P\u0159\u00edlepy,Kladensk\u00e1",
+            "fullName": "Velk\u00e9 P\u0159\u00edlepy,Kladensk\u00e1",
+            "lat": "50.159393",
+            "lon": "14.305149",
+            "node": "67539",
+            "gtfs_node": "7691",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 P\u0159\u00edlepy",
+            "fullName": "Velk\u00e9 P\u0159\u00edlepy",
+            "lat": "50.160454",
+            "lon": "14.310835",
+            "node": "38858",
+            "gtfs_node": "1690",
+            "lineType": "bus"
+        },
+        {
+            "name": "Statenice,u h\u0159i\u0161t\u011b",
+            "fullName": "Statenice,u h\u0159i\u0161t\u011b",
+            "lat": "50.138240",
+            "lon": "14.312251",
+            "node": "67962",
+            "gtfs_node": "5091",
+            "lineType": "bus"
+        },
+        {
+            "name": "Statenice,Ra\u010dansk\u00e1",
+            "fullName": "Statenice,Ra\u010dansk\u00e1",
+            "lat": "50.144280",
+            "lon": "14.312363",
+            "node": "67538",
+            "gtfs_node": "7692",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 P\u0159\u00edlepy,Pra\u017esk\u00e1",
+            "fullName": "Velk\u00e9 P\u0159\u00edlepy,Pra\u017esk\u00e1",
+            "lat": "50.156350",
+            "lon": "14.316331",
+            "node": "50562",
+            "gtfs_node": "2152",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 P\u0159\u00edlepy,Podmor\u00e1\u0148sk\u00e1",
+            "fullName": "Velk\u00e9 P\u0159\u00edlepy,Podmor\u00e1\u0148sk\u00e1",
+            "lat": "50.161170",
+            "lon": "14.317198",
+            "node": "67869",
+            "gtfs_node": "5355",
+            "lineType": "bus"
+        },
+        {
+            "name": "Statenice",
+            "fullName": "Statenice",
+            "lat": "50.141710",
+            "lon": "14.318338",
+            "node": "33122",
+            "gtfs_node": "1213",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 P\u0159\u00edlepy,Roztock\u00e1",
+            "fullName": "Velk\u00e9 P\u0159\u00edlepy,Roztock\u00e1",
+            "lat": "50.157425",
+            "lon": "14.320774",
+            "node": "58718",
+            "gtfs_node": "4102",
+            "lineType": "bus"
+        },
+        {
+            "name": "Statenice,U Kov\u00e1rny",
+            "fullName": "Statenice,U Kov\u00e1rny",
+            "lat": "50.143570",
+            "lon": "14.322912",
+            "node": "33123",
+            "gtfs_node": "1212",
+            "lineType": "bus"
+        },
+        {
+            "name": "Statenice,\u010cern\u00fd V\u016fl",
+            "fullName": "Statenice,\u010cern\u00fd V\u016fl",
+            "lat": "50.148727",
+            "lon": "14.328419",
+            "node": "47229",
+            "gtfs_node": "1202",
+            "lineType": "bus"
+        },
+        {
+            "name": "Statenice,\u010cern\u00fd V\u016fl,Hospoda",
+            "fullName": "Statenice,\u010cern\u00fd V\u016fl,Hospoda",
+            "lat": "50.146700",
+            "lon": "14.333090",
+            "node": "47230",
+            "gtfs_node": "1201",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00daholi\u010dky,V Kopci",
+            "fullName": "\u00daholi\u010dky,V Kopci",
+            "lat": "50.159245",
+            "lon": "14.333827",
+            "node": "37527",
+            "gtfs_node": "1741",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00daholi\u010dky",
+            "fullName": "\u00daholi\u010dky",
+            "lat": "50.161280",
+            "lon": "14.334583",
+            "node": "37525",
+            "gtfs_node": "1742",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00daholi\u010dky,Na Hab\u0159\u00ed",
+            "fullName": "\u00daholi\u010dky,Na Hab\u0159\u00ed",
+            "lat": "50.158196",
+            "lon": "14.335156",
+            "node": "62934",
+            "gtfs_node": "4189",
+            "lineType": "bus"
+        },
+        {
+            "name": "Horom\u011b\u0159ice,Velk\u00e1 Br\u00e1na",
+            "fullName": "Horom\u011b\u0159ice,Velk\u00e1 Br\u00e1na",
+            "lat": "50.138710",
+            "lon": "14.335983",
+            "node": "66851",
+            "gtfs_node": "7011",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00daholi\u010dky,V Chaloupk\u00e1ch",
+            "fullName": "\u00daholi\u010dky,V Chaloupk\u00e1ch",
+            "lat": "50.164047",
+            "lon": "14.340841",
+            "node": "68540",
+            "gtfs_node": "4282",
+            "lineType": "bus"
+        },
+        {
+            "name": "Horom\u011b\u0159ice,Lidl",
+            "fullName": "Horom\u011b\u0159ice,Lidl",
+            "lat": "50.141464",
+            "lon": "14.343438",
+            "node": "66171",
+            "gtfs_node": "4468",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00daholi\u010dky,Podmor\u00e1\u0148",
+            "fullName": "\u00daholi\u010dky,Podmor\u00e1\u0148",
+            "lat": "50.167670",
+            "lon": "14.345268",
+            "node": "68541",
+            "gtfs_node": "5892",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00daholi\u010dky,\u017del.zast.",
+            "fullName": "\u00daholi\u010dky,\u017delezni\u010dn\u00ed zast\u00e1vka",
+            "lat": "50.170900",
+            "lon": "14.351219",
+            "node": "68542",
+            "gtfs_node": "2822",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00daholi\u010dky",
+            "fullName": "\u00daholi\u010dky",
+            "lat": "50.170110",
+            "lon": "14.351867",
+            "node": "5454486",
+            "gtfs_node": "2822",
+            "lineType": "train"
+        },
+        {
+            "name": "\u00dan\u011btice,Obecn\u00ed \u00fa\u0159ad",
+            "fullName": "\u00dan\u011btice,Obecn\u00ed \u00fa\u0159ad",
+            "lat": "50.150353",
+            "lon": "14.354825",
+            "node": "47261",
+            "gtfs_node": "1139",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u00dan\u011btice",
+            "fullName": "\u00dan\u011btice",
+            "lat": "50.151817",
+            "lon": "14.354934",
+            "node": "37693",
+            "gtfs_node": "1192",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0158e\u017e",
+            "fullName": "\u0158e\u017e",
+            "lat": "50.179176",
+            "lon": "14.355288",
+            "node": "5454476",
+            "gtfs_node": "2823",
+            "lineType": "train"
+        },
+        {
+            "name": "\u00dan\u011btice,Na Parcel\u00e1ch",
+            "fullName": "\u00dan\u011btice,Na Parcel\u00e1ch",
+            "lat": "50.148650",
+            "lon": "14.355434",
+            "node": "37694",
+            "gtfs_node": "1138",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,\u0158e\u017e,Z\u00e1v.",
+            "fullName": "Husinec,\u0158e\u017e,Z\u00e1vod",
+            "lat": "50.177180",
+            "lon": "14.358526",
+            "node": "11238",
+            "gtfs_node": "2248",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,\u0158e\u017e",
+            "fullName": "Husinec,\u0158e\u017e",
+            "lat": "50.170630",
+            "lon": "14.360163",
+            "node": "11236",
+            "gtfs_node": "2247",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,\u0158e\u017e,S\u00eddli\u0161t\u011b",
+            "fullName": "Husinec,\u0158e\u017e,S\u00eddli\u0161t\u011b",
+            "lat": "50.172380",
+            "lon": "14.361788",
+            "node": "11237",
+            "gtfs_node": "2246",
+            "lineType": "bus"
+        }
+    ]
+}

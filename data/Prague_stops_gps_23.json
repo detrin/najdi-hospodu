@@ -1,0 +1,193 @@
+{
+    "group_stops": [
+        {
+            "name": "Mo\u0159ina,Trn\u011bn\u00fd \u00dajezd,rozc.I",
+            "fullName": "Mo\u0159ina,Trn\u011bn\u00fd \u00dajezd,rozcest\u00ed I",
+            "lat": "49.969975",
+            "lon": "14.217728",
+            "node": "22022",
+            "gtfs_node": "1638",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mo\u0159ina,Trn\u011bn\u00fd \u00dajezd",
+            "fullName": "Mo\u0159ina,Trn\u011bn\u00fd \u00dajezd",
+            "lat": "49.971870",
+            "lon": "14.219893",
+            "node": "22020",
+            "gtfs_node": "1353",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mo\u0159ina,Trn\u011bn\u00fd \u00dajezd,rozc.",
+            "fullName": "Mo\u0159ina,Trn\u011bn\u00fd \u00dajezd,rozcest\u00ed",
+            "lat": "49.973465",
+            "lon": "14.230125",
+            "node": "22021",
+            "gtfs_node": "9050",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vysok\u00fd \u00dajezd,Kucha\u0159,II",
+            "fullName": "Vysok\u00fd \u00dajezd,Kucha\u0159,II",
+            "lat": "49.982002",
+            "lon": "14.235840",
+            "node": "40933",
+            "gtfs_node": "1637",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vysok\u00fd \u00dajezd,Kucha\u0159,I",
+            "fullName": "Vysok\u00fd \u00dajezd,Kucha\u0159,I",
+            "lat": "49.981995",
+            "lon": "14.236141",
+            "node": "40932",
+            "gtfs_node": "1637",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tachlovice,Jakubsk\u00e1 n\u00e1ves",
+            "fullName": "Tachlovice,Jakubsk\u00e1 n\u00e1ves",
+            "lat": "50.010944",
+            "lon": "14.243292",
+            "node": "49429",
+            "gtfs_node": "1667",
+            "lineType": "bus"
+        },
+        {
+            "name": "Robl\u00edn",
+            "fullName": "Robl\u00edn",
+            "lat": "49.962080",
+            "lon": "14.247866",
+            "node": "29847",
+            "gtfs_node": "1639",
+            "lineType": "bus"
+        },
+        {
+            "name": "Robl\u00edn,Kucha\u0159\u00edk",
+            "fullName": "Robl\u00edn,Kucha\u0159\u00edk",
+            "lat": "49.977510",
+            "lon": "14.249064",
+            "node": "36774",
+            "gtfs_node": "1636",
+            "lineType": "bus"
+        },
+        {
+            "name": "Robl\u00edn,H\u00e1jovna",
+            "fullName": "Robl\u00edn,H\u00e1jovna",
+            "lat": "49.963753",
+            "lon": "14.263998",
+            "node": "52686",
+            "gtfs_node": "2318",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ch\u00fdnice,Pod Radnic\u00ed",
+            "fullName": "Ch\u00fdnice,Pod Radnic\u00ed",
+            "lat": "49.995940",
+            "lon": "14.264064",
+            "node": "46973",
+            "gtfs_node": "1199",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ch\u00fdnice",
+            "fullName": "Ch\u00fdnice",
+            "lat": "49.994263",
+            "lon": "14.264541",
+            "node": "12245",
+            "gtfs_node": "1200",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,Kala",
+            "fullName": "T\u0159ebotov,Kala",
+            "lat": "49.963730",
+            "lon": "14.280335",
+            "node": "47250",
+            "gtfs_node": "1640",
+            "lineType": "bus"
+        },
+        {
+            "name": "Chote\u010d",
+            "fullName": "Chote\u010d",
+            "lat": "49.985370",
+            "lon": "14.283370",
+            "node": "11790",
+            "gtfs_node": "1635",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov",
+            "fullName": "T\u0159ebotov",
+            "lat": "49.973152",
+            "lon": "14.289475",
+            "node": "36771",
+            "gtfs_node": "1634",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,\u0160kola",
+            "fullName": "T\u0159ebotov,\u0160kola",
+            "lat": "49.973680",
+            "lon": "14.291974",
+            "node": "49546",
+            "gtfs_node": "1642",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,Solopisky,ZD",
+            "fullName": "T\u0159ebotov,Solopisky,ZD",
+            "lat": "49.961674",
+            "lon": "14.293091",
+            "node": "36777",
+            "gtfs_node": "1641",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,Sanatorium",
+            "fullName": "T\u0159ebotov,Sanatorium",
+            "lat": "49.974678",
+            "lon": "14.297050",
+            "node": "36773",
+            "gtfs_node": "1632",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,Pomn\u00edk",
+            "fullName": "T\u0159ebotov,Pomn\u00edk",
+            "lat": "49.975655",
+            "lon": "14.304845",
+            "node": "36772",
+            "gtfs_node": "1631",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zmrzl\u00edk",
+            "fullName": "Zmrzl\u00edk",
+            "lat": "50.011776",
+            "lon": "14.312866",
+            "node": "59415",
+            "gtfs_node": "915",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zadn\u00ed Kopanina",
+            "fullName": "Zadn\u00ed Kopanina",
+            "lat": "50.006626",
+            "lon": "14.312903",
+            "node": "59398",
+            "gtfs_node": "888",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ma\u0161k\u016fv ml\u00fdn",
+            "fullName": "Ma\u0161k\u016fv ml\u00fdn",
+            "lat": "49.998880",
+            "lon": "14.318501",
+            "node": "59109",
+            "gtfs_node": "380",
+            "lineType": "bus"
+        }
+    ]
+}

@@ -1,0 +1,481 @@
+{
+    "group_stops": [
+        {
+            "name": "B\u0159ezov\u00e1-Ole\u0161ko,Zahradn\u00ed",
+            "fullName": "B\u0159ezov\u00e1-Ole\u0161ko,Zahradn\u00ed",
+            "lat": "49.918064",
+            "lon": "14.405265",
+            "node": "64188",
+            "gtfs_node": "4267",
+            "lineType": "bus"
+        },
+        {
+            "name": "Okrouhlo",
+            "fullName": "Okrouhlo",
+            "lat": "49.918840",
+            "lon": "14.447600",
+            "node": "24620",
+            "gtfs_node": "1520",
+            "lineType": "bus"
+        },
+        {
+            "name": "B\u0159ezov\u00e1-Ole\u0161ko,Nov\u00e1 B\u0159ezov\u00e1",
+            "fullName": "B\u0159ezov\u00e1-Ole\u0161ko,Nov\u00e1 B\u0159ezov\u00e1",
+            "lat": "49.919136",
+            "lon": "14.400803",
+            "node": "64187",
+            "gtfs_node": "4266",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zvole,\u010cern\u00edky",
+            "fullName": "Zvole,\u010cern\u00edky",
+            "lat": "49.920810",
+            "lon": "14.419651",
+            "node": "3235",
+            "gtfs_node": "1514",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,Lesn\u00ed",
+            "fullName": "Vran\u00e9 nad Vltavou,Lesn\u00ed",
+            "lat": "49.922325",
+            "lon": "14.396397",
+            "node": "64186",
+            "gtfs_node": "4265",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159",
+            "fullName": "Libe\u0159",
+            "lat": "49.923400",
+            "lon": "14.480433",
+            "node": "47021",
+            "gtfs_node": "2105",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zvole,Nov\u00e1 Zvole",
+            "fullName": "Zvole,Nov\u00e1 Zvole",
+            "lat": "49.923935",
+            "lon": "14.421247",
+            "node": "48914",
+            "gtfs_node": "1905",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159,Na Ov\u010d\u00edn\u011b",
+            "fullName": "Libe\u0159,Na Ov\u010d\u00edn\u011b",
+            "lat": "49.927628",
+            "lon": "14.481278",
+            "node": "18237",
+            "gtfs_node": "2104",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zvole,J\u00edlovsk\u00e1",
+            "fullName": "Zvole,J\u00edlovsk\u00e1",
+            "lat": "49.930637",
+            "lon": "14.423847",
+            "node": "48913",
+            "gtfs_node": "1904",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,Mod\u0159\u00ednov\u00e1",
+            "fullName": "Vran\u00e9 nad Vltavou,Mod\u0159\u00ednov\u00e1",
+            "lat": "49.931710",
+            "lon": "14.385820",
+            "node": "64185",
+            "gtfs_node": "4264",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zvole",
+            "fullName": "Zvole",
+            "lat": "49.933533",
+            "lon": "14.422804",
+            "node": "42213",
+            "gtfs_node": "1513",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zvole,\u0160kola",
+            "fullName": "Zvole,\u0160kola",
+            "lat": "49.934470",
+            "lon": "14.418451",
+            "node": "42215",
+            "gtfs_node": "1519",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,Zdrav.st\u0159.",
+            "fullName": "Vran\u00e9 nad Vltavou,Zdravotn\u00ed st\u0159edisko",
+            "lat": "49.934990",
+            "lon": "14.380329",
+            "node": "64184",
+            "gtfs_node": "4263",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zvole,K Jarovu",
+            "fullName": "Zvole,K Jarovu",
+            "lat": "49.935097",
+            "lon": "14.410826",
+            "node": "68146",
+            "gtfs_node": "5086",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159,Libe\u0148,Odb.STS",
+            "fullName": "Libe\u0159,Libe\u0148,Odbo\u010dka STS",
+            "lat": "49.936058",
+            "lon": "14.463881",
+            "node": "18241",
+            "gtfs_node": "2103",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,\u0160kola",
+            "fullName": "Vran\u00e9 nad Vltavou,\u0160kola",
+            "lat": "49.936585",
+            "lon": "14.378126",
+            "node": "40207",
+            "gtfs_node": "1518",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 nad Vltavou",
+            "fullName": "Vran\u00e9 nad Vltavou",
+            "lat": "49.938550",
+            "lon": "14.381165",
+            "node": "5455546",
+            "gtfs_node": "2518",
+            "lineType": "train"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,\u017del.st.",
+            "fullName": "Vran\u00e9 nad Vltavou,\u017delezni\u010dn\u00ed stanice",
+            "lat": "49.938873",
+            "lon": "14.381404",
+            "node": "58091",
+            "gtfs_node": "2518",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159,Libe\u0148",
+            "fullName": "Libe\u0159,Libe\u0148",
+            "lat": "49.939140",
+            "lon": "14.463611",
+            "node": "18240",
+            "gtfs_node": "2102",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ohrobec,Zvolsk\u00e1",
+            "fullName": "Ohrobec,Zvolsk\u00e1",
+            "lat": "49.939285",
+            "lon": "14.427648",
+            "node": "66696",
+            "gtfs_node": "6955",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ohrobec,U Rybn\u00edka",
+            "fullName": "Ohrobec,U Rybn\u00edka",
+            "lat": "49.942474",
+            "lon": "14.431445",
+            "node": "24536",
+            "gtfs_node": "1512",
+            "lineType": "bus"
+        },
+        {
+            "name": "J\u00edlovi\u0161t\u011b,V\u00fdzkumn\u00fd \u00fastav",
+            "fullName": "J\u00edlovi\u0161t\u011b,V\u00fdzkumn\u00fd \u00fastav",
+            "lat": "49.942543",
+            "lon": "14.392230",
+            "node": "52945",
+            "gtfs_node": "716",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159,Libe\u0148,U Hru\u0161k\u016f",
+            "fullName": "Libe\u0159,Libe\u0148,U Hru\u0161k\u016f",
+            "lat": "49.943222",
+            "lon": "14.463716",
+            "node": "43458",
+            "gtfs_node": "2101",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ohrobec",
+            "fullName": "Ohrobec",
+            "lat": "49.943695",
+            "lon": "14.431492",
+            "node": "47058",
+            "gtfs_node": "1507",
+            "lineType": "bus"
+        },
+        {
+            "name": "Strnady",
+            "fullName": "Strnady",
+            "lat": "49.945650",
+            "lon": "14.394558",
+            "node": "50963",
+            "gtfs_node": "520",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany-Jarov",
+            "fullName": "Doln\u00ed B\u0159e\u017eany-Jarov",
+            "lat": "49.947000",
+            "lon": "14.397078",
+            "node": "5455556",
+            "gtfs_node": "2513",
+            "lineType": "train"
+        },
+        {
+            "name": "Ohrobec,K\u00e1rov",
+            "fullName": "Ohrobec,K\u00e1rov",
+            "lat": "49.947407",
+            "lon": "14.419716",
+            "node": "47059",
+            "gtfs_node": "1508",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ohrobec,U \u010cisteck\u00fdch",
+            "fullName": "Ohrobec,U \u010cisteck\u00fdch",
+            "lat": "49.947723",
+            "lon": "14.433987",
+            "node": "24535",
+            "gtfs_node": "1506",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Z\u00e1lepy",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Z\u00e1lepy",
+            "lat": "49.948418",
+            "lon": "14.411247",
+            "node": "47060",
+            "gtfs_node": "1509",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159,Libe\u0148,O\u00e1za",
+            "fullName": "Libe\u0159,Libe\u0148,O\u00e1za",
+            "lat": "49.951510",
+            "lon": "14.474566",
+            "node": "43457",
+            "gtfs_node": "1530",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ban\u011b",
+            "fullName": "Ban\u011b",
+            "lat": "49.952680",
+            "lon": "14.379145",
+            "node": "27904",
+            "gtfs_node": "14",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pod Zat\u00e1\u010dkou",
+            "fullName": "Pod Zat\u00e1\u010dkou",
+            "lat": "49.956005",
+            "lon": "14.381588",
+            "node": "27905",
+            "gtfs_node": "578",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Lhota",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Lhota",
+            "lat": "49.956180",
+            "lon": "14.432776",
+            "node": "6436",
+            "gtfs_node": "1504",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,U Hasi\u010d\u00e1rny",
+            "fullName": "Zlatn\u00edky-Hodkovice,U Hasi\u010d\u00e1rny",
+            "lat": "49.957165",
+            "lon": "14.480456",
+            "node": "47302",
+            "gtfs_node": "1529",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Na Rovn\u00e9m",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Na Rovn\u00e9m",
+            "lat": "49.958510",
+            "lon": "14.450163",
+            "node": "46953",
+            "gtfs_node": "1510",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zbraslav",
+            "fullName": "Zbraslav",
+            "lat": "49.959045",
+            "lon": "14.382795",
+            "node": "68309",
+            "gtfs_node": "1039",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kamenolom Zbraslav",
+            "fullName": "Kamenolom Zbraslav",
+            "lat": "49.959675",
+            "lon": "14.394268",
+            "node": "28032",
+            "gtfs_node": "232",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,N\u00e1ves",
+            "fullName": "Zlatn\u00edky-Hodkovice,N\u00e1ves",
+            "lat": "49.960346",
+            "lon": "14.480949",
+            "node": "47300",
+            "gtfs_node": "1528",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,H\u0159i\u0161t\u011b",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,H\u0159i\u0161t\u011b",
+            "lat": "49.961280",
+            "lon": "14.452513",
+            "node": "55153",
+            "gtfs_node": "1511",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,U Prodejny",
+            "fullName": "Zlatn\u00edky-Hodkovice,U Prodejny",
+            "lat": "49.962387",
+            "lon": "14.481099",
+            "node": "47303",
+            "gtfs_node": "1527",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Hradi\u0161\u0165\u00e1tko",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Hradi\u0161\u0165\u00e1tko",
+            "lat": "49.962840",
+            "lon": "14.447992",
+            "node": "66983",
+            "gtfs_node": "4820",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Obecn\u00ed \u00fa\u0159ad",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Obecn\u00ed \u00fa\u0159ad",
+            "lat": "49.963240",
+            "lon": "14.456331",
+            "node": "6433",
+            "gtfs_node": "1503",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,N\u00e1m\u011bst\u00ed",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,N\u00e1m\u011bst\u00ed",
+            "lat": "49.964127",
+            "lon": "14.459049",
+            "node": "46955",
+            "gtfs_node": "1502",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u017dabov\u0159esky",
+            "fullName": "\u017dabov\u0159esky",
+            "lat": "49.965126",
+            "lon": "14.383626",
+            "node": "28036",
+            "gtfs_node": "917",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Nad Ml\u00fdnem",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Nad Ml\u00fdnem",
+            "lat": "49.965454",
+            "lon": "14.448179",
+            "node": "55154",
+            "gtfs_node": "1575",
+            "lineType": "bus"
+        },
+        {
+            "name": "Na Pl\u00e1cku",
+            "fullName": "Na Pl\u00e1cku",
+            "lat": "49.966065",
+            "lon": "14.394441",
+            "node": "27877",
+            "gtfs_node": "421",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,\u0160kola",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,\u0160kola",
+            "lat": "49.966217",
+            "lon": "14.460882",
+            "node": "6434",
+            "gtfs_node": "1524",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,Slune\u010dn\u00e1",
+            "fullName": "Zlatn\u00edky-Hodkovice,Slune\u010dn\u00e1",
+            "lat": "49.966595",
+            "lon": "14.482220",
+            "node": "47301",
+            "gtfs_node": "1526",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Na Sp\u00e1lence",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Na Sp\u00e1lence",
+            "lat": "49.966700",
+            "lon": "14.440836",
+            "node": "46954",
+            "gtfs_node": "1523",
+            "lineType": "bus"
+        },
+        {
+            "name": "S\u00eddli\u0161t\u011b Zbraslav",
+            "fullName": "S\u00eddli\u0161t\u011b Zbraslav",
+            "lat": "49.968110",
+            "lon": "14.384634",
+            "node": "47186",
+            "gtfs_node": "672",
+            "lineType": "bus"
+        },
+        {
+            "name": "U V\u010dely",
+            "fullName": "U V\u010dely",
+            "lat": "49.968970",
+            "lon": "14.388445",
+            "node": "47187",
+            "gtfs_node": "802",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed B\u0159e\u017eany,Na kope\u010dku",
+            "fullName": "Doln\u00ed B\u0159e\u017eany,Na kope\u010dku",
+            "lat": "49.969010",
+            "lon": "14.462015",
+            "node": "6432",
+            "gtfs_node": "1501",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kostrounek",
+            "fullName": "Kostrounek",
+            "lat": "49.969357",
+            "lon": "14.381944",
+            "node": "59074",
+            "gtfs_node": "288",
+            "lineType": "bus"
+        }
+    ]
+}

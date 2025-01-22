@@ -1,0 +1,517 @@
+{
+    "group_stops": [
+        {
+            "name": "Trnov\u00e1,Domov Borov\u00e1",
+            "fullName": "Trnov\u00e1,Domov Borov\u00e1",
+            "lat": "49.916930",
+            "lon": "14.348551",
+            "node": "36384",
+            "gtfs_node": "1719",
+            "lineType": "bus"
+        },
+        {
+            "name": "J\u00edlovi\u0161t\u011b,Rozcest\u00ed Trnov\u00e1",
+            "fullName": "J\u00edlovi\u0161t\u011b,Rozcest\u00ed Trnov\u00e1",
+            "lat": "49.921210",
+            "lon": "14.336300",
+            "node": "55769",
+            "gtfs_node": "1704",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161enory,U K\u0159\u00ed\u017ek\u016f",
+            "fullName": "V\u0161enory,U K\u0159\u00ed\u017ek\u016f",
+            "lat": "49.922173",
+            "lon": "14.305426",
+            "node": "40628",
+            "gtfs_node": "1856",
+            "lineType": "bus"
+        },
+        {
+            "name": "Skochovice",
+            "fullName": "Skochovice",
+            "lat": "49.924664",
+            "lon": "14.376194",
+            "node": "5458316",
+            "gtfs_node": "2514",
+            "lineType": "train"
+        },
+        {
+            "name": "J\u00edlovi\u0161t\u011b,U Mostu",
+            "fullName": "J\u00edlovi\u0161t\u011b,U Mostu",
+            "lat": "49.925697",
+            "lon": "14.338457",
+            "node": "63055",
+            "gtfs_node": "4200",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dob\u0159ichovice,N\u00e1dra\u017e\u00ed",
+            "fullName": "Dob\u0159ichovice,N\u00e1dra\u017e\u00ed",
+            "lat": "49.927162",
+            "lon": "14.288145",
+            "node": "6127",
+            "gtfs_node": "1853",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161enory,U K\u00e1covsk\u00fdch",
+            "fullName": "V\u0161enory,U K\u00e1covsk\u00fdch",
+            "lat": "49.927395",
+            "lon": "14.303221",
+            "node": "40627",
+            "gtfs_node": "1855",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dob\u0159ichovice",
+            "fullName": "Dob\u0159ichovice",
+            "lat": "49.927475",
+            "lon": "14.287769",
+            "node": "5453226",
+            "gtfs_node": "1853",
+            "lineType": "train"
+        },
+        {
+            "name": "J\u00edlovi\u0161t\u011b",
+            "fullName": "J\u00edlovi\u0161t\u011b",
+            "lat": "49.927906",
+            "lon": "14.343224",
+            "node": "13344",
+            "gtfs_node": "1739",
+            "lineType": "bus"
+        },
+        {
+            "name": "J\u00edlovi\u0161t\u011b,Hl.sil.",
+            "fullName": "J\u00edlovi\u0161t\u011b,Hlavn\u00ed silnice",
+            "lat": "49.928900",
+            "lon": "14.342453",
+            "node": "13346",
+            "gtfs_node": "1703",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161enory,Sportovn\u00ed are\u00e1l",
+            "fullName": "V\u0161enory,Sportovn\u00ed are\u00e1l",
+            "lat": "49.929497",
+            "lon": "14.300221",
+            "node": "48912",
+            "gtfs_node": "1854",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161enory",
+            "fullName": "V\u0161enory",
+            "lat": "49.932842",
+            "lon": "14.305041",
+            "node": "5453236",
+            "gtfs_node": "2279",
+            "lineType": "train"
+        },
+        {
+            "name": "V\u0161enory,\u017eel.zast.",
+            "fullName": "V\u0161enory,\u017eelezni\u010dn\u00ed zast\u00e1vka",
+            "lat": "49.932983",
+            "lon": "14.305841",
+            "node": "68432",
+            "gtfs_node": "2279",
+            "lineType": "bus"
+        },
+        {
+            "name": "J\u00edlovi\u0161t\u011b,Cukr\u00e1k",
+            "fullName": "J\u00edlovi\u0161t\u011b,Cukr\u00e1k",
+            "lat": "49.934850",
+            "lon": "14.356913",
+            "node": "13345",
+            "gtfs_node": "1702",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,Zdrav.st\u0159.",
+            "fullName": "Vran\u00e9 nad Vltavou,Zdravotn\u00ed st\u0159edisko",
+            "lat": "49.934990",
+            "lon": "14.380329",
+            "node": "64184",
+            "gtfs_node": "4263",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161enory,Horn\u00ed Mokropsy",
+            "fullName": "V\u0161enory,Horn\u00ed Mokropsy",
+            "lat": "49.935093",
+            "lon": "14.319256",
+            "node": "68417",
+            "gtfs_node": "5936",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dob\u0159ichovice,Randova",
+            "fullName": "Dob\u0159ichovice,Randova",
+            "lat": "49.935837",
+            "lon": "14.283480",
+            "node": "6126",
+            "gtfs_node": "1624",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,\u0160kola",
+            "fullName": "Vran\u00e9 nad Vltavou,\u0160kola",
+            "lat": "49.936585",
+            "lon": "14.378126",
+            "node": "40207",
+            "gtfs_node": "1518",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vran\u00e9 nad Vltavou",
+            "fullName": "Vran\u00e9 nad Vltavou",
+            "lat": "49.938550",
+            "lon": "14.381165",
+            "node": "5455546",
+            "gtfs_node": "2518",
+            "lineType": "train"
+        },
+        {
+            "name": "Vran\u00e9 n.Vlt.,\u017del.st.",
+            "fullName": "Vran\u00e9 nad Vltavou,\u017delezni\u010dn\u00ed stanice",
+            "lat": "49.938873",
+            "lon": "14.381404",
+            "node": "58091",
+            "gtfs_node": "2518",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,U Kamenn\u00e9ho mostu",
+            "fullName": "\u010cerno\u0161ice,U Kamenn\u00e9ho mostu",
+            "lat": "49.940567",
+            "lon": "14.326334",
+            "node": "54707",
+            "gtfs_node": "2566",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Masopustn\u00ed n\u00e1m\u011bst\u00ed",
+            "fullName": "\u010cerno\u0161ice,Masopustn\u00ed n\u00e1m\u011bst\u00ed",
+            "lat": "49.941555",
+            "lon": "14.329366",
+            "node": "64081",
+            "gtfs_node": "4276",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Na Ladech",
+            "fullName": "\u010cerno\u0161ice,Na Ladech",
+            "lat": "49.942673",
+            "lon": "14.317636",
+            "node": "54708",
+            "gtfs_node": "1628",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Javorov\u00e1",
+            "fullName": "\u010cerno\u0161ice,Javorov\u00e1",
+            "lat": "49.944656",
+            "lon": "14.312534",
+            "node": "58744",
+            "gtfs_node": "4116",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice-Mokropsy",
+            "fullName": "\u010cerno\u0161ice-Mokropsy",
+            "lat": "49.946228",
+            "lon": "14.330339",
+            "node": "5453246",
+            "gtfs_node": "2278",
+            "lineType": "train"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Mokropsy \u017eel.zast.",
+            "fullName": "\u010cerno\u0161ice,Mokropsy \u017eelezni\u010dn\u00ed zast\u00e1vka",
+            "lat": "49.946518",
+            "lon": "14.330117",
+            "node": "54709",
+            "gtfs_node": "2278",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,\u0160kola",
+            "fullName": "\u010cerno\u0161ice,\u0160kola",
+            "lat": "49.947130",
+            "lon": "14.327024",
+            "node": "4539",
+            "gtfs_node": "1615",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,U Transform\u00e1toru",
+            "fullName": "\u010cerno\u0161ice,U Transform\u00e1toru",
+            "lat": "49.947327",
+            "lon": "14.308020",
+            "node": "4542",
+            "gtfs_node": "1623",
+            "lineType": "bus"
+        },
+        {
+            "name": "K Chat\u00e1m",
+            "fullName": "K Chat\u00e1m",
+            "lat": "49.947930",
+            "lon": "14.375294",
+            "node": "27906",
+            "gtfs_node": "1701",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Centrum Vr\u00e1\u017e",
+            "fullName": "\u010cerno\u0161ice,Centrum Vr\u00e1\u017e",
+            "lat": "49.949600",
+            "lon": "14.314020",
+            "node": "4541",
+            "gtfs_node": "1622",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Husova",
+            "fullName": "\u010cerno\u0161ice,Husova",
+            "lat": "49.949657",
+            "lon": "14.314094",
+            "node": "65225",
+            "gtfs_node": "1622",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kaz\u00edn",
+            "fullName": "Kaz\u00edn",
+            "lat": "49.951042",
+            "lon": "14.340826",
+            "node": "64966",
+            "gtfs_node": "4286",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ban\u011b",
+            "fullName": "Ban\u011b",
+            "lat": "49.952680",
+            "lon": "14.379145",
+            "node": "27904",
+            "gtfs_node": "14",
+            "lineType": "bus"
+        },
+        {
+            "name": "Na Lhotk\u00e1ch",
+            "fullName": "Na Lhotk\u00e1ch",
+            "lat": "49.953340",
+            "lon": "14.368297",
+            "node": "66741",
+            "gtfs_node": "4291",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Kladensk\u00e1",
+            "fullName": "\u010cerno\u0161ice,Kladensk\u00e1",
+            "lat": "49.953423",
+            "lon": "14.319168",
+            "node": "59627",
+            "gtfs_node": "4159",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vonoklasy,chaty",
+            "fullName": "Vonoklasy,chaty",
+            "lat": "49.954468",
+            "lon": "14.285585",
+            "node": "40099",
+            "gtfs_node": "1619",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pod Zat\u00e1\u010dkou",
+            "fullName": "Pod Zat\u00e1\u010dkou",
+            "lat": "49.956005",
+            "lon": "14.381588",
+            "node": "27905",
+            "gtfs_node": "578",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Karl\u0161tejnsk\u00e1",
+            "fullName": "\u010cerno\u0161ice,Karl\u0161tejnsk\u00e1",
+            "lat": "49.956370",
+            "lon": "14.311682",
+            "node": "4537",
+            "gtfs_node": "1617",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ke Kaz\u00ednu",
+            "fullName": "Ke Kaz\u00ednu",
+            "lat": "49.956413",
+            "lon": "14.342335",
+            "node": "64967",
+            "gtfs_node": "4288",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ke \u0160t\u011brkovn\u011b",
+            "fullName": "Ke \u0160t\u011brkovn\u011b",
+            "lat": "49.957176",
+            "lon": "14.371549",
+            "node": "66742",
+            "gtfs_node": "4290",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zbraslav",
+            "fullName": "Zbraslav",
+            "lat": "49.959045",
+            "lon": "14.382795",
+            "node": "68309",
+            "gtfs_node": "1039",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,\u017del.zast.",
+            "fullName": "\u010cerno\u0161ice,\u017delezni\u010dn\u00ed zast\u00e1vka",
+            "lat": "49.959118",
+            "lon": "14.322465",
+            "node": "4540",
+            "gtfs_node": "1616",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice",
+            "fullName": "\u010cerno\u0161ice",
+            "lat": "49.959620",
+            "lon": "14.323433",
+            "node": "5453266",
+            "gtfs_node": "1616",
+            "lineType": "train"
+        },
+        {
+            "name": "U \u017dl\u00e1bku",
+            "fullName": "U \u017dl\u00e1bku",
+            "lat": "49.959656",
+            "lon": "14.366790",
+            "node": "66743",
+            "gtfs_node": "4289",
+            "lineType": "bus"
+        },
+        {
+            "name": "Lipence",
+            "fullName": "Lipence",
+            "lat": "49.959675",
+            "lon": "14.352923",
+            "node": "59099",
+            "gtfs_node": "1225",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dolno\u010derno\u0161ick\u00e1",
+            "fullName": "Dolno\u010derno\u0161ick\u00e1",
+            "lat": "49.959740",
+            "lon": "14.328898",
+            "node": "64968",
+            "gtfs_node": "4357",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,Solopisky",
+            "fullName": "T\u0159ebotov,Solopisky",
+            "lat": "49.960270",
+            "lon": "14.296750",
+            "node": "36776",
+            "gtfs_node": "1618",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0160kola Lipence",
+            "fullName": "\u0160kola Lipence",
+            "lat": "49.960682",
+            "lon": "14.356225",
+            "node": "59311",
+            "gtfs_node": "341",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,Komensk\u00e9ho",
+            "fullName": "\u010cerno\u0161ice,Komensk\u00e9ho",
+            "lat": "49.961020",
+            "lon": "14.323340",
+            "node": "49506",
+            "gtfs_node": "2367",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,Solopisky,ZD",
+            "fullName": "T\u0159ebotov,Solopisky,ZD",
+            "lat": "49.961674",
+            "lon": "14.293091",
+            "node": "36777",
+            "gtfs_node": "1641",
+            "lineType": "bus"
+        },
+        {
+            "name": "U Kapli\u010dky",
+            "fullName": "U Kapli\u010dky",
+            "lat": "49.962048",
+            "lon": "14.360671",
+            "node": "59338",
+            "gtfs_node": "777",
+            "lineType": "bus"
+        },
+        {
+            "name": "Doln\u00ed \u010cerno\u0161ice",
+            "fullName": "Doln\u00ed \u010cerno\u0161ice",
+            "lat": "49.962970",
+            "lon": "14.332371",
+            "node": "64969",
+            "gtfs_node": "4287",
+            "lineType": "bus"
+        },
+        {
+            "name": "Obchodn\u00ed centrum Lipence",
+            "fullName": "Obchodn\u00ed centrum Lipence",
+            "lat": "49.963642",
+            "lon": "14.363703",
+            "node": "68481",
+            "gtfs_node": "2714",
+            "lineType": "bus"
+        },
+        {
+            "name": "T\u0159ebotov,Kala",
+            "fullName": "T\u0159ebotov,Kala",
+            "lat": "49.963730",
+            "lon": "14.280335",
+            "node": "47250",
+            "gtfs_node": "1640",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u017dabov\u0159esky",
+            "fullName": "\u017dabov\u0159esky",
+            "lat": "49.965126",
+            "lon": "14.383626",
+            "node": "28036",
+            "gtfs_node": "917",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pod Kyjovem",
+            "fullName": "Pod Kyjovem",
+            "lat": "49.965714",
+            "lon": "14.369059",
+            "node": "59215",
+            "gtfs_node": "564",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cerno\u0161ice,U Vod\u00e1rny",
+            "fullName": "\u010cerno\u0161ice,U Vod\u00e1rny",
+            "lat": "49.967026",
+            "lon": "14.330013",
+            "node": "37011",
+            "gtfs_node": "1614",
+            "lineType": "bus"
+        }
+    ]
+}

@@ -1,0 +1,220 @@
+{
+    "group_stops": [
+        {
+            "name": "Ct\u011bnick\u00fd z\u00e1mek",
+            "fullName": "Ct\u011bnick\u00fd z\u00e1mek",
+            "lat": "50.148277",
+            "lon": "14.562317",
+            "node": "67025",
+            "gtfs_node": "1105",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u0159ezletice,Pansk\u00e1 pole",
+            "fullName": "P\u0159ezletice,Pansk\u00e1 pole",
+            "lat": "50.155880",
+            "lon": "14.571032",
+            "node": "68431",
+            "gtfs_node": "2583",
+            "lineType": "bus"
+        },
+        {
+            "name": "Rous\u00ednovsk\u00e1",
+            "fullName": "Rous\u00ednovsk\u00e1",
+            "lat": "50.146225",
+            "lon": "14.571388",
+            "node": "47092",
+            "gtfs_node": "1107",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u0159ezletice,Kocanda",
+            "fullName": "P\u0159ezletice,Kocanda",
+            "lat": "50.159760",
+            "lon": "14.573484",
+            "node": "60308",
+            "gtfs_node": "1671",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u0159ezletice,Horn\u00ed n\u00e1ves",
+            "fullName": "P\u0159ezletice,Horn\u00ed n\u00e1ves",
+            "lat": "50.156350",
+            "lon": "14.575682",
+            "node": "59427",
+            "gtfs_node": "2572",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vino\u0159sk\u00e1",
+            "fullName": "Vino\u0159sk\u00e1",
+            "lat": "50.139988",
+            "lon": "14.575898",
+            "node": "63910",
+            "gtfs_node": "4269",
+            "lineType": "bus"
+        },
+        {
+            "name": "Bukovinsk\u00e1",
+            "fullName": "Bukovinsk\u00e1",
+            "lat": "50.143986",
+            "lon": "14.577089",
+            "node": "63480",
+            "gtfs_node": "4172",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u0159ezletice,Vino\u0159sk\u00e1",
+            "fullName": "P\u0159ezletice,Vino\u0159sk\u00e1",
+            "lat": "50.153480",
+            "lon": "14.577553",
+            "node": "54867",
+            "gtfs_node": "1957",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vino\u0159sk\u00fd z\u00e1mek",
+            "fullName": "Vino\u0159sk\u00fd z\u00e1mek",
+            "lat": "50.141953",
+            "lon": "14.578070",
+            "node": "65802",
+            "gtfs_node": "9549",
+            "lineType": "bus"
+        },
+        {
+            "name": "Moravansk\u00e1",
+            "fullName": "Moravansk\u00e1",
+            "lat": "50.148100",
+            "lon": "14.578445",
+            "node": "47177",
+            "gtfs_node": "1290",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vino\u0159sk\u00fd h\u0159bitov",
+            "fullName": "Vino\u0159sk\u00fd h\u0159bitov",
+            "lat": "50.144720",
+            "lon": "14.579728",
+            "node": "49461",
+            "gtfs_node": "179",
+            "lineType": "bus"
+        },
+        {
+            "name": "Br\u00e1zdim,Nov\u00fd Br\u00e1zdim",
+            "fullName": "Br\u00e1zdim,Nov\u00fd Br\u00e1zdim",
+            "lat": "50.182526",
+            "lon": "14.585509",
+            "node": "2571",
+            "gtfs_node": "1239",
+            "lineType": "bus"
+        },
+        {
+            "name": "Lohenick\u00e1",
+            "fullName": "Lohenick\u00e1",
+            "lat": "50.149033",
+            "lon": "14.586884",
+            "node": "28026",
+            "gtfs_node": "346",
+            "lineType": "bus"
+        },
+        {
+            "name": "Br\u00e1zdim,Star\u00fd Br\u00e1zdim",
+            "fullName": "Br\u00e1zdim,Star\u00fd Br\u00e1zdim",
+            "lat": "50.182373",
+            "lon": "14.589272",
+            "node": "48710",
+            "gtfs_node": "1805",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vino\u0159",
+            "fullName": "Vino\u0159",
+            "lat": "50.151756",
+            "lon": "14.591041",
+            "node": "47174",
+            "gtfs_node": "852",
+            "lineType": "bus"
+        },
+        {
+            "name": "Podolanka",
+            "fullName": "Podolanka",
+            "lat": "50.156807",
+            "lon": "14.598814",
+            "node": "27281",
+            "gtfs_node": "1095",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jen\u0161tejn,Domov senior\u016f",
+            "fullName": "Jen\u0161tejn,Domov senior\u016f",
+            "lat": "50.154297",
+            "lon": "14.600746",
+            "node": "56526",
+            "gtfs_node": "2304",
+            "lineType": "bus"
+        },
+        {
+            "name": "Radonice,Spojovac\u00ed",
+            "fullName": "Radonice,Spojovac\u00ed",
+            "lat": "50.142777",
+            "lon": "14.610049",
+            "node": "63916",
+            "gtfs_node": "4271",
+            "lineType": "bus"
+        },
+        {
+            "name": "D\u0159ev\u010dice,Rozc.Jen\u0161tejn",
+            "fullName": "D\u0159ev\u010dice,Rozcest\u00ed Jen\u0161tejn",
+            "lat": "50.160103",
+            "lon": "14.612489",
+            "node": "13015",
+            "gtfs_node": "2190",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jen\u0161tejn",
+            "fullName": "Jen\u0161tejn",
+            "lat": "50.153004",
+            "lon": "14.612600",
+            "node": "13014",
+            "gtfs_node": "1821",
+            "lineType": "bus"
+        },
+        {
+            "name": "Radonice",
+            "fullName": "Radonice",
+            "lat": "50.141617",
+            "lon": "14.612692",
+            "node": "29283",
+            "gtfs_node": "1339",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jen\u0161tejn,Hradn\u00ed",
+            "fullName": "Jen\u0161tejn,Hradn\u00ed",
+            "lat": "50.149834",
+            "lon": "14.618770",
+            "node": "56527",
+            "gtfs_node": "2471",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Popovice",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Popovice",
+            "lat": "50.178010",
+            "lon": "14.624978",
+            "node": "2430",
+            "gtfs_node": "1962",
+            "lineType": "bus"
+        },
+        {
+            "name": "D\u0159ev\u010dice",
+            "fullName": "D\u0159ev\u010dice",
+            "lat": "50.166733",
+            "lon": "14.628556",
+            "node": "7222",
+            "gtfs_node": "1822",
+            "lineType": "bus"
+        }
+    ]
+}

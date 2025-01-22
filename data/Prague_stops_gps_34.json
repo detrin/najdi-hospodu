@@ -1,0 +1,94 @@
+{
+    "group_stops": [
+        {
+            "name": "Beroun,Hostim",
+            "fullName": "Beroun,Hostim",
+            "lat": "49.960310",
+            "lon": "14.129067",
+            "node": "1061",
+            "gtfs_node": "2357",
+            "lineType": "bus"
+        },
+        {
+            "name": "Srbsko",
+            "fullName": "Srbsko",
+            "lat": "49.936955",
+            "lon": "14.131135",
+            "node": "5453196",
+            "gtfs_node": "2847",
+            "lineType": "train"
+        },
+        {
+            "name": "Korno",
+            "fullName": "Korno",
+            "lat": "49.919320",
+            "lon": "14.137283",
+            "node": "15359",
+            "gtfs_node": "9021",
+            "lineType": "bus"
+        },
+        {
+            "name": "Karl\u0161tejn",
+            "fullName": "Karl\u0161tejn",
+            "lat": "49.932000",
+            "lon": "14.175151",
+            "node": "5453186",
+            "gtfs_node": "2846",
+            "lineType": "train"
+        },
+        {
+            "name": "Hl\u00e1sn\u00e1 T\u0159eba\u0148",
+            "fullName": "Hl\u00e1sn\u00e1 T\u0159eba\u0148",
+            "lat": "49.920776",
+            "lon": "14.199211",
+            "node": "8775",
+            "gtfs_node": "5938",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zadn\u00ed T\u0159eba\u0148",
+            "fullName": "Zadn\u00ed T\u0159eba\u0148",
+            "lat": "49.918750",
+            "lon": "14.202987",
+            "node": "5453206",
+            "gtfs_node": "2845",
+            "lineType": "train"
+        },
+        {
+            "name": "Mo\u0159ina",
+            "fullName": "Mo\u0159ina",
+            "lat": "49.954678",
+            "lon": "14.204496",
+            "node": "22015",
+            "gtfs_node": "4256",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mo\u0159ina,odb.lom",
+            "fullName": "Mo\u0159ina,odbo\u010dka lom",
+            "lat": "49.960693",
+            "lon": "14.204642",
+            "node": "22017",
+            "gtfs_node": "1662",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mo\u0159ina,obecn\u00ed \u00fa\u0159ad",
+            "fullName": "Mo\u0159ina,obecn\u00ed \u00fa\u0159ad",
+            "lat": "49.952705",
+            "lon": "14.212701",
+            "node": "64136",
+            "gtfs_node": "1664",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mo\u0159ina,u P\u011bchot\u016f",
+            "fullName": "Mo\u0159ina,u P\u011bchot\u016f",
+            "lat": "49.952507",
+            "lon": "14.217475",
+            "node": "22018",
+            "gtfs_node": "1663",
+            "lineType": "bus"
+        }
+    ]
+}

@@ -1,0 +1,1660 @@
+{
+    "group_stops": [
+        {
+            "name": "Florenc",
+            "fullName": "Florenc",
+            "lat": "50.090653",
+            "lon": "14.438921",
+            "node": "27863",
+            "gtfs_node": "689",
+            "lineType": "metroBC"
+        },
+        {
+            "name": "Ohrada",
+            "fullName": "Ohrada",
+            "lat": "50.090690",
+            "lon": "14.468334",
+            "node": "58841",
+            "gtfs_node": "512",
+            "lineType": "tram"
+        },
+        {
+            "name": "Hradebn\u00ed",
+            "fullName": "Hradebn\u00ed",
+            "lat": "50.090700",
+            "lon": "14.427097",
+            "node": "63505",
+            "gtfs_node": "1410",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ha\u0161talsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "fullName": "Ha\u0161talsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "lat": "50.091000",
+            "lon": "14.424040",
+            "node": "59010",
+            "gtfs_node": "2957",
+            "lineType": "bus"
+        },
+        {
+            "name": "Malostransk\u00e1",
+            "fullName": "Malostransk\u00e1",
+            "lat": "50.091072",
+            "lon": "14.410060",
+            "node": "57811",
+            "gtfs_node": "360",
+            "lineType": "metroA"
+        },
+        {
+            "name": "Dlouh\u00e1 t\u0159\u00edda",
+            "fullName": "Dlouh\u00e1 t\u0159\u00edda",
+            "lat": "50.091103",
+            "lon": "14.427720",
+            "node": "58774",
+            "gtfs_node": "87",
+            "lineType": "tram"
+        },
+        {
+            "name": "Petrsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "fullName": "Petrsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "lat": "50.091293",
+            "lon": "14.432240",
+            "node": "59203",
+            "gtfs_node": "2956",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pr\u00e1vnick\u00e1 fakulta",
+            "fullName": "Pr\u00e1vnick\u00e1 fakulta",
+            "lat": "50.091476",
+            "lon": "14.417732",
+            "node": "59240",
+            "gtfs_node": "593",
+            "lineType": "tram"
+        },
+        {
+            "name": "Vozovna \u017di\u017ekov",
+            "fullName": "Vozovna \u017di\u017ekov",
+            "lat": "50.091503",
+            "lon": "14.475054",
+            "node": "62901",
+            "gtfs_node": "837",
+            "lineType": "tram"
+        },
+        {
+            "name": "T\u011b\u0161nov",
+            "fullName": "T\u011b\u0161nov",
+            "lat": "50.091698",
+            "lon": "14.436561",
+            "node": "59326",
+            "gtfs_node": "952",
+            "lineType": "tram"
+        },
+        {
+            "name": "Spojovac\u00ed",
+            "fullName": "Spojovac\u00ed",
+            "lat": "50.091747",
+            "lon": "14.498804",
+            "node": "27891",
+            "gtfs_node": "694",
+            "lineType": "tram"
+        },
+        {
+            "name": "Kn\u011b\u017esk\u00e1 luka",
+            "fullName": "Kn\u011b\u017esk\u00e1 luka",
+            "lat": "50.092117",
+            "lon": "14.493246",
+            "node": "59065",
+            "gtfs_node": "266",
+            "lineType": "tram"
+        },
+        {
+            "name": "Str\u00e1\u017en\u00ed",
+            "fullName": "Str\u00e1\u017en\u00ed",
+            "lat": "50.092255",
+            "lon": "14.481275",
+            "node": "59305",
+            "gtfs_node": "714",
+            "lineType": "tram"
+        },
+        {
+            "name": "Chmelnice",
+            "fullName": "Chmelnice",
+            "lat": "50.092520",
+            "lon": "14.486400",
+            "node": "59020",
+            "gtfs_node": "180",
+            "lineType": "tram"
+        },
+        {
+            "name": "Karl\u00ednsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "fullName": "Karl\u00ednsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "lat": "50.092766",
+            "lon": "14.445656",
+            "node": "59045",
+            "gtfs_node": "854",
+            "lineType": "tram"
+        },
+        {
+            "name": "Nemocnice Na Franti\u0161ku",
+            "fullName": "Nemocnice Na Franti\u0161ku",
+            "lat": "50.093002",
+            "lon": "14.422155",
+            "node": "57812",
+            "gtfs_node": "620",
+            "lineType": "bus"
+        },
+        {
+            "name": "K\u0159i\u017e\u00edkova",
+            "fullName": "K\u0159i\u017e\u00edkova",
+            "lat": "50.093290",
+            "lon": "14.451389",
+            "node": "62880",
+            "gtfs_node": "758",
+            "lineType": "metroB"
+        },
+        {
+            "name": "Pra\u017esk\u00fd hrad",
+            "fullName": "Pra\u017esk\u00fd hrad",
+            "lat": "50.093323",
+            "lon": "14.398235",
+            "node": "59243",
+            "gtfs_node": "598",
+            "lineType": "tram"
+        },
+        {
+            "name": "\u010cech\u016fv most",
+            "fullName": "\u010cech\u016fv most",
+            "lat": "50.094055",
+            "lon": "14.417288",
+            "node": "58977",
+            "gtfs_node": "68",
+            "lineType": "tram"
+        },
+        {
+            "name": "Kr\u00e1lovsk\u00fd letohr\u00e1dek",
+            "fullName": "Kr\u00e1lovsk\u00fd letohr\u00e1dek",
+            "lat": "50.094246",
+            "lon": "14.404763",
+            "node": "59079",
+            "gtfs_node": "20",
+            "lineType": "tram"
+        },
+        {
+            "name": "Balk\u00e1n",
+            "fullName": "Balk\u00e1n",
+            "lat": "50.094803",
+            "lon": "14.496246",
+            "node": "58763",
+            "gtfs_node": "13",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pra\u0161n\u00fd most",
+            "fullName": "Pra\u0161n\u00fd most",
+            "lat": "50.094820",
+            "lon": "14.395074",
+            "node": "59239",
+            "gtfs_node": "592",
+            "lineType": "tram"
+        },
+        {
+            "name": "Chotkovy sady",
+            "fullName": "Chotkovy sady",
+            "lat": "50.095165",
+            "lon": "14.409044",
+            "node": "59022",
+            "gtfs_node": "187",
+            "lineType": "tram"
+        },
+        {
+            "name": "Urxova",
+            "fullName": "Urxova",
+            "lat": "50.095200",
+            "lon": "14.456741",
+            "node": "59356",
+            "gtfs_node": "816",
+            "lineType": "tram"
+        },
+        {
+            "name": "\u0160tvanice",
+            "fullName": "\u0160tvanice",
+            "lat": "50.095270",
+            "lon": "14.436951",
+            "node": "64180",
+            "gtfs_node": "983",
+            "lineType": "tram"
+        },
+        {
+            "name": "Krejc\u00e1rek",
+            "fullName": "Krejc\u00e1rek",
+            "lat": "50.095367",
+            "lon": "14.475628",
+            "node": "59080",
+            "gtfs_node": "1074",
+            "lineType": "tram"
+        },
+        {
+            "name": "N\u00e1b\u0159e\u017e\u00ed Kapit\u00e1na Jaro\u0161e",
+            "fullName": "N\u00e1b\u0159e\u017e\u00ed Kapit\u00e1na Jaro\u0161e",
+            "lat": "50.096320",
+            "lon": "14.431299",
+            "node": "59145",
+            "gtfs_node": "439",
+            "lineType": "tram"
+        },
+        {
+            "name": "Praha-Dejvice",
+            "fullName": "Praha-Dejvice",
+            "lat": "50.096977",
+            "lon": "14.399686",
+            "node": "5457066",
+            "gtfs_node": "163",
+            "lineType": "train"
+        },
+        {
+            "name": "Invalidovna",
+            "fullName": "Invalidovna",
+            "lat": "50.097393",
+            "lon": "14.464328",
+            "node": "27868",
+            "gtfs_node": "655",
+            "lineType": "metroB"
+        },
+        {
+            "name": "\u0160pejchar",
+            "fullName": "\u0160pejchar",
+            "lat": "50.097458",
+            "lon": "14.409987",
+            "node": "56959",
+            "gtfs_node": "734",
+            "lineType": ""
+        },
+        {
+            "name": "Hrad\u010dansk\u00e1",
+            "fullName": "Hrad\u010dansk\u00e1",
+            "lat": "50.097504",
+            "lon": "14.404309",
+            "node": "27866",
+            "gtfs_node": "163",
+            "lineType": "metroA"
+        },
+        {
+            "name": "Bubensk\u00e1",
+            "fullName": "Bubensk\u00e1",
+            "lat": "50.098103",
+            "lon": "14.436589",
+            "node": "66230",
+            "gtfs_node": "100",
+            "lineType": "bus"
+        },
+        {
+            "name": "Hole\u0161ovick\u00e1 tr\u017enice",
+            "fullName": "Hole\u0161ovick\u00e1 tr\u017enice",
+            "lat": "50.098290",
+            "lon": "14.444672",
+            "node": "67973",
+            "gtfs_node": "595",
+            "lineType": "tram"
+        },
+        {
+            "name": "Odlehl\u00e1",
+            "fullName": "Odlehl\u00e1",
+            "lat": "50.098420",
+            "lon": "14.481834",
+            "node": "59182",
+            "gtfs_node": "763",
+            "lineType": "bus"
+        },
+        {
+            "name": "Strossmayerovo n\u00e1m\u011bst\u00ed",
+            "fullName": "Strossmayerovo n\u00e1m\u011bst\u00ed",
+            "lat": "50.098910",
+            "lon": "14.433265",
+            "node": "59306",
+            "gtfs_node": "717",
+            "lineType": "tram"
+        },
+        {
+            "name": "Vltavsk\u00e1",
+            "fullName": "Vltavsk\u00e1",
+            "lat": "50.099070",
+            "lon": "14.438273",
+            "node": "27896",
+            "gtfs_node": "100",
+            "lineType": "metroC"
+        },
+        {
+            "name": "Sparta",
+            "fullName": "Sparta",
+            "lat": "50.099160",
+            "lon": "14.417687",
+            "node": "59290",
+            "gtfs_node": "692",
+            "lineType": "tram"
+        },
+        {
+            "name": "K \u017di\u017ekovu",
+            "fullName": "K \u017di\u017ekovu",
+            "lat": "50.099495",
+            "lon": "14.496414",
+            "node": "59040",
+            "gtfs_node": "225",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kamenick\u00e1",
+            "fullName": "Kamenick\u00e1",
+            "lat": "50.099640",
+            "lon": "14.428637",
+            "node": "59043",
+            "gtfs_node": "231",
+            "lineType": "tram"
+        },
+        {
+            "name": "V\u00edt\u011bzn\u00e9 n\u00e1m\u011bst\u00ed",
+            "fullName": "V\u00edt\u011bzn\u00e9 n\u00e1m\u011bst\u00ed",
+            "lat": "50.099750",
+            "lon": "14.395556",
+            "node": "27895",
+            "gtfs_node": "321",
+            "lineType": "tram"
+        },
+        {
+            "name": "Letensk\u00e9 n\u00e1m\u011bst\u00ed",
+            "fullName": "Letensk\u00e9 n\u00e1m\u011bst\u00ed",
+            "lat": "50.099976",
+            "lon": "14.423605",
+            "node": "62881",
+            "gtfs_node": "324",
+            "lineType": "tram"
+        },
+        {
+            "name": "Sklon\u011bn\u00e1",
+            "fullName": "Sklon\u011bn\u00e1",
+            "lat": "50.100334",
+            "lon": "14.487579",
+            "node": "59280",
+            "gtfs_node": "678",
+            "lineType": "bus"
+        },
+        {
+            "name": "Novovyso\u010dansk\u00e1",
+            "fullName": "Novovyso\u010dansk\u00e1",
+            "lat": "50.100346",
+            "lon": "14.491522",
+            "node": "58838",
+            "gtfs_node": "498",
+            "lineType": "bus"
+        },
+        {
+            "name": "Korunova\u010dn\u00ed",
+            "fullName": "Korunova\u010dn\u00ed",
+            "lat": "50.100390",
+            "lon": "14.419716",
+            "node": "62878",
+            "gtfs_node": "262",
+            "lineType": "tram"
+        },
+        {
+            "name": "Radnice Praha 6",
+            "fullName": "Radnice Praha 6",
+            "lat": "50.100480",
+            "lon": "14.401611",
+            "node": "66175",
+            "gtfs_node": "3216",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tusarova",
+            "fullName": "Tusarova",
+            "lat": "50.100730",
+            "lon": "14.450172",
+            "node": "59332",
+            "gtfs_node": "81",
+            "lineType": "tram"
+        },
+        {
+            "name": "\u0158ez\u00e1\u010dovo n\u00e1m\u011bst\u00ed",
+            "fullName": "\u0158ez\u00e1\u010dovo n\u00e1m\u011bst\u00ed",
+            "lat": "50.100765",
+            "lon": "14.437200",
+            "node": "59264",
+            "gtfs_node": "3035",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ronalda Reagana",
+            "fullName": "Ronalda Reagana",
+            "lat": "50.101124",
+            "lon": "14.404657",
+            "node": "68652",
+            "gtfs_node": "2716",
+            "lineType": "bus"
+        },
+        {
+            "name": "Veletr\u017en\u00ed pal\u00e1c",
+            "fullName": "Veletr\u017en\u00ed pal\u00e1c",
+            "lat": "50.101734",
+            "lon": "14.433064",
+            "node": "62900",
+            "gtfs_node": "841",
+            "lineType": "tram"
+        },
+        {
+            "name": "OC Stromovka",
+            "fullName": "OC Stromovka",
+            "lat": "50.101948",
+            "lon": "14.429262",
+            "node": "66694",
+            "gtfs_node": "2770",
+            "lineType": "bus"
+        },
+        {
+            "name": "Schorova",
+            "fullName": "Schorova",
+            "lat": "50.102234",
+            "lon": "14.469186",
+            "node": "0",
+            "gtfs_node": "5211",
+            "lineType": "bus"
+        },
+        {
+            "name": "Praha-Bubny",
+            "fullName": "Praha-Bubny",
+            "lat": "50.102303",
+            "lon": "14.438852",
+            "node": "5457036",
+            "gtfs_node": "100",
+            "lineType": ""
+        },
+        {
+            "name": "Mal\u00fd Berl\u00edn",
+            "fullName": "Mal\u00fd Berl\u00edn",
+            "lat": "50.102543",
+            "lon": "14.435037",
+            "node": "68665",
+            "gtfs_node": "2719",
+            "lineType": "bus"
+        },
+        {
+            "name": "Arena Libe\u0148 jih",
+            "fullName": "Arena Libe\u0148 jih",
+            "lat": "50.102890",
+            "lon": "14.494593",
+            "node": "62884",
+            "gtfs_node": "348",
+            "lineType": "tram"
+        },
+        {
+            "name": "Argentinsk\u00e1",
+            "fullName": "Argentinsk\u00e1",
+            "lat": "50.103046",
+            "lon": "14.443398",
+            "node": "58761",
+            "gtfs_node": "48",
+            "lineType": "bus"
+        },
+        {
+            "name": "Osadn\u00ed",
+            "fullName": "Osadn\u00ed",
+            "lat": "50.103127",
+            "lon": "14.446531",
+            "node": "59190",
+            "gtfs_node": "3034",
+            "lineType": "bus"
+        },
+        {
+            "name": "D\u011blnick\u00e1",
+            "fullName": "D\u011blnick\u00e1",
+            "lat": "50.103146",
+            "lon": "14.449928",
+            "node": "58982",
+            "gtfs_node": "81",
+            "lineType": "tram"
+        },
+        {
+            "name": "Maniny",
+            "fullName": "Maniny",
+            "lat": "50.103294",
+            "lon": "14.453264",
+            "node": "59106",
+            "gtfs_node": "365",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0148sk\u00fd most",
+            "fullName": "Libe\u0148sk\u00fd most",
+            "lat": "50.103410",
+            "lon": "14.464732",
+            "node": "59096",
+            "gtfs_node": "331",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ocel\u00e1\u0159sk\u00e1",
+            "fullName": "Ocel\u00e1\u0159sk\u00e1",
+            "lat": "50.103546",
+            "lon": "14.488421",
+            "node": "59181",
+            "gtfs_node": "1075",
+            "lineType": "tram"
+        },
+        {
+            "name": "Rooseveltova",
+            "fullName": "Rooseveltova",
+            "lat": "50.103780",
+            "lon": "14.399746",
+            "node": "66627",
+            "gtfs_node": "2768",
+            "lineType": "bus"
+        },
+        {
+            "name": "Palmovka",
+            "fullName": "Palmovka",
+            "lat": "50.103962",
+            "lon": "14.474864",
+            "node": "27884",
+            "gtfs_node": "529",
+            "lineType": "metroB"
+        },
+        {
+            "name": "Balabenka",
+            "fullName": "Balabenka",
+            "lat": "50.104023",
+            "lon": "14.482588",
+            "node": "58762",
+            "gtfs_node": "12",
+            "lineType": "tram"
+        },
+        {
+            "name": "Loty\u0161sk\u00e1",
+            "fullName": "Loty\u0161sk\u00e1",
+            "lat": "50.104263",
+            "lon": "14.394960",
+            "node": "48070",
+            "gtfs_node": "350",
+            "lineType": "tram"
+        },
+        {
+            "name": "V\u00fdstavi\u0161t\u011b",
+            "fullName": "V\u00fdstavi\u0161t\u011b",
+            "lat": "50.104350",
+            "lon": "14.431912",
+            "node": "59391",
+            "gtfs_node": "532",
+            "lineType": "tram"
+        },
+        {
+            "name": "Sibi\u0159sk\u00e9 n\u00e1m\u011bst\u00ed",
+            "fullName": "Sibi\u0159sk\u00e9 n\u00e1m\u011bst\u00ed",
+            "lat": "50.104610",
+            "lon": "14.405958",
+            "node": "58859",
+            "gtfs_node": "646",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010ceskomal\u00ednsk\u00e1",
+            "fullName": "\u010ceskomal\u00ednsk\u00e1",
+            "lat": "50.104683",
+            "lon": "14.403407",
+            "node": "66626",
+            "gtfs_node": "2767",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u0159\u00edstav Hole\u0161ovice",
+            "fullName": "P\u0159\u00edstav Hole\u0161ovice",
+            "lat": "50.104706",
+            "lon": "14.455816",
+            "node": "59249",
+            "gtfs_node": "3033",
+            "lineType": "bus"
+        },
+        {
+            "name": "U Pr\u016fhonu",
+            "fullName": "U Pr\u016fhonu",
+            "lat": "50.104923",
+            "lon": "14.450027",
+            "node": "62898",
+            "gtfs_node": "1122",
+            "lineType": "tram"
+        },
+        {
+            "name": "Divadlo pod Palmovkou",
+            "fullName": "Divadlo pod Palmovkou",
+            "lat": "50.105660",
+            "lon": "14.472753",
+            "node": "54872",
+            "gtfs_node": "272",
+            "lineType": "tram"
+        },
+        {
+            "name": "\u010ceskomoravsk\u00e1",
+            "fullName": "\u010ceskomoravsk\u00e1",
+            "lat": "50.105830",
+            "lon": "14.492602",
+            "node": "47178",
+            "gtfs_node": "510",
+            "lineType": "bus"
+        },
+        {
+            "name": "Praha-Hole\u0161ovice zast.",
+            "fullName": "Praha-Hole\u0161ovice zast\u00e1vka",
+            "lat": "50.106106",
+            "lon": "14.437323",
+            "node": "5457046",
+            "gtfs_node": "115",
+            "lineType": "train"
+        },
+        {
+            "name": "Divadlo Gong",
+            "fullName": "Divadlo Gong",
+            "lat": "50.106667",
+            "lon": "14.488344",
+            "node": "62869",
+            "gtfs_node": "308",
+            "lineType": "tram"
+        },
+        {
+            "name": "Zelen\u00e1",
+            "fullName": "Zelen\u00e1",
+            "lat": "50.107235",
+            "lon": "14.394911",
+            "node": "58897",
+            "gtfs_node": "906",
+            "lineType": "tram"
+        },
+        {
+            "name": "Goetheho",
+            "fullName": "Goetheho",
+            "lat": "50.107437",
+            "lon": "14.404092",
+            "node": "63443",
+            "gtfs_node": "450",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ortenovo n\u00e1m\u011bst\u00ed",
+            "fullName": "Ortenovo n\u00e1m\u011bst\u00ed",
+            "lat": "50.107720",
+            "lon": "14.447826",
+            "node": "59188",
+            "gtfs_node": "521",
+            "lineType": "tram"
+        },
+        {
+            "name": "Nemocnice Bubene\u010d",
+            "fullName": "Nemocnice Bubene\u010d",
+            "lat": "50.107750",
+            "lon": "14.401875",
+            "node": "58834",
+            "gtfs_node": "980",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0148sk\u00fd z\u00e1mek",
+            "fullName": "Libe\u0148sk\u00fd z\u00e1mek",
+            "lat": "50.108450",
+            "lon": "14.472282",
+            "node": "66229",
+            "gtfs_node": "471",
+            "lineType": "tram"
+        },
+        {
+            "name": "V P\u0159\u00edstavu",
+            "fullName": "V P\u0159\u00edstavu",
+            "lat": "50.108486",
+            "lon": "14.453746",
+            "node": "59362",
+            "gtfs_node": "3032",
+            "lineType": "bus"
+        },
+        {
+            "name": "Poliklinika Vyso\u010dany",
+            "fullName": "Poliklinika Vyso\u010dany",
+            "lat": "50.108738",
+            "lon": "14.494236",
+            "node": "59236",
+            "gtfs_node": "464",
+            "lineType": "tram"
+        },
+        {
+            "name": "\u010c\u00ednsk\u00e1",
+            "fullName": "\u010c\u00ednsk\u00e1",
+            "lat": "50.108980",
+            "lon": "14.394304",
+            "node": "58524",
+            "gtfs_node": "162",
+            "lineType": "bus"
+        },
+        {
+            "name": "N\u00e1dra\u017e\u00ed Hole\u0161ovice",
+            "fullName": "N\u00e1dra\u017e\u00ed Hole\u0161ovice",
+            "lat": "50.109043",
+            "lon": "14.439334",
+            "node": "27878",
+            "gtfs_node": "115",
+            "lineType": "metroC"
+        },
+        {
+            "name": "Jankovcova",
+            "fullName": "Jankovcova",
+            "lat": "50.109530",
+            "lon": "14.444365",
+            "node": "50693",
+            "gtfs_node": "196",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u0159\u00edvozn\u00ed",
+            "fullName": "P\u0159\u00edvozn\u00ed",
+            "lat": "50.110226",
+            "lon": "14.451601",
+            "node": "59251",
+            "gtfs_node": "3031",
+            "lineType": "bus"
+        },
+        {
+            "name": "N\u00e1dra\u017e\u00ed Vyso\u010dany",
+            "fullName": "N\u00e1dra\u017e\u00ed Vyso\u010dany",
+            "lat": "50.110230",
+            "lon": "14.499046",
+            "node": "62886",
+            "gtfs_node": "474",
+            "lineType": "tram"
+        },
+        {
+            "name": "Praha-Hole\u0161ovice",
+            "fullName": "Praha-Hole\u0161ovice",
+            "lat": "50.110530",
+            "lon": "14.439771",
+            "node": "5457256",
+            "gtfs_node": "115",
+            "lineType": "train"
+        },
+        {
+            "name": "U Vody",
+            "fullName": "U Vody",
+            "lat": "50.110653",
+            "lon": "14.448031",
+            "node": "59524",
+            "gtfs_node": "3036",
+            "lineType": "bus"
+        },
+        {
+            "name": "N\u00e1dra\u017e\u00ed Podbaba",
+            "fullName": "N\u00e1dra\u017e\u00ed Podbaba",
+            "lat": "50.111816",
+            "lon": "14.394122",
+            "node": "63414",
+            "gtfs_node": "126",
+            "lineType": "tram"
+        },
+        {
+            "name": "U K\u0159\u00ed\u017ee",
+            "fullName": "U K\u0159\u00ed\u017ee",
+            "lat": "50.112244",
+            "lon": "14.475540",
+            "node": "54885",
+            "gtfs_node": "779",
+            "lineType": "tram"
+        },
+        {
+            "name": "Praha-Vyso\u010dany",
+            "fullName": "Praha-Vyso\u010dany",
+            "lat": "50.112350",
+            "lon": "14.497358",
+            "node": "5457316",
+            "gtfs_node": "474",
+            "lineType": "train"
+        },
+        {
+            "name": "Kundratka",
+            "fullName": "Kundratka",
+            "lat": "50.112576",
+            "lon": "14.479704",
+            "node": "64942",
+            "gtfs_node": "1413",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Praha-Podbaba",
+            "fullName": "Praha-Podbaba",
+            "lat": "50.112810",
+            "lon": "14.394747",
+            "node": "5457027",
+            "gtfs_node": "126",
+            "lineType": "train"
+        },
+        {
+            "name": "Vosm\u00edkov\u00fdch",
+            "fullName": "Vosm\u00edkov\u00fdch",
+            "lat": "50.114357",
+            "lon": "14.473273",
+            "node": "59383",
+            "gtfs_node": "861",
+            "lineType": "tram"
+        },
+        {
+            "name": "Kelerka",
+            "fullName": "Kelerka",
+            "lat": "50.115220",
+            "lon": "14.489533",
+            "node": "54886",
+            "gtfs_node": "251",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Nad Jetelkou",
+            "fullName": "Nad Jetelkou",
+            "lat": "50.115276",
+            "lon": "14.496156",
+            "node": "47718",
+            "gtfs_node": "442",
+            "lineType": "bus"
+        },
+        {
+            "name": "Parkovi\u0161t\u011b Trojsk\u00fd most",
+            "fullName": "Parkovi\u0161t\u011b Trojsk\u00fd most",
+            "lat": "50.115646",
+            "lon": "14.436711",
+            "node": "67559",
+            "gtfs_node": "7406",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bulovka",
+            "fullName": "Nemocnice Bulovka",
+            "lat": "50.115680",
+            "lon": "14.463954",
+            "node": "57531",
+            "gtfs_node": "3005",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pelc Tyrolka",
+            "fullName": "Pelc Tyrolka",
+            "lat": "50.115936",
+            "lon": "14.443846",
+            "node": "59200",
+            "gtfs_node": "536",
+            "lineType": "bus"
+        },
+        {
+            "name": "Povltavsk\u00e1",
+            "fullName": "Povltavsk\u00e1",
+            "lat": "50.116077",
+            "lon": "14.433817",
+            "node": "59238",
+            "gtfs_node": "588",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bulovka - gynekologie",
+            "fullName": "Nemocnice Bulovka - gynekologie",
+            "lat": "50.116100",
+            "lon": "14.460119",
+            "node": "58455",
+            "gtfs_node": "3006",
+            "lineType": "bus"
+        },
+        {
+            "name": "Bulovka",
+            "fullName": "Bulovka",
+            "lat": "50.116410",
+            "lon": "14.467950",
+            "node": "27857",
+            "gtfs_node": "54",
+            "lineType": "tram"
+        },
+        {
+            "name": "Zoo Praha - Troja",
+            "fullName": "Zoo Praha - Troja",
+            "lat": "50.116630",
+            "lon": "14.411608",
+            "node": "68047",
+            "gtfs_node": "764",
+            "lineType": "bus"
+        },
+        {
+            "name": "Trojsk\u00e1",
+            "fullName": "Trojsk\u00e1",
+            "lat": "50.116783",
+            "lon": "14.432540",
+            "node": "59329",
+            "gtfs_node": "765",
+            "lineType": "tram"
+        },
+        {
+            "name": "Nemocnice Bulovka - onkologie",
+            "fullName": "Nemocnice Bulovka - onkologie",
+            "lat": "50.116917",
+            "lon": "14.462770",
+            "node": "58456",
+            "gtfs_node": "3007",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kuchy\u0148ka",
+            "fullName": "Kuchy\u0148ka",
+            "lat": "50.116990",
+            "lon": "14.450306",
+            "node": "58806",
+            "gtfs_node": "305",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cechova \u0161kola",
+            "fullName": "\u010cechova \u0161kola",
+            "lat": "50.117184",
+            "lon": "14.423426",
+            "node": "58974",
+            "gtfs_node": "66",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cert\u016fv vr\u0161ek",
+            "fullName": "\u010cert\u016fv vr\u0161ek",
+            "lat": "50.117233",
+            "lon": "14.474052",
+            "node": "57529",
+            "gtfs_node": "993",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kazanka",
+            "fullName": "Kazanka",
+            "lat": "50.117294",
+            "lon": "14.428040",
+            "node": "59052",
+            "gtfs_node": "241",
+            "lineType": "bus"
+        },
+        {
+            "name": "Proseck\u00e1",
+            "fullName": "Proseck\u00e1",
+            "lat": "50.117374",
+            "lon": "14.496969",
+            "node": "47893",
+            "gtfs_node": "754",
+            "lineType": "trolleybus"
+        },
+        {
+            "name": "Kov\u00e1rna",
+            "fullName": "Kov\u00e1rna",
+            "lat": "50.117380",
+            "lon": "14.416596",
+            "node": "59077",
+            "gtfs_node": "290",
+            "lineType": "bus"
+        },
+        {
+            "name": "Rokoska",
+            "fullName": "Rokoska",
+            "lat": "50.117380",
+            "lon": "14.457513",
+            "node": "58854",
+            "gtfs_node": "622",
+            "lineType": "bus"
+        },
+        {
+            "name": "U Kundratky",
+            "fullName": "U Kundratky",
+            "lat": "50.117820",
+            "lon": "14.487756",
+            "node": "57527",
+            "gtfs_node": "1081",
+            "lineType": "bus"
+        },
+        {
+            "name": "Star\u00fd Prosek",
+            "fullName": "Star\u00fd Prosek",
+            "lat": "50.118015",
+            "lon": "14.490980",
+            "node": "57526",
+            "gtfs_node": "1151",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vychovatelna",
+            "fullName": "Vychovatelna",
+            "lat": "50.118400",
+            "lon": "14.464318",
+            "node": "27898",
+            "gtfs_node": "870",
+            "lineType": "tram"
+        },
+        {
+            "name": "Nov\u00fd St\u0159\u00ed\u017ekov",
+            "fullName": "Nov\u00fd St\u0159\u00ed\u017ekov",
+            "lat": "50.118520",
+            "lon": "14.483915",
+            "node": "57528",
+            "gtfs_node": "502",
+            "lineType": "bus"
+        },
+        {
+            "name": "Botanick\u00e1 zahrada Troja",
+            "fullName": "Botanick\u00e1 zahrada Troja",
+            "lat": "50.119120",
+            "lon": "14.410485",
+            "node": "58959",
+            "gtfs_node": "557",
+            "lineType": "bus"
+        },
+        {
+            "name": "Prosek",
+            "fullName": "Prosek",
+            "lat": "50.119286",
+            "lon": "14.498221",
+            "node": "27979",
+            "gtfs_node": "603",
+            "lineType": "metroC"
+        },
+        {
+            "name": "Okrouhlick\u00e1",
+            "fullName": "Okrouhlick\u00e1",
+            "lat": "50.119680",
+            "lon": "14.460331",
+            "node": "58843",
+            "gtfs_node": "514",
+            "lineType": "tram"
+        },
+        {
+            "name": "Vinopalnick\u00e1",
+            "fullName": "Vinopalnick\u00e1",
+            "lat": "50.119950",
+            "lon": "14.470384",
+            "node": "59379",
+            "gtfs_node": "881",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zoo Praha - Sklen\u00e1\u0159ka",
+            "fullName": "Zoo Praha - Sklen\u00e1\u0159ka",
+            "lat": "50.120304",
+            "lon": "14.403448",
+            "node": "68048",
+            "gtfs_node": "3210",
+            "lineType": "bus"
+        },
+        {
+            "name": "Madlina",
+            "fullName": "Madlina",
+            "lat": "50.120316",
+            "lon": "14.484501",
+            "node": "57654",
+            "gtfs_node": "990",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nad Trojou",
+            "fullName": "Nad Trojou",
+            "lat": "50.120354",
+            "lon": "14.439337",
+            "node": "59153",
+            "gtfs_node": "447",
+            "lineType": "tram"
+        },
+        {
+            "name": "V Podbab\u011b",
+            "fullName": "V Podbab\u011b",
+            "lat": "50.121760",
+            "lon": "14.394158",
+            "node": "47154",
+            "gtfs_node": "506",
+            "lineType": "ferry"
+        },
+        {
+            "name": "Hercovka",
+            "fullName": "Hercovka",
+            "lat": "50.121964",
+            "lon": "14.452263",
+            "node": "62874",
+            "gtfs_node": "139",
+            "lineType": "tram"
+        },
+        {
+            "name": "S\u00eddli\u0161t\u011b Prosek",
+            "fullName": "S\u00eddli\u0161t\u011b Prosek",
+            "lat": "50.122498",
+            "lon": "14.493733",
+            "node": "57525",
+            "gtfs_node": "665",
+            "lineType": "bus"
+        },
+        {
+            "name": "Podho\u0159\u00ed",
+            "fullName": "Podho\u0159\u00ed",
+            "lat": "50.122616",
+            "lon": "14.399700",
+            "node": "59229",
+            "gtfs_node": "582",
+            "lineType": "ferry"
+        },
+        {
+            "name": "Ke St\u00edrce",
+            "fullName": "Ke St\u00edrce",
+            "lat": "50.122830",
+            "lon": "14.456011",
+            "node": "27937",
+            "gtfs_node": "249",
+            "lineType": "tram"
+        },
+        {
+            "name": "Na Slovance",
+            "fullName": "Na Slovance",
+            "lat": "50.124107",
+            "lon": "14.472532",
+            "node": "59141",
+            "gtfs_node": "985",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kobylisy",
+            "fullName": "Kobylisy",
+            "lat": "50.124330",
+            "lon": "14.454498",
+            "node": "51888",
+            "gtfs_node": "675",
+            "lineType": "metroC"
+        },
+        {
+            "name": "Slu\u017esk\u00e1",
+            "fullName": "Slu\u017esk\u00e1",
+            "lat": "50.124336",
+            "lon": "14.449883",
+            "node": "58574",
+            "gtfs_node": "267",
+            "lineType": "bus"
+        },
+        {
+            "name": "Na Pazderce",
+            "fullName": "Na Pazderce",
+            "lat": "50.125122",
+            "lon": "14.417893",
+            "node": "58823",
+            "gtfs_node": "924",
+            "lineType": "bus"
+        },
+        {
+            "name": "Teplick\u00e1",
+            "fullName": "Teplick\u00e1",
+            "lat": "50.125362",
+            "lon": "14.486243",
+            "node": "58878",
+            "gtfs_node": "683",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dunajeck\u00e1",
+            "fullName": "Dunajeck\u00e1",
+            "lat": "50.125557",
+            "lon": "14.426439",
+            "node": "58776",
+            "gtfs_node": "925",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u00edse\u010dn\u00e1",
+            "fullName": "P\u00edse\u010dn\u00e1",
+            "lat": "50.125740",
+            "lon": "14.443515",
+            "node": "58573",
+            "gtfs_node": "543",
+            "lineType": "bus"
+        },
+        {
+            "name": "St\u0159elni\u010dn\u00e1",
+            "fullName": "St\u0159elni\u010dn\u00e1",
+            "lat": "50.125770",
+            "lon": "14.458929",
+            "node": "62895",
+            "gtfs_node": "676",
+            "lineType": "tram"
+        },
+        {
+            "name": "Kyselova",
+            "fullName": "Kyselova",
+            "lat": "50.126167",
+            "lon": "14.463701",
+            "node": "59091",
+            "gtfs_node": "314",
+            "lineType": "tram"
+        },
+        {
+            "name": "Novoborsk\u00e1",
+            "fullName": "Novoborsk\u00e1",
+            "lat": "50.126280",
+            "lon": "14.498531",
+            "node": "59177",
+            "gtfs_node": "3205",
+            "lineType": "bus"
+        },
+        {
+            "name": "St\u0159\u00ed\u017ekov",
+            "fullName": "St\u0159\u00ed\u017ekov",
+            "lat": "50.126347",
+            "lon": "14.489245",
+            "node": "57524",
+            "gtfs_node": "332",
+            "lineType": "metroC"
+        },
+        {
+            "name": "L\u00e1dv\u00ed",
+            "fullName": "L\u00e1dv\u00ed",
+            "lat": "50.126430",
+            "lon": "14.469768",
+            "node": "51889",
+            "gtfs_node": "78",
+            "lineType": "metroC"
+        },
+        {
+            "name": "B\u0159ezin\u011bvesk\u00e1",
+            "fullName": "B\u0159ezin\u011bvesk\u00e1",
+            "lat": "50.126530",
+            "lon": "14.456921",
+            "node": "62868",
+            "gtfs_node": "718",
+            "lineType": "tram"
+        },
+        {
+            "name": "Poliklinika \u010cumpel\u00edkova",
+            "fullName": "Poliklinika \u010cumpel\u00edkova",
+            "lat": "50.126957",
+            "lon": "14.460493",
+            "node": "60287",
+            "gtfs_node": "4128",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztock\u00e1",
+            "fullName": "Roztock\u00e1",
+            "lat": "50.127010",
+            "lon": "14.398731",
+            "node": "28002",
+            "gtfs_node": "623",
+            "lineType": "bus"
+        },
+        {
+            "name": "S\u00eddli\u0161t\u011b Kobylisy",
+            "fullName": "S\u00eddli\u0161t\u011b Kobylisy",
+            "lat": "50.127045",
+            "lon": "14.452108",
+            "node": "59274",
+            "gtfs_node": "688",
+            "lineType": "bus"
+        },
+        {
+            "name": "Poliklinika Mazursk\u00e1",
+            "fullName": "Poliklinika Mazursk\u00e1",
+            "lat": "50.127300",
+            "lon": "14.413631",
+            "node": "59234",
+            "gtfs_node": "649",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cimick\u00fd h\u00e1j",
+            "fullName": "\u010cimick\u00fd h\u00e1j",
+            "lat": "50.127327",
+            "lon": "14.435609",
+            "node": "58572",
+            "gtfs_node": "544",
+            "lineType": "bus"
+        },
+        {
+            "name": "Krakov",
+            "fullName": "Krakov",
+            "lat": "50.127770",
+            "lon": "14.417053",
+            "node": "58803",
+            "gtfs_node": "371",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0160t\u011bpni\u010dn\u00e1",
+            "fullName": "\u0160t\u011bpni\u010dn\u00e1",
+            "lat": "50.127926",
+            "lon": "14.477303",
+            "node": "51890",
+            "gtfs_node": "740",
+            "lineType": "tram"
+        },
+        {
+            "name": "Poliklinika Prosek",
+            "fullName": "Poliklinika Prosek",
+            "lat": "50.128070",
+            "lon": "14.491937",
+            "node": "57523",
+            "gtfs_node": "351",
+            "lineType": "bus"
+        },
+        {
+            "name": "V Sedlci",
+            "fullName": "V Sedlci",
+            "lat": "50.128204",
+            "lon": "14.394781",
+            "node": "49462",
+            "gtfs_node": "397",
+            "lineType": "bus"
+        },
+        {
+            "name": "Z\u00e1sadsk\u00e1",
+            "fullName": "Z\u00e1sadsk\u00e1",
+            "lat": "50.128770",
+            "lon": "14.496110",
+            "node": "68058",
+            "gtfs_node": "2704",
+            "lineType": "bus"
+        },
+        {
+            "name": "L\u00edbeznick\u00e1",
+            "fullName": "L\u00edbeznick\u00e1",
+            "lat": "50.128944",
+            "lon": "14.455515",
+            "node": "62882",
+            "gtfs_node": "333",
+            "lineType": "tram"
+        },
+        {
+            "name": "T\u0159ebenick\u00e1",
+            "fullName": "T\u0159ebenick\u00e1",
+            "lat": "50.129326",
+            "lon": "14.481306",
+            "node": "51891",
+            "gtfs_node": "467",
+            "lineType": "tram"
+        },
+        {
+            "name": "Podhajsk\u00e1 pole",
+            "fullName": "Podhajsk\u00e1 pole",
+            "lat": "50.129700",
+            "lon": "14.430872",
+            "node": "59228",
+            "gtfs_node": "581",
+            "lineType": "bus"
+        },
+        {
+            "name": "Odra",
+            "fullName": "Odra",
+            "lat": "50.130860",
+            "lon": "14.424155",
+            "node": "58840",
+            "gtfs_node": "511",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mirovick\u00e1",
+            "fullName": "Mirovick\u00e1",
+            "lat": "50.130882",
+            "lon": "14.452434",
+            "node": "59117",
+            "gtfs_node": "1011",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kobylisk\u00e1 st\u0159elnice",
+            "fullName": "Kobylisk\u00e1 st\u0159elnice",
+            "lat": "50.130966",
+            "lon": "14.460742",
+            "node": "59500",
+            "gtfs_node": "4129",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zho\u0159eleck\u00e1",
+            "fullName": "Zho\u0159eleck\u00e1",
+            "lat": "50.130993",
+            "lon": "14.417467",
+            "node": "58899",
+            "gtfs_node": "912",
+            "lineType": "bus"
+        },
+        {
+            "name": "S\u00eddli\u0161t\u011b Bohnice",
+            "fullName": "S\u00eddli\u0161t\u011b Bohnice",
+            "lat": "50.131610",
+            "lon": "14.410610",
+            "node": "58860",
+            "gtfs_node": "648",
+            "lineType": "bus"
+        },
+        {
+            "name": "Praha-Sedlec",
+            "fullName": "Praha-Sedlec",
+            "lat": "50.132046",
+            "lon": "14.394304",
+            "node": "5454506",
+            "gtfs_node": "1381",
+            "lineType": "train"
+        },
+        {
+            "name": "Katovick\u00e1",
+            "fullName": "Katovick\u00e1",
+            "lat": "50.132110",
+            "lon": "14.428075",
+            "node": "58798",
+            "gtfs_node": "345",
+            "lineType": "bus"
+        },
+        {
+            "name": "S\u00eddli\u0161t\u011b \u010e\u00e1blice",
+            "fullName": "S\u00eddli\u0161t\u011b \u010e\u00e1blice",
+            "lat": "50.132362",
+            "lon": "14.479131",
+            "node": "27916",
+            "gtfs_node": "651",
+            "lineType": "tram"
+        },
+        {
+            "name": "Bojasova",
+            "fullName": "Bojasova",
+            "lat": "50.132534",
+            "lon": "14.462613",
+            "node": "58957",
+            "gtfs_node": "39",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vozovna Kobylisy",
+            "fullName": "Vozovna Kobylisy",
+            "lat": "50.132860",
+            "lon": "14.453828",
+            "node": "27938",
+            "gtfs_node": "864",
+            "lineType": "tram"
+        },
+        {
+            "name": "\u0160im\u016fnkova",
+            "fullName": "\u0160im\u016fnkova",
+            "lat": "50.132935",
+            "lon": "14.470473",
+            "node": "59309",
+            "gtfs_node": "55",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0158ep\u00ednsk\u00e1",
+            "fullName": "\u0158ep\u00ednsk\u00e1",
+            "lat": "50.133514",
+            "lon": "14.430046",
+            "node": "58856",
+            "gtfs_node": "806",
+            "lineType": "bus"
+        },
+        {
+            "name": "Star\u00e9 Bohnice",
+            "fullName": "Star\u00e9 Bohnice",
+            "lat": "50.133575",
+            "lon": "14.415844",
+            "node": "59295",
+            "gtfs_node": "38",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - \u0158editelstv\u00ed",
+            "fullName": "Nemocnice Bohnice - \u0158editelstv\u00ed",
+            "lat": "50.134010",
+            "lon": "14.423561",
+            "node": "67600",
+            "gtfs_node": "2772",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - Divadlo Za plotem",
+            "fullName": "Nemocnice Bohnice - Divadlo Za plotem",
+            "lat": "50.134216",
+            "lon": "14.419077",
+            "node": "67603",
+            "gtfs_node": "2773",
+            "lineType": "bus"
+        },
+        {
+            "name": "U Drahan\u011b",
+            "fullName": "U Drahan\u011b",
+            "lat": "50.135403",
+            "lon": "14.416000",
+            "node": "59335",
+            "gtfs_node": "1133",
+            "lineType": "bus"
+        },
+        {
+            "name": "Za \u010cimick\u00fdm h\u00e1jem",
+            "fullName": "Za \u010cimick\u00fdm h\u00e1jem",
+            "lat": "50.135445",
+            "lon": "14.447542",
+            "node": "59396",
+            "gtfs_node": "898",
+            "lineType": "bus"
+        },
+        {
+            "name": "Domov senior\u016f \u010e\u00e1blice",
+            "fullName": "Domov senior\u016f \u010e\u00e1blice",
+            "lat": "50.135544",
+            "lon": "14.474096",
+            "node": "59501",
+            "gtfs_node": "4130",
+            "lineType": "bus"
+        },
+        {
+            "name": "Bohnick\u00e9 \u00fadol\u00ed",
+            "fullName": "Bohnick\u00e9 \u00fadol\u00ed",
+            "lat": "50.135670",
+            "lon": "14.412017",
+            "node": "58956",
+            "gtfs_node": "1134",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - Hlavn\u00ed vr\u00e1tnice",
+            "fullName": "Nemocnice Bohnice - Hlavn\u00ed vr\u00e1tnice",
+            "lat": "50.135868",
+            "lon": "14.428747",
+            "node": "67601",
+            "gtfs_node": "2771",
+            "lineType": "bus"
+        },
+        {
+            "name": "Oko\u0159sk\u00e1",
+            "fullName": "Oko\u0159sk\u00e1",
+            "lat": "50.135906",
+            "lon": "14.431482",
+            "node": "59183",
+            "gtfs_node": "1015",
+            "lineType": "bus"
+        },
+        {
+            "name": "P\u0159\u00edvorsk\u00e1",
+            "fullName": "P\u0159\u00edvorsk\u00e1",
+            "lat": "50.136078",
+            "lon": "14.436379",
+            "node": "59250",
+            "gtfs_node": "615",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - Interna",
+            "fullName": "Nemocnice Bohnice - Interna",
+            "lat": "50.136093",
+            "lon": "14.421196",
+            "node": "67599",
+            "gtfs_node": "2775",
+            "lineType": "bus"
+        },
+        {
+            "name": "Z\u00e1mky",
+            "fullName": "Z\u00e1mky",
+            "lat": "50.136770",
+            "lon": "14.395045",
+            "node": "59402",
+            "gtfs_node": "607",
+            "lineType": "ferry"
+        },
+        {
+            "name": "Libe\u0148sk\u00e1",
+            "fullName": "Libe\u0148sk\u00e1",
+            "lat": "50.137160",
+            "lon": "14.430042",
+            "node": "58811",
+            "gtfs_node": "330",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - Centr\u00e1ln\u00ed terapie",
+            "fullName": "Nemocnice Bohnice - Centr\u00e1ln\u00ed terapie",
+            "lat": "50.137318",
+            "lon": "14.423623",
+            "node": "67602",
+            "gtfs_node": "2776",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010e\u00e1blick\u00fd h\u0159bitov",
+            "fullName": "\u010e\u00e1blick\u00fd h\u0159bitov",
+            "lat": "50.137590",
+            "lon": "14.478716",
+            "node": "47860",
+            "gtfs_node": "167",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice",
+            "fullName": "Nemocnice Bohnice",
+            "lat": "50.137665",
+            "lon": "14.418087",
+            "node": "67598",
+            "gtfs_node": "2774",
+            "lineType": "bus"
+        },
+        {
+            "name": "Po\u010deradsk\u00e1",
+            "fullName": "Po\u010deradsk\u00e1",
+            "lat": "50.139237",
+            "lon": "14.451767",
+            "node": "49572",
+            "gtfs_node": "555",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cimice",
+            "fullName": "\u010cimice",
+            "lat": "50.140810",
+            "lon": "14.430658",
+            "node": "58571",
+            "gtfs_node": "74",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kv\u011btnov\u00e1",
+            "fullName": "Kv\u011btnov\u00e1",
+            "lat": "50.142708",
+            "lon": "14.477959",
+            "node": "47889",
+            "gtfs_node": "312",
+            "lineType": "bus"
+        }
+    ]
+}

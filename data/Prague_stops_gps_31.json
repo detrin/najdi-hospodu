@@ -1,0 +1,202 @@
+{
+    "group_stops": [
+        {
+            "name": "Libe\u0159",
+            "fullName": "Libe\u0159",
+            "lat": "49.923400",
+            "lon": "14.480433",
+            "node": "47021",
+            "gtfs_node": "2105",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sulice",
+            "fullName": "Sulice",
+            "lat": "49.923657",
+            "lon": "14.557330",
+            "node": "34034",
+            "gtfs_node": "1578",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sulice,Na K\u0159\u00ed\u017ek\u00e1ch",
+            "fullName": "Sulice,Na K\u0159\u00ed\u017ek\u00e1ch",
+            "lat": "49.926773",
+            "lon": "14.568974",
+            "node": "50357",
+            "gtfs_node": "1535",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159,Na Ov\u010d\u00edn\u011b",
+            "fullName": "Libe\u0159,Na Ov\u010d\u00edn\u011b",
+            "lat": "49.927628",
+            "lon": "14.481278",
+            "node": "18237",
+            "gtfs_node": "2104",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ps\u00e1ry,Domov Laguna",
+            "fullName": "Ps\u00e1ry,Domov Laguna",
+            "lat": "49.931892",
+            "lon": "14.508205",
+            "node": "28958",
+            "gtfs_node": "2127",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sulice,Hlubo\u010dinka",
+            "fullName": "Sulice,Hlubo\u010dinka",
+            "lat": "49.933914",
+            "lon": "14.559320",
+            "node": "34035",
+            "gtfs_node": "1534",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ps\u00e1ry",
+            "fullName": "Ps\u00e1ry",
+            "lat": "49.936720",
+            "lon": "14.514378",
+            "node": "28957",
+            "gtfs_node": "2128",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sulice,Hlubo\u010dinka,Obchodn\u00ed centrum",
+            "fullName": "Sulice,Hlubo\u010dinka,Obchodn\u00ed centrum",
+            "lat": "49.938717",
+            "lon": "14.553016",
+            "node": "62908",
+            "gtfs_node": "1533",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ps\u00e1ry,\u0160t\u011bd\u0159\u00edk",
+            "fullName": "Ps\u00e1ry,\u0160t\u011bd\u0159\u00edk",
+            "lat": "49.941880",
+            "lon": "14.515791",
+            "node": "28960",
+            "gtfs_node": "2129",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Horn\u00ed Jir\u010dany,Vod\u00e1rna",
+            "fullName": "Jesenice,Horn\u00ed Jir\u010dany,Vod\u00e1rna",
+            "lat": "49.946320",
+            "lon": "14.543139",
+            "node": "47652",
+            "gtfs_node": "1532",
+            "lineType": "bus"
+        },
+        {
+            "name": "Rad\u011bjovice",
+            "fullName": "Rad\u011bjovice",
+            "lat": "49.946762",
+            "lon": "14.564467",
+            "node": "29172",
+            "gtfs_node": "1582",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ps\u00e1ry,Doln\u00ed Jir\u010dany",
+            "fullName": "Ps\u00e1ry,Doln\u00ed Jir\u010dany",
+            "lat": "49.948790",
+            "lon": "14.519651",
+            "node": "28959",
+            "gtfs_node": "2130",
+            "lineType": "bus"
+        },
+        {
+            "name": "Rad\u011bjovice,Ole\u0161ky",
+            "fullName": "Rad\u011bjovice,Ole\u0161ky",
+            "lat": "49.949146",
+            "lon": "14.571491",
+            "node": "29173",
+            "gtfs_node": "1581",
+            "lineType": "bus"
+        },
+        {
+            "name": "Libe\u0159,Libe\u0148,O\u00e1za",
+            "fullName": "Libe\u0159,Libe\u0148,O\u00e1za",
+            "lat": "49.951510",
+            "lon": "14.474566",
+            "node": "43457",
+            "gtfs_node": "1530",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Horn\u00ed Jir\u010dany",
+            "fullName": "Jesenice,Horn\u00ed Jir\u010dany",
+            "lat": "49.952213",
+            "lon": "14.537533",
+            "node": "13036",
+            "gtfs_node": "1531",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,Na Drah\u00e1ch",
+            "fullName": "Zlatn\u00edky-Hodkovice,Na Drah\u00e1ch",
+            "lat": "49.955100",
+            "lon": "14.483936",
+            "node": "68026",
+            "gtfs_node": "5088",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,U Hasi\u010d\u00e1rny",
+            "fullName": "Zlatn\u00edky-Hodkovice,U Hasi\u010d\u00e1rny",
+            "lat": "49.957165",
+            "lon": "14.480456",
+            "node": "47302",
+            "gtfs_node": "1529",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,N\u00e1ves",
+            "fullName": "Zlatn\u00edky-Hodkovice,N\u00e1ves",
+            "lat": "49.960346",
+            "lon": "14.480949",
+            "node": "47300",
+            "gtfs_node": "1528",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,U Prodejny",
+            "fullName": "Zlatn\u00edky-Hodkovice,U Prodejny",
+            "lat": "49.962387",
+            "lon": "14.481099",
+            "node": "47303",
+            "gtfs_node": "1527",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zlatn\u00edky-Hodkovice,Slune\u010dn\u00e1",
+            "fullName": "Zlatn\u00edky-Hodkovice,Slune\u010dn\u00e1",
+            "lat": "49.966595",
+            "lon": "14.482220",
+            "node": "47301",
+            "gtfs_node": "1526",
+            "lineType": "bus"
+        },
+        {
+            "name": "Herink",
+            "fullName": "Herink",
+            "lat": "49.967705",
+            "lon": "14.575202",
+            "node": "8671",
+            "gtfs_node": "1896",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice",
+            "fullName": "Jesenice",
+            "lat": "49.967796",
+            "lon": "14.514916",
+            "node": "13035",
+            "gtfs_node": "1330",
+            "lineType": "bus"
+        }
+    ]
+}

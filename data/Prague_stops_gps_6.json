@@ -1,0 +1,238 @@
+{
+    "group_stops": [
+        {
+            "name": "Jen\u0161tejn,Hradn\u00ed",
+            "fullName": "Jen\u0161tejn,Hradn\u00ed",
+            "lat": "50.149834",
+            "lon": "14.618770",
+            "node": "56527",
+            "gtfs_node": "2471",
+            "lineType": "bus"
+        },
+        {
+            "name": "Radonice,Penny Market",
+            "fullName": "Radonice,Penny Market",
+            "lat": "50.132835",
+            "lon": "14.619645",
+            "node": "49116",
+            "gtfs_node": "1293",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Popovice",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Popovice",
+            "lat": "50.178010",
+            "lon": "14.624978",
+            "node": "2430",
+            "gtfs_node": "1962",
+            "lineType": "bus"
+        },
+        {
+            "name": "D\u0159ev\u010dice",
+            "fullName": "D\u0159ev\u010dice",
+            "lat": "50.166733",
+            "lon": "14.628556",
+            "node": "7222",
+            "gtfs_node": "1822",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jen\u0161tejn,Deht\u00e1ry",
+            "fullName": "Jen\u0161tejn,Deht\u00e1ry",
+            "lat": "50.142850",
+            "lon": "14.633617",
+            "node": "13016",
+            "gtfs_node": "2193",
+            "lineType": "bus"
+        },
+        {
+            "name": "D\u0159ev\u010dice,Cihelna",
+            "fullName": "D\u0159ev\u010dice,Cihelna",
+            "lat": "50.171562",
+            "lon": "14.638557",
+            "node": "7223",
+            "gtfs_node": "1823",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sv\u00e9myslice",
+            "fullName": "Sv\u00e9myslice",
+            "lat": "50.146233",
+            "lon": "14.648333",
+            "node": "34234",
+            "gtfs_node": "2194",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Zahradn\u00ed M\u011bsto",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Zahradn\u00ed M\u011bsto",
+            "lat": "50.174423",
+            "lon": "14.648831",
+            "node": "52590",
+            "gtfs_node": "2365",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Vr\u00e1b\u00ed",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Vr\u00e1b\u00ed",
+            "lat": "50.178085",
+            "lon": "14.653933",
+            "node": "2427",
+            "gtfs_node": "1824",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Zdrav.st\u0159.",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Zdravotn\u00ed st\u0159edisko",
+            "lat": "50.182297",
+            "lon": "14.654940",
+            "node": "2428",
+            "gtfs_node": "1961",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds nad Labem",
+            "fullName": "Brand\u00fds nad Labem",
+            "lat": "50.183456",
+            "lon": "14.655232",
+            "node": "5454646",
+            "gtfs_node": "1942",
+            "lineType": "train"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,N\u00e1dr.",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,N\u00e1dra\u017e\u00ed",
+            "lat": "50.183300",
+            "lon": "14.656429",
+            "node": "45696",
+            "gtfs_node": "1942",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Pra\u017esk\u00e1",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Pra\u017esk\u00e1",
+            "lat": "50.183720",
+            "lon": "14.657339",
+            "node": "45697",
+            "gtfs_node": "1826",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Continental",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Continental",
+            "lat": "50.176170",
+            "lon": "14.658670",
+            "node": "64074",
+            "gtfs_node": "1950",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zelene\u010d,Obora",
+            "fullName": "Zelene\u010d,Obora",
+            "lat": "50.137337",
+            "lon": "14.659822",
+            "node": "52766",
+            "gtfs_node": "1196",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zelene\u010d",
+            "fullName": "Zelene\u010d",
+            "lat": "50.133266",
+            "lon": "14.660664",
+            "node": "41807",
+            "gtfs_node": "1193",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds nad Labem-Z\u00e1psk\u00e1",
+            "fullName": "Brand\u00fds nad Labem-Z\u00e1psk\u00e1",
+            "lat": "50.183605",
+            "lon": "14.664977",
+            "node": "5454650",
+            "gtfs_node": "1973",
+            "lineType": "train"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Baumit",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Baumit",
+            "lat": "50.175972",
+            "lon": "14.665555",
+            "node": "49438",
+            "gtfs_node": "1996",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Fakulta",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Fakulta",
+            "lat": "50.184250",
+            "lon": "14.668252",
+            "node": "2406",
+            "gtfs_node": "2202",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Pek\u00e1rny",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Pek\u00e1rny",
+            "lat": "50.178820",
+            "lon": "14.670040",
+            "node": "2413",
+            "gtfs_node": "1825",
+            "lineType": "bus"
+        },
+        {
+            "name": "Z\u00e1py,Tesco Brand\u00fds n.L.",
+            "fullName": "Z\u00e1py,Tesco Brand\u00fds nad Labem",
+            "lat": "50.176643",
+            "lon": "14.670241",
+            "node": "55760",
+            "gtfs_node": "2457",
+            "lineType": "bus"
+        },
+        {
+            "name": "Z\u00e1py,Ostrov l\u00e1zn\u011b",
+            "fullName": "Z\u00e1py,Ostrov l\u00e1zn\u011b",
+            "lat": "50.161460",
+            "lon": "14.672621",
+            "node": "41454",
+            "gtfs_node": "2195",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Na Radosti",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Na Radosti",
+            "lat": "50.183178",
+            "lon": "14.677065",
+            "node": "2411",
+            "gtfs_node": "2203",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds nad Labem zast.",
+            "fullName": "Brand\u00fds nad Labem zast\u00e1vka",
+            "lat": "50.180355",
+            "lon": "14.678040",
+            "node": "5454666",
+            "gtfs_node": "2894",
+            "lineType": "train"
+        },
+        {
+            "name": "Z\u00e1py",
+            "fullName": "Z\u00e1py",
+            "lat": "50.164460",
+            "lon": "14.678320",
+            "node": "41453",
+            "gtfs_node": "2196",
+            "lineType": "bus"
+        },
+        {
+            "name": "Brand\u00fds n.L.-St.Bol.,Kr\u00e1lovice",
+            "fullName": "Brand\u00fds nad Labem-Star\u00e1 Boleslav,Kr\u00e1lovice",
+            "lat": "50.179253",
+            "lon": "14.686704",
+            "node": "2408",
+            "gtfs_node": "2204",
+            "lineType": "bus"
+        }
+    ]
+}

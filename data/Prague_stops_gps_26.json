@@ -1,0 +1,400 @@
+{
+    "group_stops": [
+        {
+            "name": "Herink",
+            "fullName": "Herink",
+            "lat": "49.967705",
+            "lon": "14.575202",
+            "node": "8671",
+            "gtfs_node": "1896",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice",
+            "fullName": "Jesenice",
+            "lat": "49.967796",
+            "lon": "14.514916",
+            "node": "13035",
+            "gtfs_node": "1330",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Belnick\u00e1",
+            "fullName": "Jesenice,Belnick\u00e1",
+            "lat": "49.969310",
+            "lon": "14.528502",
+            "node": "49535",
+            "gtfs_node": "1335",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Osnice",
+            "fullName": "Jesenice,Osnice",
+            "lat": "49.970036",
+            "lon": "14.551534",
+            "node": "13038",
+            "gtfs_node": "1329",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Bytovky",
+            "fullName": "Jesenice,Bytovky",
+            "lat": "49.970303",
+            "lon": "14.508007",
+            "node": "46977",
+            "gtfs_node": "1332",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Kocanda",
+            "fullName": "Jesenice,Kocanda",
+            "lat": "49.971070",
+            "lon": "14.541832",
+            "node": "13039",
+            "gtfs_node": "1327",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Osnice,H\u0159bitov",
+            "fullName": "Jesenice,Osnice,H\u0159bitov",
+            "lat": "49.973770",
+            "lon": "14.549480",
+            "node": "46978",
+            "gtfs_node": "1328",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Zdim\u011b\u0159ice,Canadian School",
+            "fullName": "Jesenice,Zdim\u011b\u0159ice,Canadian School",
+            "lat": "49.974964",
+            "lon": "14.536135",
+            "node": "59433",
+            "gtfs_node": "3292",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vestec,\u0160\u00e1talka",
+            "fullName": "Vestec,\u0160\u00e1talka",
+            "lat": "49.978280",
+            "lon": "14.499258",
+            "node": "39271",
+            "gtfs_node": "1331",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Zdim\u011b\u0159ice,u rybn\u00edka",
+            "fullName": "Jesenice,Zdim\u011b\u0159ice,u rybn\u00edka",
+            "lat": "49.978703",
+            "lon": "14.531859",
+            "node": "51385",
+            "gtfs_node": "1326",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dob\u0159ejovice,Ko\u0161umberk",
+            "fullName": "Dob\u0159ejovice,Ko\u0161umberk",
+            "lat": "49.979230",
+            "lon": "14.584101",
+            "node": "68566",
+            "gtfs_node": "7812",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vestec,Obecn\u00ed \u00fa\u0159ad",
+            "fullName": "Vestec,Obecn\u00ed \u00fa\u0159ad",
+            "lat": "49.979920",
+            "lon": "14.500646",
+            "node": "47282",
+            "gtfs_node": "1208",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dob\u0159ejovice,Jesenick\u00e1",
+            "fullName": "Dob\u0159ejovice,Jesenick\u00e1",
+            "lat": "49.980827",
+            "lon": "14.573265",
+            "node": "63514",
+            "gtfs_node": "4250",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vestec,U Klime\u0161\u016f",
+            "fullName": "Vestec,U Klime\u0161\u016f",
+            "lat": "49.980840",
+            "lon": "14.507573",
+            "node": "47283",
+            "gtfs_node": "1207",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dob\u0159ejovice,Na n\u00e1vsi",
+            "fullName": "Dob\u0159ejovice,Na n\u00e1vsi",
+            "lat": "49.981804",
+            "lon": "14.579258",
+            "node": "48889",
+            "gtfs_node": "1263",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Zdim\u011b\u0159ice,bytovky",
+            "fullName": "Jesenice,Zdim\u011b\u0159ice,bytovky",
+            "lat": "49.983383",
+            "lon": "14.525438",
+            "node": "54843",
+            "gtfs_node": "1322",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vestec,BIOCEV",
+            "fullName": "Vestec,BIOCEV",
+            "lat": "49.983444",
+            "lon": "14.487957",
+            "node": "64135",
+            "gtfs_node": "4178",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vestec,Obchodn\u00ed centrum",
+            "fullName": "Vestec,Obchodn\u00ed centrum",
+            "lat": "49.983757",
+            "lon": "14.495354",
+            "node": "64134",
+            "gtfs_node": "4176",
+            "lineType": "bus"
+        },
+        {
+            "name": "Dob\u0159ejovice,\u010cestlick\u00e1",
+            "fullName": "Dob\u0159ejovice,\u010cestlick\u00e1",
+            "lat": "49.983818",
+            "lon": "14.585552",
+            "node": "48888",
+            "gtfs_node": "1262",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vestec,Safina",
+            "fullName": "Vestec,Safina",
+            "lat": "49.985653",
+            "lon": "14.494019",
+            "node": "44002",
+            "gtfs_node": "1522",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vestec,U vod\u00e1rny",
+            "fullName": "Vestec,U vod\u00e1rny",
+            "lat": "49.986275",
+            "lon": "14.515741",
+            "node": "47284",
+            "gtfs_node": "1206",
+            "lineType": "bus"
+        },
+        {
+            "name": "Jesenice,Zdim\u011b\u0159ice,Sportovn\u00ed are\u00e1l",
+            "fullName": "Jesenice,Zdim\u011b\u0159ice,Sportovn\u00ed are\u00e1l",
+            "lat": "49.988365",
+            "lon": "14.521390",
+            "node": "65034",
+            "gtfs_node": "4437",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pr\u016fhonice,h\u00e1jovna",
+            "fullName": "Pr\u016fhonice,h\u00e1jovna",
+            "lat": "49.994606",
+            "lon": "14.544510",
+            "node": "28470",
+            "gtfs_node": "1227",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pramenn\u00e1",
+            "fullName": "Pramenn\u00e1",
+            "lat": "49.995018",
+            "lon": "14.487457",
+            "node": "65355",
+            "gtfs_node": "4861",
+            "lineType": "bus"
+        },
+        {
+            "name": "Drazdeck\u00e1",
+            "fullName": "Drazdeck\u00e1",
+            "lat": "49.995907",
+            "lon": "14.518543",
+            "node": "49529",
+            "gtfs_node": "204",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice,Rehau",
+            "fullName": "\u010cestlice,Rehau",
+            "lat": "49.996758",
+            "lon": "14.582892",
+            "node": "47651",
+            "gtfs_node": "1376",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice,Lipov\u00e1",
+            "fullName": "\u010cestlice,Lipov\u00e1",
+            "lat": "49.997093",
+            "lon": "14.584926",
+            "node": "49537",
+            "gtfs_node": "1744",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pr\u016fhonice,Tov\u00e1rn\u00ed",
+            "fullName": "Pr\u016fhonice,Tov\u00e1rn\u00ed",
+            "lat": "49.997803",
+            "lon": "14.548998",
+            "node": "47194",
+            "gtfs_node": "1366",
+            "lineType": "bus"
+        },
+        {
+            "name": "Hrn\u010d\u00ed\u0159e",
+            "fullName": "Hrn\u010d\u00ed\u0159e",
+            "lat": "49.998356",
+            "lon": "14.517169",
+            "node": "28007",
+            "gtfs_node": "164",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pr\u016fhonice,Rozko\u0161",
+            "fullName": "Pr\u016fhonice,Rozko\u0161",
+            "lat": "49.999977",
+            "lon": "14.531834",
+            "node": "28473",
+            "gtfs_node": "1365",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice,z\u00e1bavn\u00ed park",
+            "fullName": "\u010cestlice,z\u00e1bavn\u00ed park",
+            "lat": "50.000267",
+            "lon": "14.577451",
+            "node": "62572",
+            "gtfs_node": "1375",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pr\u016fhonice,Hole",
+            "fullName": "Pr\u016fhonice,Hole",
+            "lat": "50.000565",
+            "lon": "14.552893",
+            "node": "28471",
+            "gtfs_node": "1370",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice",
+            "fullName": "\u010cestlice",
+            "lat": "50.001730",
+            "lon": "14.583880",
+            "node": "39172",
+            "gtfs_node": "1374",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pr\u016fhonice",
+            "fullName": "Pr\u016fhonice",
+            "lat": "50.001778",
+            "lon": "14.560997",
+            "node": "28468",
+            "gtfs_node": "1371",
+            "lineType": "bus"
+        },
+        {
+            "name": "Hrn\u010d\u00ed\u0159sk\u00fd h\u0159bitov",
+            "fullName": "Hrn\u010d\u00ed\u0159sk\u00fd h\u0159bitov",
+            "lat": "50.002327",
+            "lon": "14.516439",
+            "node": "28008",
+            "gtfs_node": "165",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pr\u016fhonice,Kom\u00e1rov",
+            "fullName": "Pr\u016fhonice,Kom\u00e1rov",
+            "lat": "50.003212",
+            "lon": "14.548436",
+            "node": "49027",
+            "gtfs_node": "1284",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice,Poln\u00ed",
+            "fullName": "\u010cestlice,Poln\u00ed",
+            "lat": "50.003433",
+            "lon": "14.579500",
+            "node": "50356",
+            "gtfs_node": "1382",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice,n\u00e1kupn\u00ed z\u00f3na",
+            "fullName": "\u010cestlice,n\u00e1kupn\u00ed z\u00f3na",
+            "lat": "50.004560",
+            "lon": "14.574770",
+            "node": "46938",
+            "gtfs_node": "1373",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice,V Oblouku",
+            "fullName": "\u010cestlice,V Oblouku",
+            "lat": "50.006317",
+            "lon": "14.571491",
+            "node": "62571",
+            "gtfs_node": "1372",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0160kola \u0160eberov",
+            "fullName": "\u0160kola \u0160eberov",
+            "lat": "50.006470",
+            "lon": "14.516811",
+            "node": "68651",
+            "gtfs_node": "2715",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cestlice,aquapark",
+            "fullName": "\u010cestlice,aquapark",
+            "lat": "50.007590",
+            "lon": "14.573566",
+            "node": "62573",
+            "gtfs_node": "2558",
+            "lineType": "bus"
+        },
+        {
+            "name": "Vo\u017eick\u00e1",
+            "fullName": "Vo\u017eick\u00e1",
+            "lat": "50.009370",
+            "lon": "14.493198",
+            "node": "68192",
+            "gtfs_node": "2794",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pod Vs\u00ed",
+            "fullName": "Pod Vs\u00ed",
+            "lat": "50.011300",
+            "lon": "14.514359",
+            "node": "49459",
+            "gtfs_node": "1038",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0160eber\u00e1k",
+            "fullName": "\u0160eber\u00e1k",
+            "lat": "50.011726",
+            "lon": "14.491318",
+            "node": "55252",
+            "gtfs_node": "729",
+            "lineType": "bus"
+        }
+    ]
+}

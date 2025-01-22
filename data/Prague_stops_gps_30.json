@@ -1,0 +1,274 @@
+{
+    "group_stops": [
+        {
+            "name": "Kamenice,\u0160ti\u0159\u00edn,U Rybn\u00edka",
+            "fullName": "Kamenice,\u0160ti\u0159\u00edn,U Rybn\u00edka",
+            "lat": "49.917076",
+            "lon": "14.594696",
+            "node": "66335",
+            "gtfs_node": "6019",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kamenice,V\u0161edobrovice",
+            "fullName": "Kamenice,V\u0161edobrovice",
+            "lat": "49.917230",
+            "lon": "14.610151",
+            "node": "13808",
+            "gtfs_node": "1561",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,rozc.Vidovice",
+            "fullName": "Kunice,rozcest\u00ed Vidovice",
+            "lat": "49.920357",
+            "lon": "14.664546",
+            "node": "17064",
+            "gtfs_node": "1699",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pet\u0159\u00edkov,rozc.",
+            "fullName": "Pet\u0159\u00edkov,rozcest\u00ed",
+            "lat": "49.920837",
+            "lon": "14.621830",
+            "node": "26465",
+            "gtfs_node": "1562",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 Popovice",
+            "fullName": "Velk\u00e9 Popovice",
+            "lat": "49.921475",
+            "lon": "14.644285",
+            "node": "38843",
+            "gtfs_node": "1599",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 Popovice,pivovar",
+            "fullName": "Velk\u00e9 Popovice,pivovar",
+            "lat": "49.921780",
+            "lon": "14.634331",
+            "node": "52091",
+            "gtfs_node": "1598",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 Popovice,Todice",
+            "fullName": "Velk\u00e9 Popovice,Todice",
+            "lat": "49.922020",
+            "lon": "14.648981",
+            "node": "38845",
+            "gtfs_node": "1600",
+            "lineType": "bus"
+        },
+        {
+            "name": "Velk\u00e9 Popovice,po\u0161ta",
+            "fullName": "Velk\u00e9 Popovice,po\u0161ta",
+            "lat": "49.922190",
+            "lon": "14.639777",
+            "node": "63244",
+            "gtfs_node": "1700",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sulice,\u017delivec,Mandava",
+            "fullName": "Sulice,\u017delivec,Mandava",
+            "lat": "49.922936",
+            "lon": "14.575577",
+            "node": "56533",
+            "gtfs_node": "2288",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sulice,Na K\u0159\u00ed\u017ek\u00e1ch",
+            "fullName": "Sulice,Na K\u0159\u00ed\u017ek\u00e1ch",
+            "lat": "49.926773",
+            "lon": "14.568974",
+            "node": "50357",
+            "gtfs_node": "1535",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pet\u0159\u00edkov",
+            "fullName": "Pet\u0159\u00edkov",
+            "lat": "49.926790",
+            "lon": "14.615521",
+            "node": "26464",
+            "gtfs_node": "1563",
+            "lineType": "bus"
+        },
+        {
+            "name": "K\u0159\u00ed\u017ekov\u00fd \u00dajezdec",
+            "fullName": "K\u0159\u00ed\u017ekov\u00fd \u00dajezdec",
+            "lat": "49.931076",
+            "lon": "14.584711",
+            "node": "16928",
+            "gtfs_node": "1579",
+            "lineType": "bus"
+        },
+        {
+            "name": "Pet\u0159\u00edkov,Radimovice",
+            "fullName": "Pet\u0159\u00edkov,Radimovice",
+            "lat": "49.936302",
+            "lon": "14.617056",
+            "node": "26466",
+            "gtfs_node": "1871",
+            "lineType": "bus"
+        },
+        {
+            "name": "K\u0159\u00ed\u017ekov\u00fd \u00dajezdec,\u010cen\u011btice",
+            "fullName": "K\u0159\u00ed\u017ekov\u00fd \u00dajezdec,\u010cen\u011btice",
+            "lat": "49.943478",
+            "lon": "14.578991",
+            "node": "16929",
+            "gtfs_node": "1580",
+            "lineType": "bus"
+        },
+        {
+            "name": "Popovi\u010dky,Neb\u0159enice",
+            "fullName": "Popovi\u010dky,Neb\u0159enice",
+            "lat": "49.943657",
+            "lon": "14.612633",
+            "node": "27603",
+            "gtfs_node": "1873",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,rozc.pr\u016fmyslov\u00e1 z\u00f3na",
+            "fullName": "Stran\u010dice,rozcest\u00ed pr\u016fmyslov\u00e1 z\u00f3na",
+            "lat": "49.943687",
+            "lon": "14.648041",
+            "node": "33309",
+            "gtfs_node": "1694",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,Ka\u0161ovice",
+            "fullName": "Stran\u010dice,Ka\u0161ovice",
+            "lat": "49.944496",
+            "lon": "14.639806",
+            "node": "33312",
+            "gtfs_node": "1901",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,P\u0159edbo\u0159",
+            "fullName": "Stran\u010dice,P\u0159edbo\u0159",
+            "lat": "49.945820",
+            "lon": "14.628080",
+            "node": "33315",
+            "gtfs_node": "1902",
+            "lineType": "bus"
+        },
+        {
+            "name": "Rad\u011bjovice",
+            "fullName": "Rad\u011bjovice",
+            "lat": "49.946762",
+            "lon": "14.564467",
+            "node": "29172",
+            "gtfs_node": "1582",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,V\u0161echromy",
+            "fullName": "Stran\u010dice,V\u0161echromy",
+            "lat": "49.948360",
+            "lon": "14.656486",
+            "node": "33317",
+            "gtfs_node": "1695",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,V\u0161echromy,n\u00e1ves",
+            "fullName": "Stran\u010dice,V\u0161echromy,n\u00e1ves",
+            "lat": "49.948925",
+            "lon": "14.650850",
+            "node": "54999",
+            "gtfs_node": "1585",
+            "lineType": "bus"
+        },
+        {
+            "name": "Rad\u011bjovice,Ole\u0161ky",
+            "fullName": "Rad\u011bjovice,Ole\u0161ky",
+            "lat": "49.949146",
+            "lon": "14.571491",
+            "node": "29173",
+            "gtfs_node": "1581",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,rozc.Sklenka",
+            "fullName": "Stran\u010dice,rozcest\u00ed Sklenka",
+            "lat": "49.951828",
+            "lon": "14.631630",
+            "node": "33316",
+            "gtfs_node": "6156",
+            "lineType": "bus"
+        },
+        {
+            "name": "Popovi\u010dky,Chomutovice",
+            "fullName": "Popovi\u010dky,Chomutovice",
+            "lat": "49.956932",
+            "lon": "14.603426",
+            "node": "27602",
+            "gtfs_node": "1872",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,Svoj\u0161ovice",
+            "fullName": "Stran\u010dice,Svoj\u0161ovice",
+            "lat": "49.958447",
+            "lon": "14.656364",
+            "node": "48911",
+            "gtfs_node": "1927",
+            "lineType": "bus"
+        },
+        {
+            "name": "Popovi\u010dky,rozc.",
+            "fullName": "Popovi\u010dky,rozcest\u00ed",
+            "lat": "49.961845",
+            "lon": "14.600910",
+            "node": "27601",
+            "gtfs_node": "1874",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0158\u00ed\u010dany,Ja\u017elovice",
+            "fullName": "\u0158\u00ed\u010dany,Ja\u017elovice",
+            "lat": "49.963768",
+            "lon": "14.634104",
+            "node": "30855",
+            "gtfs_node": "1877",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,Otice",
+            "fullName": "Stran\u010dice,Otice",
+            "lat": "49.963980",
+            "lon": "14.645391",
+            "node": "33313",
+            "gtfs_node": "1893",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u0158\u00ed\u010dany,Ja\u017elovice,Zd\u011bbrady",
+            "fullName": "\u0158\u00ed\u010dany,Ja\u017elovice,Zd\u011bbrady",
+            "lat": "49.967320",
+            "lon": "14.620932",
+            "node": "47894",
+            "gtfs_node": "1876",
+            "lineType": "bus"
+        },
+        {
+            "name": "Herink",
+            "fullName": "Herink",
+            "lat": "49.967705",
+            "lon": "14.575202",
+            "node": "8671",
+            "gtfs_node": "1896",
+            "lineType": "bus"
+        }
+    ]
+}

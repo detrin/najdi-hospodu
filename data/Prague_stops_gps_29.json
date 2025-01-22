@@ -1,0 +1,418 @@
+{
+    "group_stops": [
+        {
+            "name": "Hrusice,Vl\u010d\u00ed hal\u00ed\u0159",
+            "fullName": "Hrusice,Vl\u010d\u00ed hal\u00ed\u0159",
+            "lat": "49.921020",
+            "lon": "14.738591",
+            "node": "49000",
+            "gtfs_node": "2062",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,Vidovice,Bonavita",
+            "fullName": "Kunice,Vidovice,Bonavita",
+            "lat": "49.921085",
+            "lon": "14.666700",
+            "node": "48960",
+            "gtfs_node": "1699",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,Vidovice",
+            "fullName": "Kunice,Vidovice",
+            "lat": "49.923775",
+            "lon": "14.667683",
+            "node": "59836",
+            "gtfs_node": "4158",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,V\u0161e\u0161\u00edmy",
+            "fullName": "Kunice,V\u0161e\u0161\u00edmy",
+            "lat": "49.923958",
+            "lon": "14.692147",
+            "node": "54566",
+            "gtfs_node": "2564",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,U H\u0159bitova",
+            "fullName": "Mnichovice,U H\u0159bitova",
+            "lat": "49.925865",
+            "lon": "14.727333",
+            "node": "21560",
+            "gtfs_node": "2063",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,V\u0161e\u0161\u00edmy,Pard\u00e1lov",
+            "fullName": "Kunice,V\u0161e\u0161\u00edmy,Pard\u00e1lov",
+            "lat": "49.927353",
+            "lon": "14.684496",
+            "node": "54567",
+            "gtfs_node": "2565",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,Vidovice,z\u00e1mek",
+            "fullName": "Kunice,Vidovice,z\u00e1mek",
+            "lat": "49.927910",
+            "lon": "14.666486",
+            "node": "17063",
+            "gtfs_node": "1698",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,Z\u00e1v\u011brka",
+            "fullName": "Mnichovice,Z\u00e1v\u011brka",
+            "lat": "49.929130",
+            "lon": "14.717428",
+            "node": "51148",
+            "gtfs_node": "2361",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ond\u0159ejov,T\u0159emblat,K My\u0161l\u00ednu",
+            "fullName": "Ond\u0159ejov,T\u0159emblat,K My\u0161l\u00ednu",
+            "lat": "49.930607",
+            "lon": "14.753134",
+            "node": "52763",
+            "gtfs_node": "2112",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice",
+            "fullName": "Mnichovice",
+            "lat": "49.932720",
+            "lon": "14.707031",
+            "node": "5455016",
+            "gtfs_node": "2277",
+            "lineType": "train"
+        },
+        {
+            "name": "Mnichovice,po\u017e\u00e1rn\u00ed d\u016fm",
+            "fullName": "Mnichovice,po\u017e\u00e1rn\u00ed d\u016fm",
+            "lat": "49.933106",
+            "lon": "14.712537",
+            "node": "21558",
+            "gtfs_node": "2064",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,U H\u0159bitova",
+            "fullName": "Kunice,U H\u0159bitova",
+            "lat": "49.935200",
+            "lon": "14.678154",
+            "node": "58628",
+            "gtfs_node": "3294",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,n\u00e1m.",
+            "fullName": "Mnichovice,n\u00e1m\u011bst\u00ed",
+            "lat": "49.935830",
+            "lon": "14.709431",
+            "node": "21557",
+            "gtfs_node": "2055",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice",
+            "fullName": "Kunice",
+            "lat": "49.936030",
+            "lon": "14.669331",
+            "node": "17060",
+            "gtfs_node": "1697",
+            "lineType": "bus"
+        },
+        {
+            "name": "Ond\u0159ejov,T\u0159emblat,Lipsk\u00e1",
+            "fullName": "Ond\u0159ejov,T\u0159emblat,Lipsk\u00e1",
+            "lat": "49.936184",
+            "lon": "14.758136",
+            "node": "24874",
+            "gtfs_node": "2040",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,zdrav.st\u0159.",
+            "fullName": "Mnichovice,zdravotn\u00ed st\u0159edisko",
+            "lat": "49.937600",
+            "lon": "14.706167",
+            "node": "54525",
+            "gtfs_node": "2563",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,U k\u0159\u00ed\u017eku",
+            "fullName": "Mnichovice,U k\u0159\u00ed\u017eku",
+            "lat": "49.939007",
+            "lon": "14.715471",
+            "node": "49520",
+            "gtfs_node": "2359",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,hotel My\u0161l\u00edn",
+            "fullName": "Mnichovice,hotel My\u0161l\u00edn",
+            "lat": "49.939133",
+            "lon": "14.735481",
+            "node": "49012",
+            "gtfs_node": "2073",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,My\u0161l\u00edn",
+            "fullName": "Mnichovice,My\u0161l\u00edn",
+            "lat": "49.939170",
+            "lon": "14.719921",
+            "node": "21561",
+            "gtfs_node": "2087",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kunice,U D\u00e1lnice",
+            "fullName": "Kunice,U D\u00e1lnice",
+            "lat": "49.939568",
+            "lon": "14.668660",
+            "node": "54551",
+            "gtfs_node": "2559",
+            "lineType": "bus"
+        },
+        {
+            "name": "Mnichovice,bytovky",
+            "fullName": "Mnichovice,bytovky",
+            "lat": "49.941540",
+            "lon": "14.702095",
+            "node": "51147",
+            "gtfs_node": "2360",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161estary,V\u00e1vrov",
+            "fullName": "V\u0161estary,V\u00e1vrov",
+            "lat": "49.945625",
+            "lon": "14.692181",
+            "node": "40669",
+            "gtfs_node": "2065",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,obchodn\u00ed centrum",
+            "fullName": "Stran\u010dice,obchodn\u00ed centrum",
+            "lat": "49.945910",
+            "lon": "14.670778",
+            "node": "66163",
+            "gtfs_node": "9873",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,\u0161kola",
+            "fullName": "Stran\u010dice,\u0161kola",
+            "lat": "49.947180",
+            "lon": "14.674600",
+            "node": "55762",
+            "gtfs_node": "2209",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,V\u0161echromy",
+            "fullName": "Stran\u010dice,V\u0161echromy",
+            "lat": "49.948360",
+            "lon": "14.656486",
+            "node": "33317",
+            "gtfs_node": "1695",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice",
+            "fullName": "Stran\u010dice",
+            "lat": "49.949524",
+            "lon": "14.678152",
+            "node": "5455006",
+            "gtfs_node": "1696",
+            "lineType": "train"
+        },
+        {
+            "name": "Stran\u010dice,\u017eel.st.",
+            "fullName": "Stran\u010dice,\u017eelezni\u010dn\u00ed stanice",
+            "lat": "49.949680",
+            "lon": "14.678897",
+            "node": "33311",
+            "gtfs_node": "1696",
+            "lineType": "bus"
+        },
+        {
+            "name": "Struha\u0159ov",
+            "fullName": "Struha\u0159ov",
+            "lat": "49.952362",
+            "lon": "14.744236",
+            "node": "33569",
+            "gtfs_node": "2005",
+            "lineType": "bus"
+        },
+        {
+            "name": "Struha\u0159ov,Habr",
+            "fullName": "Struha\u0159ov,Habr",
+            "lat": "49.953796",
+            "lon": "14.752691",
+            "node": "33570",
+            "gtfs_node": "2039",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161estary,Men\u010dice",
+            "fullName": "V\u0161estary,Men\u010dice",
+            "lat": "49.954040",
+            "lon": "14.700165",
+            "node": "40670",
+            "gtfs_node": "2054",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161estary,Stran\u010dick\u00e1",
+            "fullName": "V\u0161estary,Stran\u010dick\u00e1",
+            "lat": "49.954860",
+            "lon": "14.683468",
+            "node": "64626",
+            "gtfs_node": "4426",
+            "lineType": "bus"
+        },
+        {
+            "name": "Struha\u0159ov,U h\u0159i\u0161t\u011b",
+            "fullName": "Struha\u0159ov,U h\u0159i\u0161t\u011b",
+            "lat": "49.956660",
+            "lon": "14.750471",
+            "node": "33571",
+            "gtfs_node": "2038",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161estary",
+            "fullName": "V\u0161estary",
+            "lat": "49.958427",
+            "lon": "14.685654",
+            "node": "40666",
+            "gtfs_node": "2053",
+            "lineType": "bus"
+        },
+        {
+            "name": "Stran\u010dice,Svoj\u0161ovice",
+            "fullName": "Stran\u010dice,Svoj\u0161ovice",
+            "lat": "49.958447",
+            "lon": "14.656364",
+            "node": "48911",
+            "gtfs_node": "1927",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kloko\u010dn\u00e1",
+            "fullName": "Kloko\u010dn\u00e1",
+            "lat": "49.958496",
+            "lon": "14.720465",
+            "node": "68379",
+            "gtfs_node": "2084",
+            "lineType": "bus"
+        },
+        {
+            "name": "Kloko\u010dn\u00e1,n\u00e1ves",
+            "fullName": "Kloko\u010dn\u00e1,n\u00e1ves",
+            "lat": "49.959090",
+            "lon": "14.720111",
+            "node": "14658",
+            "gtfs_node": "5021",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u0161estary,h\u0159bitov",
+            "fullName": "V\u0161estary,h\u0159bitov",
+            "lat": "49.960830",
+            "lon": "14.677572",
+            "node": "68617",
+            "gtfs_node": "7583",
+            "lineType": "bus"
+        },
+        {
+            "name": "Svojetice,Na vyhl\u00eddce",
+            "fullName": "Svojetice,Na vyhl\u00eddce",
+            "lat": "49.963165",
+            "lon": "14.745018",
+            "node": "34439",
+            "gtfs_node": "2037",
+            "lineType": "bus"
+        },
+        {
+            "name": "Svojetice,U H\u00e1jenky",
+            "fullName": "Svojetice,U H\u00e1jenky",
+            "lat": "49.965860",
+            "lon": "14.733095",
+            "node": "49445",
+            "gtfs_node": "2167",
+            "lineType": "bus"
+        },
+        {
+            "name": "Svojetice,Na skalce",
+            "fullName": "Svojetice,Na skalce",
+            "lat": "49.969240",
+            "lon": "14.739071",
+            "node": "34438",
+            "gtfs_node": "2083",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sv\u011btice",
+            "fullName": "Sv\u011btice",
+            "lat": "49.969880",
+            "lon": "14.657448",
+            "node": "5454996",
+            "gtfs_node": "1928",
+            "lineType": "train"
+        },
+        {
+            "name": "Tehov",
+            "fullName": "Tehov",
+            "lat": "49.970820",
+            "lon": "14.693356",
+            "node": "35485",
+            "gtfs_node": "2052",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sv\u011btice",
+            "fullName": "Sv\u011btice",
+            "lat": "49.970833",
+            "lon": "14.662481",
+            "node": "34252",
+            "gtfs_node": "1928",
+            "lineType": "bus"
+        },
+        {
+            "name": "Tehov,Ha\u010d\u00e1lka",
+            "fullName": "Tehov,Ha\u010d\u00e1lka",
+            "lat": "49.971237",
+            "lon": "14.679064",
+            "node": "63598",
+            "gtfs_node": "4252",
+            "lineType": "bus"
+        },
+        {
+            "name": "Sv\u011btice,\u0161kola",
+            "fullName": "Sv\u011btice,\u0161kola",
+            "lat": "49.972233",
+            "lon": "14.665118",
+            "node": "64980",
+            "gtfs_node": "4436",
+            "lineType": "bus"
+        },
+        {
+            "name": "Svojetice",
+            "fullName": "Svojetice",
+            "lat": "49.972270",
+            "lon": "14.738377",
+            "node": "34437",
+            "gtfs_node": "2036",
+            "lineType": "bus"
+        }
+    ]
+}

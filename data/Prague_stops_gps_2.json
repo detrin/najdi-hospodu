@@ -1,0 +1,436 @@
+{
+    "group_stops": [
+        {
+            "name": "U Drahan\u011b",
+            "fullName": "U Drahan\u011b",
+            "lat": "50.135403",
+            "lon": "14.416000",
+            "node": "59335",
+            "gtfs_node": "1133",
+            "lineType": "bus"
+        },
+        {
+            "name": "Bohnick\u00e9 \u00fadol\u00ed",
+            "fullName": "Bohnick\u00e9 \u00fadol\u00ed",
+            "lat": "50.135670",
+            "lon": "14.412017",
+            "node": "58956",
+            "gtfs_node": "1134",
+            "lineType": "bus"
+        },
+        {
+            "name": "Suchdolsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "fullName": "Suchdolsk\u00e9 n\u00e1m\u011bst\u00ed",
+            "lat": "50.135864",
+            "lon": "14.380329",
+            "node": "66963",
+            "gtfs_node": "721",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - Hlavn\u00ed vr\u00e1tnice",
+            "fullName": "Nemocnice Bohnice - Hlavn\u00ed vr\u00e1tnice",
+            "lat": "50.135868",
+            "lon": "14.428747",
+            "node": "67601",
+            "gtfs_node": "2771",
+            "lineType": "bus"
+        },
+        {
+            "name": "Oko\u0159sk\u00e1",
+            "fullName": "Oko\u0159sk\u00e1",
+            "lat": "50.135906",
+            "lon": "14.431482",
+            "node": "59183",
+            "gtfs_node": "1015",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - Interna",
+            "fullName": "Nemocnice Bohnice - Interna",
+            "lat": "50.136093",
+            "lon": "14.421196",
+            "node": "67599",
+            "gtfs_node": "2775",
+            "lineType": "bus"
+        },
+        {
+            "name": "Z\u00e1mky",
+            "fullName": "Z\u00e1mky",
+            "lat": "50.136770",
+            "lon": "14.395045",
+            "node": "59402",
+            "gtfs_node": "607",
+            "lineType": "ferry"
+        },
+        {
+            "name": "Libe\u0148sk\u00e1",
+            "fullName": "Libe\u0148sk\u00e1",
+            "lat": "50.137160",
+            "lon": "14.430042",
+            "node": "58811",
+            "gtfs_node": "330",
+            "lineType": "bus"
+        },
+        {
+            "name": "V\u00fdhledy",
+            "fullName": "V\u00fdhledy",
+            "lat": "50.137190",
+            "lon": "14.368688",
+            "node": "47165",
+            "gtfs_node": "869",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice - Centr\u00e1ln\u00ed terapie",
+            "fullName": "Nemocnice Bohnice - Centr\u00e1ln\u00ed terapie",
+            "lat": "50.137318",
+            "lon": "14.423623",
+            "node": "67602",
+            "gtfs_node": "2776",
+            "lineType": "bus"
+        },
+        {
+            "name": "Nemocnice Bohnice",
+            "fullName": "Nemocnice Bohnice",
+            "lat": "50.137665",
+            "lon": "14.418087",
+            "node": "67598",
+            "gtfs_node": "2774",
+            "lineType": "bus"
+        },
+        {
+            "name": "Suchdol",
+            "fullName": "Suchdol",
+            "lat": "50.139137",
+            "lon": "14.379189",
+            "node": "47157",
+            "gtfs_node": "513",
+            "lineType": "bus"
+        },
+        {
+            "name": "\u010cimice",
+            "fullName": "\u010cimice",
+            "lat": "50.140810",
+            "lon": "14.430658",
+            "node": "58571",
+            "gtfs_node": "74",
+            "lineType": "bus"
+        },
+        {
+            "name": "K Drsnici",
+            "fullName": "K Drsnici",
+            "lat": "50.142680",
+            "lon": "14.384613",
+            "node": "58693",
+            "gtfs_node": "1398",
+            "lineType": "bus"
+        },
+        {
+            "name": "S\u00eddli\u0161t\u011b \u010cimice",
+            "fullName": "S\u00eddli\u0161t\u011b \u010cimice",
+            "lat": "50.144110",
+            "lon": "14.432021",
+            "node": "58861",
+            "gtfs_node": "949",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,Maxmili\u00e1nka",
+            "fullName": "Roztoky,Maxmili\u00e1nka",
+            "lat": "50.152905",
+            "lon": "14.385409",
+            "node": "68606",
+            "gtfs_node": "4099",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,Tich\u00e9 \u00fadol\u00ed",
+            "fullName": "Roztoky,Tich\u00e9 \u00fadol\u00ed",
+            "lat": "50.155747",
+            "lon": "14.392939",
+            "node": "68607",
+            "gtfs_node": "4098",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,Brnky",
+            "fullName": "Zdiby,Brnky",
+            "lat": "50.156418",
+            "lon": "14.409306",
+            "node": "67054",
+            "gtfs_node": "5017",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,N\u00e1dra\u017e\u00ed",
+            "fullName": "Roztoky,N\u00e1dra\u017e\u00ed",
+            "lat": "50.159126",
+            "lon": "14.397672",
+            "node": "30252",
+            "gtfs_node": "2095",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,Pod H\u00e1jem",
+            "fullName": "Zdiby,Pod H\u00e1jem",
+            "lat": "50.159306",
+            "lon": "14.417820",
+            "node": "67053",
+            "gtfs_node": "5016",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky u Prahy",
+            "fullName": "Roztoky u Prahy",
+            "lat": "50.159680",
+            "lon": "14.398439",
+            "node": "5454466",
+            "gtfs_node": "2095",
+            "lineType": "train"
+        },
+        {
+            "name": "Roztoky,Rozc.\u017dalov",
+            "fullName": "Roztoky,Rozcest\u00ed \u017dalov",
+            "lat": "50.160300",
+            "lon": "14.372253",
+            "node": "30255",
+            "gtfs_node": "2099",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,Pod Mez\u00ed",
+            "fullName": "Zdiby,Pod Mez\u00ed",
+            "lat": "50.160973",
+            "lon": "14.420206",
+            "node": "67052",
+            "gtfs_node": "5014",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,Tyr\u0161ovo n\u00e1m.",
+            "fullName": "Roztoky,Tyr\u0161ovo n\u00e1m\u011bst\u00ed",
+            "lat": "50.161034",
+            "lon": "14.392195",
+            "node": "30249",
+            "gtfs_node": "2096",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,U Rybn\u00ed\u010dku",
+            "fullName": "Roztoky,U Rybn\u00ed\u010dku",
+            "lat": "50.161500",
+            "lon": "14.382415",
+            "node": "30250",
+            "gtfs_node": "2098",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,Holosmetky",
+            "fullName": "Zdiby,Holosmetky",
+            "lat": "50.162304",
+            "lon": "14.414130",
+            "node": "67049",
+            "gtfs_node": "5009",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,17. listopadu",
+            "fullName": "Roztoky,17. listopadu",
+            "lat": "50.162563",
+            "lon": "14.390635",
+            "node": "66620",
+            "gtfs_node": "2765",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,Zlat\u00fd kopec",
+            "fullName": "Zdiby,Zlat\u00fd kopec",
+            "lat": "50.163254",
+            "lon": "14.430870",
+            "node": "67055",
+            "gtfs_node": "5013",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,P\u0159emyslovsk\u00e1",
+            "fullName": "Roztoky,P\u0159emyslovsk\u00e1",
+            "lat": "50.165123",
+            "lon": "14.371038",
+            "node": "66621",
+            "gtfs_node": "2110",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,Masarykova",
+            "fullName": "Roztoky,Masarykova",
+            "lat": "50.165330",
+            "lon": "14.386884",
+            "node": "63116",
+            "gtfs_node": "4194",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,Soln\u00edky",
+            "fullName": "Roztoky,Soln\u00edky",
+            "lat": "50.166077",
+            "lon": "14.385447",
+            "node": "59426",
+            "gtfs_node": "2283",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,Poln\u00ed",
+            "fullName": "Zdiby,Poln\u00ed",
+            "lat": "50.166855",
+            "lon": "14.420116",
+            "node": "67050",
+            "gtfs_node": "5010",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky,Lev\u00fd Hradec",
+            "fullName": "Roztoky,Lev\u00fd Hradec",
+            "lat": "50.166977",
+            "lon": "14.372363",
+            "node": "30253",
+            "gtfs_node": "2110",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,P\u0159emy\u0161len\u00ed,Chabersk\u00e1",
+            "fullName": "Zdiby,P\u0159emy\u0161len\u00ed,Chabersk\u00e1",
+            "lat": "50.167410",
+            "lon": "14.431042",
+            "node": "67051",
+            "gtfs_node": "5011",
+            "lineType": "bus"
+        },
+        {
+            "name": "Roztoky-\u017dalov",
+            "fullName": "Roztoky-\u017dalov",
+            "lat": "50.167910",
+            "lon": "14.364411",
+            "node": "5454496",
+            "gtfs_node": "2821",
+            "lineType": "train"
+        },
+        {
+            "name": "Zdiby,P\u0159emy\u0161len\u00ed",
+            "fullName": "Zdiby,P\u0159emy\u0161len\u00ed",
+            "lat": "50.168465",
+            "lon": "14.430906",
+            "node": "41749",
+            "gtfs_node": "2240",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,\u0158e\u017e",
+            "fullName": "Husinec,\u0158e\u017e",
+            "lat": "50.170630",
+            "lon": "14.360163",
+            "node": "11236",
+            "gtfs_node": "2247",
+            "lineType": "bus"
+        },
+        {
+            "name": "Klecany,Klec\u00e1nky",
+            "fullName": "Klecany,Klec\u00e1nky",
+            "lat": "50.170700",
+            "lon": "14.402478",
+            "node": "14548",
+            "gtfs_node": "2243",
+            "lineType": "bus"
+        },
+        {
+            "name": "Zdiby,P\u0159emy\u0161len\u00ed,V Rem\u00edzk\u00e1ch",
+            "fullName": "Zdiby,P\u0159emy\u0161len\u00ed,V Rem\u00edzk\u00e1ch",
+            "lat": "50.172250",
+            "lon": "14.425304",
+            "node": "58589",
+            "gtfs_node": "4101",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,\u0158e\u017e,S\u00eddli\u0161t\u011b",
+            "fullName": "Husinec,\u0158e\u017e,S\u00eddli\u0161t\u011b",
+            "lat": "50.172380",
+            "lon": "14.361788",
+            "node": "11237",
+            "gtfs_node": "2246",
+            "lineType": "bus"
+        },
+        {
+            "name": "Klecany",
+            "fullName": "Klecany",
+            "lat": "50.175420",
+            "lon": "14.412348",
+            "node": "14542",
+            "gtfs_node": "2242",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,Rozc.",
+            "fullName": "Husinec,Rozcest\u00ed",
+            "lat": "50.175423",
+            "lon": "14.372040",
+            "node": "11234",
+            "gtfs_node": "2245",
+            "lineType": "bus"
+        },
+        {
+            "name": "Klecany,U H\u0159bitova",
+            "fullName": "Klecany,U H\u0159bitova",
+            "lat": "50.176884",
+            "lon": "14.419279",
+            "node": "14544",
+            "gtfs_node": "2241",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,\u0158e\u017e,Z\u00e1v.",
+            "fullName": "Husinec,\u0158e\u017e,Z\u00e1vod",
+            "lat": "50.177180",
+            "lon": "14.358526",
+            "node": "11238",
+            "gtfs_node": "2248",
+            "lineType": "bus"
+        },
+        {
+            "name": "Klecany,U Kostela",
+            "fullName": "Klecany,U Kostela",
+            "lat": "50.177460",
+            "lon": "14.409878",
+            "node": "14543",
+            "gtfs_node": "2244",
+            "lineType": "bus"
+        },
+        {
+            "name": "Husinec,Samota",
+            "fullName": "Husinec,Samota",
+            "lat": "50.179237",
+            "lon": "14.391201",
+            "node": "11235",
+            "gtfs_node": "2461",
+            "lineType": "bus"
+        },
+        {
+            "name": "Klecany,Astrapark",
+            "fullName": "Klecany,Astrapark",
+            "lat": "50.183510",
+            "lon": "14.424078",
+            "node": "58513",
+            "gtfs_node": "2325",
+            "lineType": "bus"
+        },
+        {
+            "name": "Klecany,Ahold",
+            "fullName": "Klecany,Ahold",
+            "lat": "50.183727",
+            "lon": "14.411507",
+            "node": "49469",
+            "gtfs_node": "2347",
+            "lineType": "bus"
+        }
+    ]
+}
