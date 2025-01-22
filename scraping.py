@@ -260,8 +260,8 @@ def main():
     error_entries = []
     error_entries_to_process = []
     for entry in raw_results:
+        processed_pairs_ids.update({(entry["from"], entry["to"]): True})
         if "error" not in entry:
-            processed_pairs_ids.update({(entry["from"], entry["to"]): True})
             correct_entries.append(entry)
         else:
             error_entries.append(entry)
