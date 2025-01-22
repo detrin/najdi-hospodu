@@ -326,7 +326,7 @@ def get_time_optimal_stop(method, selected_stops, target_stops, event_datetime, 
     elif method == "minimize-total":
         df_times = df_times.sort("total_minutes")
         
-    df_times.rename({"worst_case_minutes": "Worst Case Minutes", "total_minutes": "Total Minutes"})
+    df_times = df_times.rename({"worst_case_minutes": "Worst Case Minutes", "total_minutes": "Total Minutes"})
     for si in range(len(selected_stops)):
         df_times = df_times.rename({f"total_minutes_{si}": f"t{si+1} mins"})
         
