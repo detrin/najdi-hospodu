@@ -5,6 +5,7 @@ import datetime
 import os
 import json
 import time
+import random
 import argparse
 from tqdm import tqdm
 from multiprocessing import Pool
@@ -279,6 +280,7 @@ def main():
     
     # args = error_entries_to_process + missing_entries
     args = missing_entries_to_process
+    random.shuffle(args)
 
     if not args:
         print("No entries to process.")
