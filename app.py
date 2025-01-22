@@ -1,8 +1,8 @@
 import gradio as gr
 import polars as pl
-import json
-import math
-from datetime import datetime, timedelta, time
+import time
+from datetime import datetime, timedelta
+from datetime import time as dt_time
 import pandas as pd
 from tqdm import tqdm
 import geopy.distance
@@ -10,8 +10,11 @@ import requests
 import re
 import os
 from bs4 import BeautifulSoup
-import random
 from cachetools import cached, TTLCache
+import concurrent.futures
+from functools import partial
+import traceback
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 
@@ -49,27 +52,6 @@ def get_geo_optimal_stop(method, selected_stops, show_top=20):
         df = df.sort("total_km")
 
     return df.head(show_top)
-
-print("Loading time table file ...")
-prague_stops = pl.read_csv('Prague_stops_geo.csv')
-print("Calculating distances between stops ...")
-# stops_geo_dist = (
-#     prague_stops.join(prague_stops, how='cross')
-#     .with_columns(
-#         pl.struct(['lat', 'lon', 'lat_right', 'lon_right']).map_elements(
-#             lambda x: geopy.distance.geodesic((x['lat'], x['lon']), (x['lat_right'], x['lon_right'])).km
-#         ).alias('distance_in_km')
-#     )
-#     .rename({"name": "from", "name_right": "to"})
-#     .select(["from", "to", "distance_in_km"])
-# )
-stops_geo_dist = pl.read_csv("Prague_stops_geo_dist.csv")
-DISTANCE_TABLE = stops_geo_dist
-from_stops = DISTANCE_TABLE["from"].unique().sort().to_list()
-to_stops = DISTANCE_TABLE["to"].unique().sort().to_list()
-ALL_STOPS = sorted(list(set(from_stops) & set(to_stops)))
-SHOW_TOP = 20
-
 
 def validate_date(date_str):
     """
@@ -130,7 +112,7 @@ def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime:
     days_ahead = target_weekday - current_weekday
 
     if days_ahead == 0:
-        if start_dt.time() >= time(target_hour, 0):
+        if start_dt.time() >= dt_time(target_hour, 0):
             days_ahead = 7  
         else:
             days_ahead = 0 
@@ -186,7 +168,6 @@ def parse_time_to_minutes(time_str: str) -> int:
     total_minutes = hours * 60 + minutes
     return total_minutes
 
-@cached(cache=TTLCache(maxsize=1024, ttl=600))
 def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
     """
     Sends a POST request to the specified URL using Webshare's rotating proxy and parses the response to extract time in minutes.
@@ -266,9 +247,9 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
 
     try:
         if proxy_domain is None:
-            response = requests.post(url, headers=headers, data=data, timeout=30)
+            response = requests.post(url, headers=headers, data=data, timeout=15)
         else:
-            response = requests.post(url, headers=headers, data=data, proxies=proxies, timeout=30)
+            response = requests.post(url, headers=headers, data=data, proxies=proxies, timeout=15)
         response.raise_for_status() 
     except requests.RequestException as e:
         raise requests.HTTPError(f"Failed to retrieve data from {url}.") from e
@@ -288,18 +269,49 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
     total_minutes = parse_time_to_minutes(time_str_response)
     return total_minutes
 
+@cached(cache=TTLCache(maxsize=10**6, ttl=24*60*60))
+def get_total_minutes_with_retries(from_stop: str, to_stop: str, dt: datetime) -> int:
+    max_retries = 3
+    retry_delay = 2
+    attempt = 0
+
+    while attempt < max_retries:
+        try:
+            total_minutes = get_total_minutes(from_stop, to_stop, dt)
+            return total_minutes
+        except Exception as e:
+            attempt += 1
+            if attempt < max_retries:
+                print(f"Error processing pair ({from_stop}, {to_stop}): {e}. Retrying in {retry_delay} seconds... (Attempt {attempt}/{max_retries})")
+                time.sleep(retry_delay)
+            else:
+                print(f"Failed to process pair ({from_stop}, {to_stop}) after {max_retries} attempts.")
+                return None
+
 def get_time_optimal_stop(method, selected_stops, target_stops, event_datetime, show_top=20):
-    rows = []
-    for target_stop in tqdm(target_stops):
+    def process_target_stop(args):
+        target_stop, selected_stops, event_datetime = args
         row = {"target_stop": target_stop}
         for si, from_stop in enumerate(selected_stops):
             try:
-                total_minutes = get_total_minutes(from_stop, target_stop, event_datetime)
+                total_minutes = get_total_minutes_with_retries(from_stop, target_stop, event_datetime)
                 row[f"total_minutes_{si}"] = total_minutes
             except Exception as e:
                 print(f"Error processing pair ({from_stop}, {target_stop}): {e}")
+                traceback.print_exc()
                 row[f"total_minutes_{si}"] = None
-        rows.append(row)
+        return row
+    
+    rows = []
+    arguments = [(target_stop, selected_stops, event_datetime) for target_stop in target_stops]
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(process_target_stop, arg): arg[0] for arg in arguments}
+        for future in tqdm(as_completed(futures), total=len(arguments)):
+            try:
+                result = future.result()
+                rows.append(result)
+            except Exception as e:
+                print(f"An error occurred with target_stop={futures[future]}: {e}")
         
     df_times = (
         pl.DataFrame(rows) 
@@ -316,142 +328,169 @@ def get_time_optimal_stop(method, selected_stops, target_stops, event_datetime, 
         
     df_times.rename({"worst_case_minutes": "Worst Case Minutes", "total_minutes": "Total Minutes"})
     for si in range(len(selected_stops)):
-        df_times = df_times.rename(f"total_minutes_{si}", f"t{selected_stops[si]} mins")
+        df_times = df_times.rename({f"total_minutes_{si}": f"t{selected_stops[si]} mins"})
+        
+    df_times = df_times.drop_nulls()
         
     return df_times.head(show_top)
 
-with gr.Blocks() as demo:
-    gr.Markdown("## Optimal Public Transport Stop Finder in Prague")
-    gr.Markdown("""
-    Consider you are in Prague and you want to meet with your friends. What is the optimal stop to meet? Now you can find that with this app!
-    
-    Time table data was scraped using IDOS API, IDOS uses PID timetable data. The arrivals are calculated based on the shortest route to the target stop from starting stops so that you all meet on Friday 24.1.2025 20:00 CET.
-    """)
+def cerate_app():
+    with gr.Blocks() as app:
+        gr.Markdown("## Optimal Public Transport Stop Finder in Prague")
+        gr.Markdown("""
+        Consider you are in Prague and you want to meet with your friends. What is the optimal stop to meet? Now you can find that with this app!
+        
+        Time table data was scraped using IDOS API, IDOS uses PID timetable data. The arrivals are calculated based on the shortest route to the target stop from starting stops so that you all meet on Friday 24.1.2025 20:00 CET.
+        """)
 
-    # Slider to select the number of people
-    number_of_stops = gr.Slider(
-        minimum=2, 
-        maximum=12, 
-        step=1, 
-        value=3, 
-        label="Number of People"
-    )
-
-    # Radio buttons to select the optimization method
-    method = gr.Radio(
-        choices=["Minimize worst case for each", "Minimize total time"],
-        value="Minimize worst case for each",
-        label="Optimization Method"
-    )
-
-    next_dt = get_next_meetup_time(4, 20)  # Friday 20:00
-    next_date = next_dt.strftime("%d/%m/%Y")
-    next_time = next_dt.strftime("%H:%M")
-    # Date input in DD/MM/YYYY format
-    date_input = gr.Textbox(
-        label="Date (DD/MM/YYYY)",
-        placeholder=f"e.g., {next_date}",
-        value=next_date
-    )
-
-    # Time input in HH:MM format
-    time_input = gr.Textbox(
-        label="Time (HH:MM)",
-        placeholder=f"e.g., {next_time}",
-        value=next_time
-    )
-
-    # Dropdowns for selecting starting stops, initially hidden
-    dropdowns = []
-    for i in range(12):
-        dd = gr.Dropdown(
-            choices=ALL_STOPS, 
-            label=f"Choose Starting Stop #{i+1}",
-            visible=False  # Start hidden; we will unhide as needed
+        # Slider to select the number of people
+        number_of_stops = gr.Slider(
+            minimum=2, 
+            maximum=12, 
+            step=1, 
+            value=3, 
+            label="Number of People"
         )
-        dropdowns.append(dd)
 
-    def update_dropdowns(n):
-        updates = []
+        # Radio buttons to select the optimization method
+        method = gr.Radio(
+            choices=["Minimize worst case for each", "Minimize total time"],
+            value="Minimize worst case for each",
+            label="Optimization Method"
+        )
+
+        next_dt = get_next_meetup_time(4, 20)  # Friday 20:00
+        next_date = next_dt.strftime("%d/%m/%Y")
+        next_time = next_dt.strftime("%H:%M")
+        # Date input in DD/MM/YYYY format
+        date_input = gr.Textbox(
+            label="Date (DD/MM/YYYY)",
+            placeholder=f"e.g., {next_date}",
+            value=next_date
+        )
+
+        # Time input in HH:MM format
+        time_input = gr.Textbox(
+            label="Time (HH:MM)",
+            placeholder=f"e.g., {next_time}",
+            value=next_time
+        )
+
+        # Dropdowns for selecting starting stops, initially hidden
+        dropdowns = []
         for i in range(12):
-            if i < n:
-                updates.append(gr.update(visible=True))
+            dd = gr.Dropdown(
+                choices=ALL_STOPS, 
+                label=f"Choose Starting Stop #{i+1}",
+                visible=False  # Start hidden; we will unhide as needed
+            )
+            dropdowns.append(dd)
+
+        def update_dropdowns(n):
+            updates = []
+            for i in range(12):
+                if i < n:
+                    updates.append(gr.update(visible=True))
+                else:
+                    updates.append(gr.update(visible=False))
+            return updates
+
+        # Update the visibility of dropdowns based on the number of stops selected
+        number_of_stops.change(
+            fn=update_dropdowns,
+            inputs=number_of_stops,
+            outputs=dropdowns 
+        )
+
+        # Search button to trigger the optimization
+        search_button = gr.Button("Search")
+
+        def search_optimal_stop(num_stops, chosen_method, date_str, time_str, *all_stops):
+            # Validate Date
+            is_valid, error_message = validate_date_time(date_str, time_str)
+            if not is_valid:
+                raise gr.Error(error_message)
+            
+            # Extract selected stops based on the number of stops
+            selected_stops = [stop for stop in all_stops[:num_stops] if stop]
+            print("Number of stops:", num_stops)
+            print("Method selected:", chosen_method)
+            print("Selected stops:", selected_stops)
+            print("Selected date:", date_str)
+            print("Selected time:", time_str)
+            
+            if chosen_method == "Minimize worst case for each":
+                method = "minimize-worst-case"
             else:
-                updates.append(gr.update(visible=False))
-        return updates
+                method = "minimize-total"
+            
+            # Here, you can modify how date_str and time_str are used in your logic
+            # For example, you might want to convert them to datetime objects
+            try:
+                # Optionally parse date and time to datetime objects
+                event_datetime = datetime.strptime(f"{date_str} {time_str}", "%d/%m/%Y %H:%M")
+                print("Event DateTime:", event_datetime)
+            except ValueError as e:
+                # This should not happen due to prior validation, but added for safety
+                raise gr.Error(f"Error parsing date and time: {e}")
+            
+            df_top = get_geo_optimal_stop(method, selected_stops, show_top=SHOW_TOP+5)
+            target_stops = df_top["target_stop"].to_list()
+            df_times = get_time_optimal_stop(method, selected_stops, target_stops, event_datetime, show_top=SHOW_TOP)
+            df_times = df_times.with_row_index("#", offset=1)
+            
+            return df_times
 
-    # Update the visibility of dropdowns based on the number of stops selected
-    number_of_stops.change(
-        fn=update_dropdowns,
-        inputs=number_of_stops,
-        outputs=dropdowns 
+        # Dataframe to display the results
+        results_table = gr.Dataframe(
+            headers=["Target Stop", "Worst Case Minutes", "Total Minutes"],
+            datatype=["str", "number", "str"],
+            label="Optimal Stops"
+        )
+
+        # Configure the search button to call the callback with the new inputs
+        search_button.click(
+            fn=search_optimal_stop,
+            inputs=[number_of_stops, method, date_input, time_input] + dropdowns,
+            outputs=results_table
+        )
+
+        # On load, display the first 3 dropdowns and hide the rest
+        app.load(
+            lambda: [gr.update(visible=True) for _ in range(3)] + [gr.update(visible=False) for _ in range(9)],
+            inputs=[],
+            outputs=dropdowns
+        )
+        
+        gr.Markdown("---")
+        gr.Markdown("""
+        Created by [Daniel Herman](https://www.hermandaniel.com), check out the code [detrin/pub-finder](https://github.com/detrin/pub-finder).
+        """)
+    return app
+
+print("Loading time table file ...")
+prague_stops = pl.read_csv('Prague_stops_geo.csv')
+print("Calculating distances between stops ...")
+stops_geo_dist = (
+    prague_stops.join(prague_stops, how='cross')
+    .with_columns(
+        pl.struct(['lat', 'lon', 'lat_right', 'lon_right']).map_elements(
+            lambda x: geopy.distance.geodesic((x['lat'], x['lon']), (x['lat_right'], x['lon_right'])).km,
+            return_dtype=pl.Float64
+        ).alias('distance_in_km')
     )
+    .rename({"name": "from", "name_right": "to"})
+    .select(["from", "to", "distance_in_km"])
+)
+# stops_geo_dist = pl.read_csv("Prague_stops_geo_dist.csv")
+DISTANCE_TABLE = stops_geo_dist
+from_stops = DISTANCE_TABLE["from"].unique().sort().to_list()
+to_stops = DISTANCE_TABLE["to"].unique().sort().to_list()
+ALL_STOPS = sorted(list(set(from_stops) & set(to_stops)))
+SHOW_TOP = 15
+# DISTANCE_TABLE = None
+# ALL_STOPS = None
 
-    # Search button to trigger the optimization
-    search_button = gr.Button("Search")
-
-    def search_optimal_stop(num_stops, chosen_method, date_str, time_str, *all_stops):
-        # Validate Date
-        is_valid, error_message = validate_date_time(date_str, time_str)
-        if not is_valid:
-            raise gr.Error(error_message)
-        
-        # Extract selected stops based on the number of stops
-        selected_stops = [stop for stop in all_stops[:num_stops] if stop]
-        print("Number of stops:", num_stops)
-        print("Method selected:", chosen_method)
-        print("Selected stops:", selected_stops)
-        print("Selected date:", date_str)
-        print("Selected time:", time_str)
-        
-        if chosen_method == "Minimize worst case for each":
-            method = "minimize-worst-case"
-        else:
-            method = "minimize-total"
-        
-        # Here, you can modify how date_str and time_str are used in your logic
-        # For example, you might want to convert them to datetime objects
-        try:
-            # Optionally parse date and time to datetime objects
-            event_datetime = datetime.strptime(f"{date_str} {time_str}", "%d/%m/%Y %H:%M")
-            print("Event DateTime:", event_datetime)
-        except ValueError as e:
-            # This should not happen due to prior validation, but added for safety
-            raise gr.Error(f"Error parsing date and time: {e}")
-        
-        df_top = get_geo_optimal_stop(method, selected_stops, show_top=SHOW_TOP)
-        target_stops = df_top["target_stop"].to_list()
-        df_times = get_time_optimal_stop(method, selected_stops, target_stops, event_datetime, show_top=SHOW_TOP)
-        df_times = df_times.with_row_index("#", offset=1)
-        
-        return df_times
-
-    # Dataframe to display the results
-    results_table = gr.Dataframe(
-        headers=["Target Stop", "Worst Case Minutes", "Total Minutes"],
-        datatype=["str", "number", "str"],
-        label="Optimal Stops"
-    )
-
-    # Configure the search button to call the callback with the new inputs
-    search_button.click(
-        fn=search_optimal_stop,
-        inputs=[number_of_stops, method, date_input, time_input] + dropdowns,
-        outputs=results_table
-    )
-
-    # On load, display the first 3 dropdowns and hide the rest
-    demo.load(
-        lambda: [gr.update(visible=True) for _ in range(3)] + [gr.update(visible=False) for _ in range(9)],
-        inputs=[],
-        outputs=dropdowns
-    )
-    
-    gr.Markdown("---")
-    gr.Markdown("""
-    Created by [Daniel Herman](https://www.hermandaniel.com), check out the code [detrin/pub-finder](https://github.com/detrin/pub-finder).
-    """)
-
-
-if __name__ == "__main__":
-    demo.launch()
+if __name__ == "__main__":    
+    app = cerate_app()
+    app.launch()
