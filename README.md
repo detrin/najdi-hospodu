@@ -10,10 +10,31 @@ Try out the [Web demo](https://huggingface.co/spaces/hermanda/pub-finder), integ
 uv venv --python=3.12
 source .venv/bin/activate
 uv pip install -r requirements.txt
+python app.py
+```
+Now you can visit http://0.0.0.0:3000 and enjoy the app.
+
+### Docker
+```
+docker build -t pub-finder-app .
+docker run -p 3000:3000 --name pub-finder pub-finder-app
+```
+Now you can enjoy the app on http://localhost:3000. 
+
+To remove the image
+```
+docker rm pdf-summarizer
 ```
 
+
+## Development
+Prepare the geo data of stops scraped from PID.
 ```
-# repeat the next step how many times do you want
+python3.12 prepare_geo_data.py 
+```
+
+For scraping use the following. Repeast until you scrape all the ocmbinations. 
+```
 python3.12 scraping.py --num_processes 50
 ```
 

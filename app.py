@@ -510,4 +510,4 @@ SHOW_TOP = 15
 if __name__ == "__main__":    
     app = cerate_app()
     print("Starting app ...")
-    app.launch()
+    app.launch(server_name="0.0.0.0", server_port=3000)
