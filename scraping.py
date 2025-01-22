@@ -258,30 +258,34 @@ def main():
     processed_pairs_ids = {}
     correct_entries = []
     error_entries = []
+    error_entries_to_process = []
     for entry in raw_results:
         if "error" not in entry:
             processed_pairs_ids.update({(entry["from"], entry["to"]): True})
             correct_entries.append(entry)
         else:
-            error_entries.append((entry["from"], entry["to"], meetup_dt))
+            error_entries.append(entry)
+            error_entries_to_process.append((entry["from"], entry["to"], meetup_dt))
         
-    missing_entries = []
+    missing_entries_to_process = []
     for entry in tqdm(unique_pairs, desc="Checking"):
         if entry not in processed_pairs_ids:
-            missing_entries.append((entry[0], entry[1], meetup_dt))
+            missing_entries_to_process.append((entry[0], entry[1], meetup_dt))
             
     print(f"Total correct entries: {len(correct_entries)}")
-    print(f"Total entries with errors to retry: {len(error_entries)}")
-    print(f"Total missing entries to process: {len(missing_entries)}")
+    print(f"Total entries with errors to retry: {len(error_entries_to_process)}")
+    print(f"Total missing entries to process: {len(missing_entries_to_process)}")
     
     
-    args = error_entries + missing_entries
+    # args = error_entries_to_process + missing_entries
+    args = missing_entries_to_process
 
     if not args:
         print("No entries to process.")
         return
 
-    combined_results = correct_entries
+    # combined_results = correct_entries
+    combined_results = correct_entries + error_entries
     with Pool(processes=num_processes) as pool:
         for result in tqdm(pool.imap_unordered(process_pair, args), total=len(args), desc="Correcting"):
             if result is not None:
