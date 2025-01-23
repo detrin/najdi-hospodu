@@ -1,6 +1,8 @@
 # Pub finder
 Find the optimal place where to meet with your friends in Prague.
 
+![main](https://github.com/detrin/pub-finder/actions/workflows/test.yml/badge.svg)
+
 Try out the [Web demo](https://huggingface.co/spaces/hermanda/pub-finder), integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). 
 
 ## Usage
