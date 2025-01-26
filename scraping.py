@@ -60,7 +60,7 @@ def parse_time_to_minutes(time_str: str) -> int:
     return total_minutes
 
 
-def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> int:
+def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
     """
     Sends a POST request to the specified URL using Webshare's rotating proxy and parses the response to extract time in minutes.
 
@@ -76,6 +76,10 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
         requests.HTTPError: If the HTTP request returned an unsuccessful status code.
         ValueError: If expected HTML elements are not found in the response.
     """
+
+    if from_stop == to_stop:
+        return 0
+
     day_abbreviations = {
         0: "po",  # Monday -> po
         1: "út",  # Tuesday -> út
@@ -124,7 +128,6 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
     proxy_username = os.getenv("PROXY_USERNAME")
     proxy_password = os.getenv("PROXY_PASSWORD")
 
-    # Construct the proxy URL with authentication
     proxy_url = f"http://{proxy_username}:{proxy_password}@{proxy_domain}:{proxy_port}"
 
     proxies = {
@@ -134,10 +137,10 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
 
     try:
         if proxy_domain is None:
-            response = requests.post(url, headers=headers, data=data, timeout=30)
+            response = requests.post(url, headers=headers, data=data, timeout=15)
         else:
             response = requests.post(
-                url, headers=headers, data=data, proxies=proxies, timeout=30
+                url, headers=headers, data=data, proxies=proxies, timeout=15
             )
         response.raise_for_status()
     except requests.RequestException as e:
@@ -160,6 +163,46 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime.datetime) -> in
     total_minutes = parse_time_to_minutes(time_str_response)
     return total_minutes
 
+
+def get_total_minutes_with_retries(
+    from_stop: str,
+    to_stop: str,
+    dt: datetime,
+    max_retries: int = 3,
+    retry_delay: int = 2,
+) -> int:
+    """
+    Calculate the total travel time in minutes between two stops with retry functionality.
+
+    Parameters:
+    from_stop (str): The name of the starting stop.
+    to_stop (str): The name of the destination stop.
+    dt (datetime): The date and time for which the travel time is being calculated.
+    max_retries (int, optional): Maximum number of retry attempts if an error occurs. Default is 3.
+    retry_delay (int, optional): Delay in seconds between retry attempts. Default is 2 seconds.
+
+    Returns:
+    int: The total travel time in minutes if successful, or `None` if all attempts fail.
+    """
+    attempt = 0
+
+    while attempt < max_retries:
+        try:
+            total_minutes = get_total_minutes(from_stop, to_stop, dt)
+            return total_minutes
+        except Exception as e:
+            attempt += 1
+            if attempt < max_retries:
+                print(
+                    f"Error processing pair ({from_stop}, {to_stop}): {e}. Retrying in {retry_delay} seconds... (Attempt {attempt}/{max_retries})"
+                )
+                time.sleep(retry_delay)
+            else:
+                print(
+                    f"Failed to process pair ({from_stop}, {to_stop}) after {max_retries} attempts."
+                )
+                return None
+    return None
 
 def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime.datetime:
     """
@@ -193,30 +236,18 @@ def process_pair(args):
     if from_stop == to_stop:
         return None
 
-    max_retries = 1
-    retry_delay = 10
-    attempt = 0
-
-    while attempt < max_retries:
-        try:
-            total_minutes = get_total_minutes(from_stop, to_stop, meetup_dt)
-            return {"from": from_stop, "to": to_stop, "total_minutes": total_minutes}
-        except Exception as e:
-            attempt += 1
-            if attempt < max_retries:
-                print(
-                    f"Error processing pair ({from_stop}, {to_stop}): {e}. Retrying in {retry_delay} seconds... (Attempt {attempt}/{max_retries})"
-                )
-                time.sleep(retry_delay)
-            else:
-                print(
-                    f"Failed to process pair ({from_stop}, {to_stop}) after {max_retries} attempts."
-                )
-                return {"from": from_stop, "to": to_stop, "error": str(e)}
-
+    try:
+        total_minutes = get_total_minutes_with_retries(from_stop, to_stop, meetup_dt)
+        return {"from": from_stop, "to": to_stop, "total_minutes": total_minutes}
+    except Exception as e:
+        print(
+            f"Failed to process pair ({from_stop}, {to_stop})."
+        )
+        return {"from": from_stop, "to": to_stop, "error": str(e)}
 
 def main():
     parser = argparse.ArgumentParser(description="Scraping and Correcting Script")
+    
     parser.add_argument(
         "--stops_file",
         type=str,
@@ -232,11 +263,19 @@ def main():
     parser.add_argument(
         "--num-processes", type=int, default=5, help="Number of parallel processes."
     )
+    # Adding the --num-tasks argument
+    parser.add_argument(
+        "--num-tasks",
+        type=int,
+        default=None,
+        help="Number of tasks to process. If not set, all tasks will be processed.",
+    )
 
     args = parser.parse_args()
     results_file = args.results
     stops_file = args.stops_file
     num_processes = args.num_processes
+    num_tasks = args.num_tasks  # Retrieve the num_tasks value
 
     raw_results = []
     if os.path.exists(results_file):
@@ -246,18 +285,13 @@ def main():
     with open(stops_file, "r", encoding="utf-8") as f:
         stops = [line.strip() for line in f if line.strip()]
 
-    meetup_dt = get_next_meetup_time(4, 18)
+    meetup_dt = get_next_meetup_time(0, 18)
+    meetup_dt = datetime.datetime.now() + datetime.timedelta(hours=24)
     print(f"Next meetup: {meetup_dt}")
 
     all_pairs = list(product(stops, stops))
     unique_pairs = [pair for pair in all_pairs if pair[0] != pair[1]]
     print(f"Total unique pairs to process: {len(unique_pairs)}")
-
-    error_entries = [
-        (entry["from"], entry["to"], meetup_dt)
-        for entry in raw_results
-        if "error" in entry
-    ]
 
     processed_pairs_ids = {}
     correct_entries = []
@@ -280,31 +314,40 @@ def main():
     print(f"Total entries with errors to retry: {len(error_entries_to_process)}")
     print(f"Total missing entries to process: {len(missing_entries_to_process)}")
 
-    # args = error_entries_to_process + missing_entries
-    args = missing_entries_to_process
-    random.shuffle(args)
+    # Combine error retries and missing entries
+    args_to_process = error_entries_to_process + missing_entries_to_process
+    
+    # If num_tasks is specified, limit the number of tasks
+    if num_tasks is not None:
+        args_to_process = args_to_process[:num_tasks]
+        print(f"Limiting to the first {num_tasks} tasks as specified by --num-tasks.")
+    
+    random.shuffle(args_to_process)
 
-    if not args:
+    if not args_to_process:
         print("No entries to process.")
         return
 
-    # combined_results = correct_entries
     combined_results = correct_entries + error_entries
     with Pool(processes=num_processes) as pool:
         for result in tqdm(
-            pool.imap_unordered(process_pair, args), total=len(args), desc="Correcting"
+            pool.imap_unordered(process_pair, args_to_process),
+            total=len(args_to_process),
+            desc="Processing"
         ):
             if result is not None:
                 combined_results.append(result)
-            if len(combined_results) % 100 == 0:
-                with open(results_file, "w", encoding="utf-8") as f:
-                    json.dump(combined_results, f, ensure_ascii=False, indent=4)
+            # Save progress every 100 results
+            # if len(combined_results) % 100 == 0:
+            #     with open(results_file, "w", encoding="utf-8") as f:
+            #         json.dump(combined_results, f, ensure_ascii=False, indent=4)
 
+    # Final save after processing all tasks
     with open(results_file, "w", encoding="utf-8") as f:
         json.dump(combined_results, f, ensure_ascii=False, indent=4)
 
     print(f"Combined results have been saved to {results_file}")
 
-
 if __name__ == "__main__":
     main()
+
