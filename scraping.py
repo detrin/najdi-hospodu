@@ -287,7 +287,8 @@ def main():
     with open(stops_file, "r", encoding="utf-8") as f:
         stops = [line.strip() for line in f if line.strip()]
 
-    meetup_dt = get_next_meetup_time(4, 20)
+    # meetup_dt = get_next_meetup_time(4, 20)
+    meetup_dt = datetime.datetime(2025, 2, 28, 20, 0)
     print(f"Next meetup: {meetup_dt}")
 
     all_pairs = list(product(stops, stops))

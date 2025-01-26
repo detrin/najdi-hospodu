@@ -22,8 +22,6 @@ class EpsilonGreedyBandit:
         return random.choice(candidates)
 
     def update(self, arm_index, reward, **kwargs):
-        if not (0 <= reward <= 1):
-            raise ValueError("Reward must be in the range [0, 1].")
         self.counts[arm_index] += 1
         n = self.counts[arm_index]
         old_q = self.q_values[arm_index]
@@ -56,8 +54,6 @@ class EpsilonFirstBandit:
         return random.choice(candidates)
 
     def update(self, arm_index, reward, **kwargs):
-        if not (0 <= reward <= 1):
-            raise ValueError("Reward must be in the range [0, 1].")
         self.counts[arm_index] += 1
         n = self.counts[arm_index]
         old_q = self.q_values[arm_index]
@@ -95,8 +91,6 @@ class EpsilonDecreasingBandit:
         return random.choice(candidates)
 
     def update(self, arm_index, reward, **kwargs):
-        if not (0 <= reward <= 1):
-            raise ValueError("Reward must be in the range [0, 1].")
         self.counts[arm_index] += 1
         n = self.counts[arm_index]
         old_q = self.q_values[arm_index]
@@ -167,8 +161,6 @@ class GreedyBanditWithHistory:
         return random.choice(candidates)
 
     def update(self, arm_index, reward, **kwargs):
-        if not (0 <= reward <= 1):
-            raise ValueError("Reward must be in the range [0, 1].")
         if len(self.history[arm_index]) >= self.history_length:
             self.history[arm_index].pop(0) 
         self.history[arm_index].append(reward)
@@ -235,8 +227,6 @@ class ThompsonSamplingBandit:
         return sampled_means.index(max(sampled_means))
 
     def update(self, arm_index, reward, success=1, failure=0, **kwargs):
-        if not (0 <= reward <= 1):
-            raise ValueError("Reward must be in the range [0, 1].")
         self.alpha[arm_index] += success
         self.beta[arm_index] += failure
 
@@ -308,11 +298,7 @@ def deploy_bandit(
                 waiting_steps = 0
             else:
                 reward = successful_tasks / waiting_time * reward_factor
-                max_total = waiting_time * 10**6
-                success = successful_tasks / waiting_time
-                failure = max_total - success
-                print(f"Reward: {reward}, Success: {success}, Failure: {failure}")
-                bandit.update(current_arm_index, reward, success=success, failure=failure)
+                bandit.update(current_arm_index, reward)
                 waiting_time = 0.0
 
         else:
@@ -325,11 +311,7 @@ def deploy_bandit(
 
             if fail_fraction < failure_threshold:
                 reward = last_alive_successes / waiting_time * reward_factor
-                max_total = waiting_time * 10**6
-                success = successful_tasks / waiting_time
-                failure = max_total - success
-                print(f"Reward: {reward}, Success: {success}, Failure: {failure}")
-                bandit.update(last_arm_index, reward, success=success, failure=failure)
+                bandit.update(last_arm_index, reward)
                 waiting_time = 0.0
                 state = "ALIVE"
 
@@ -356,5 +338,5 @@ if __name__ == "__main__":
         waiting_args=10,
         max_steps=10000,
         verbose=True,
-        reward_factor=1e-6
+        reward_factor=1.0
     )

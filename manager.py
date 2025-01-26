@@ -133,6 +133,7 @@ def main():
         extra_wait_time=extra_wait,
         waiting_args=waiting_num_tasks,
         max_steps=1000,
+        reward_factor=1.0,
         verbose=True
     )
 
