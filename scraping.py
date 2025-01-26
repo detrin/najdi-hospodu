@@ -235,15 +235,13 @@ def process_pair(args):
     from_stop, to_stop, meetup_dt = args
     if from_stop == to_stop:
         return None
+    
+    total_minutes = get_total_minutes_with_retries(from_stop, to_stop, meetup_dt, max_retries=1)
 
-    try:
-        total_minutes = get_total_minutes_with_retries(from_stop, to_stop, meetup_dt)
+    if total_minutes is not None:
         return {"from": from_stop, "to": to_stop, "total_minutes": total_minutes}
-    except Exception as e:
-        print(
-            f"Failed to process pair ({from_stop}, {to_stop})."
-        )
-        return {"from": from_stop, "to": to_stop, "error": str(e)}
+    else:
+        return {"from": from_stop, "to": to_stop, "error": "Failed to retrieve data."}
 
 def main():
     parser = argparse.ArgumentParser(description="Scraping and Correcting Script")
@@ -285,8 +283,7 @@ def main():
     with open(stops_file, "r", encoding="utf-8") as f:
         stops = [line.strip() for line in f if line.strip()]
 
-    meetup_dt = get_next_meetup_time(0, 18)
-    meetup_dt = datetime.datetime.now() + datetime.timedelta(hours=24)
+    meetup_dt = get_next_meetup_time(4, 20)
     print(f"Next meetup: {meetup_dt}")
 
     all_pairs = list(product(stops, stops))
@@ -317,18 +314,18 @@ def main():
     # Combine error retries and missing entries
     args_to_process = error_entries_to_process + missing_entries_to_process
     
-    # If num_tasks is specified, limit the number of tasks
+    random.shuffle(args_to_process)
+    
     if num_tasks is not None:
         args_to_process = args_to_process[:num_tasks]
         print(f"Limiting to the first {num_tasks} tasks as specified by --num-tasks.")
-    
-    random.shuffle(args_to_process)
 
     if not args_to_process:
         print("No entries to process.")
         return
 
     combined_results = correct_entries + error_entries
+    new_results = []
     with Pool(processes=num_processes) as pool:
         for result in tqdm(
             pool.imap_unordered(process_pair, args_to_process),
@@ -336,17 +333,15 @@ def main():
             desc="Processing"
         ):
             if result is not None:
-                combined_results.append(result)
-            # Save progress every 100 results
-            # if len(combined_results) % 100 == 0:
-            #     with open(results_file, "w", encoding="utf-8") as f:
-            #         json.dump(combined_results, f, ensure_ascii=False, indent=4)
+                new_results.append(result)
 
     # Final save after processing all tasks
+    combined_results += new_results
     with open(results_file, "w", encoding="utf-8") as f:
         json.dump(combined_results, f, ensure_ascii=False, indent=4)
 
-    print(f"Combined results have been saved to {results_file}")
+    failed_results = [entry for entry in new_results if "error" in entry]
+    print(f"Total failed results: {len(failed_results)}")
 
 if __name__ == "__main__":
     main()
