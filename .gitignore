@@ -170,3 +170,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 Prague_stops_geo_dist.csv
+results.json

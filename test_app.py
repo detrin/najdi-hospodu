@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 # Import the function to be tested
 from app import get_total_minutes
 
+
 def test_get_total_minutes():
     """
     Test the get_total_minutes function with actual API call.

@@ -204,6 +204,7 @@ def get_total_minutes_with_retries(
                 return None
     return None
 
+
 def get_next_meetup_time(target_weekday: int, target_hour: int) -> datetime.datetime:
     """
     Returns the next meetup datetime.
@@ -235,17 +236,20 @@ def process_pair(args):
     from_stop, to_stop, meetup_dt = args
     if from_stop == to_stop:
         return None
-    
-    total_minutes = get_total_minutes_with_retries(from_stop, to_stop, meetup_dt, max_retries=1)
+
+    total_minutes = get_total_minutes_with_retries(
+        from_stop, to_stop, meetup_dt, max_retries=1
+    )
 
     if total_minutes is not None:
         return {"from": from_stop, "to": to_stop, "total_minutes": total_minutes}
     else:
         return {"from": from_stop, "to": to_stop, "error": "Failed to retrieve data."}
 
+
 def main():
     parser = argparse.ArgumentParser(description="Scraping and Correcting Script")
-    
+
     parser.add_argument(
         "--stops_file",
         type=str,
@@ -313,9 +317,9 @@ def main():
 
     # Combine error retries and missing entries
     args_to_process = error_entries_to_process + missing_entries_to_process
-    
+
     random.shuffle(args_to_process)
-    
+
     if num_tasks is not None:
         args_to_process = args_to_process[:num_tasks]
         print(f"Limiting to the first {num_tasks} tasks as specified by --num-tasks.")
@@ -330,7 +334,7 @@ def main():
         for result in tqdm(
             pool.imap_unordered(process_pair, args_to_process),
             total=len(args_to_process),
-            desc="Processing"
+            desc="Processing",
         ):
             if result is not None:
                 new_results.append(result)
@@ -343,6 +347,6 @@ def main():
     failed_results = [entry for entry in new_results if "error" in entry]
     print(f"Total failed results: {len(failed_results)}")
 
+
 if __name__ == "__main__":
     main()
-
