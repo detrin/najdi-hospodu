@@ -121,8 +121,8 @@ def main():
         print(f"[INFO] Running initial scraping with {initial_num_tasks} tasks.")
         _, failed_cnt = run_scraping(num_processes, initial_num_tasks)
 
-    num_tasks_options = list(range(25, 525, 25))
-    bandit = EpsilonDecreasingBandit(arms=num_tasks_options, initial_epsilon=1.0, limit_epsilon=0.05, half_decay_steps=100)
+    # num_tasks_options = list(range(25, 525, 25))
+    bandit = EpsilonDecreasingBandit(arms=num_tasks_options, initial_epsilon=1.0, limit_epsilon=0.05, half_decay_steps=300)
     # bandit = EpsilonGreedyBandit(arms=num_tasks_options, epsilon=0.1)
 
     deploy_bandit(
@@ -132,7 +132,7 @@ def main():
         default_wait_time=default_wait,
         extra_wait_time=extra_wait,
         waiting_args=waiting_num_tasks,
-        max_steps=1000,
+        max_steps=2000,
         reward_factor=1.0,
         verbose=True
     )
