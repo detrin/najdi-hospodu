@@ -115,13 +115,14 @@ def main():
     waiting_num_tasks = args.waiting_num_tasks
     num_processes = args.num_processes
     
-    initial_num_tasks = 500
+    initial_num_tasks = 50
     failed_cnt = 0
     while failed_cnt < 10:
         print(f"[INFO] Running initial scraping with {initial_num_tasks} tasks.")
         _, failed_cnt = run_scraping(num_processes, initial_num_tasks)
 
-    # num_tasks_options = list(range(25, 525, 25))
+    num_tasks_options = list(range(50, 510, 10))
+    # num_tasks_options = list(range(350, 450, 10))
     bandit = EpsilonDecreasingBandit(arms=num_tasks_options, initial_epsilon=1.0, limit_epsilon=0.05, half_decay_steps=300)
     # bandit = EpsilonGreedyBandit(arms=num_tasks_options, epsilon=0.1)
 
