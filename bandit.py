@@ -6,7 +6,6 @@ import scipy.stats as stats
 from scipy.stats import beta
 
 
-
 class EpsilonGreedyBandit:
     def __init__(self, arms, epsilon=0.1):
         self.arms = arms
@@ -35,6 +34,7 @@ class EpsilonGreedyBandit:
         for arm, q, cnt in zip(self.arms, self.q_values, self.counts):
             print(f"  num_tasks={arm}: avg_reward={q:.5f}, count={cnt}")
 
+
 class EpsilonFirstBandit:
     def __init__(self, arms, exploration_steps=100, epsilon=0.1):
         self.arms = arms
@@ -49,7 +49,7 @@ class EpsilonFirstBandit:
             return random.randint(0, len(self.arms) - 1)
         max_q = max(self.q_values)
         candidates = [i for i, q in enumerate(self.q_values) if q == max_q]
-        
+
         self.step += 1
         return random.choice(candidates)
 
@@ -69,7 +69,9 @@ class EpsilonFirstBandit:
 
 
 class EpsilonDecreasingBandit:
-    def __init__(self, arms, initial_epsilon=1.0, limit_epsilon=0.1, half_decay_steps=100):
+    def __init__(
+        self, arms, initial_epsilon=1.0, limit_epsilon=0.1, half_decay_steps=100
+    ):
         self.arms = arms
         self.initial_epsilon = initial_epsilon
         self.epsilon = initial_epsilon
@@ -82,10 +84,10 @@ class EpsilonDecreasingBandit:
     def select_arm(self):
         self.step += 1
         self.update_epsilon()
-        
+
         if random.random() < self.epsilon:
             return random.randint(0, len(self.arms) - 1)
-        
+
         max_q = max(self.q_values)
         candidates = [i for i, q in enumerate(self.q_values) if q == max_q]
         return random.choice(candidates)
@@ -97,7 +99,9 @@ class EpsilonDecreasingBandit:
         self.q_values[arm_index] = ((n - 1) * old_q + reward) / n
 
     def update_epsilon(self):
-        self.epsilon = self.limit_epsilon + (self.initial_epsilon - self.limit_epsilon) * (0.5 ** (self.step / self.half_decay_steps))
+        self.epsilon = self.limit_epsilon + (
+            self.initial_epsilon - self.limit_epsilon
+        ) * (0.5 ** (self.step / self.half_decay_steps))
 
     def __repr__(self):
         return f"EpsilonDecreasingBandit(arms={self.arms}, initial_epsilon={self.initial_epsilon}, limit_epsilon={self.limit_epsilon}, half_decay_steps={self.half_decay_steps})"
@@ -121,7 +125,8 @@ class UCB1Bandit:
                 return arm_index
 
         ucb_values = [
-            self.q_values[i] + math.sqrt((2 * math.log(self.total_count)) / self.counts[i])
+            self.q_values[i]
+            + math.sqrt((2 * math.log(self.total_count)) / self.counts[i])
             for i in range(len(self.arms))
         ]
         return ucb_values.index(max(ucb_values))
@@ -143,6 +148,7 @@ class UCB1Bandit:
         for arm, q, cnt in zip(self.arms, self.q_values, self.counts):
             print(f"  num_tasks={arm}: avg_reward={q:.5f}, count={cnt}")
 
+
 class GreedyBanditWithHistory:
     def __init__(self, arms, history_length=100):
         self.arms = arms
@@ -153,7 +159,11 @@ class GreedyBanditWithHistory:
 
     def select_arm(self):
         if any(len(history) < self.history_length for history in self.history):
-            candidates = [i for i, history in enumerate(self.history) if len(history) < self.history_length]
+            candidates = [
+                i
+                for i, history in enumerate(self.history)
+                if len(history) < self.history_length
+            ]
             return random.choice(candidates)
 
         max_q = max(self.q_values)
@@ -162,7 +172,7 @@ class GreedyBanditWithHistory:
 
     def update(self, arm_index, reward, **kwargs):
         if len(self.history[arm_index]) >= self.history_length:
-            self.history[arm_index].pop(0) 
+            self.history[arm_index].pop(0)
         self.history[arm_index].append(reward)
 
         self.counts[arm_index] = len(self.history[arm_index])
@@ -173,11 +183,18 @@ class GreedyBanditWithHistory:
 
     def report(self):
         print("Q-values per arm:")
-        for arm, q, cnt, history in zip(self.arms, self.q_values, self.counts, self.history):
-            print(f"  num_tasks={arm}: avg_reward={q:.5f}, count={cnt}, history={history}")
+        for arm, q, cnt, history in zip(
+            self.arms, self.q_values, self.counts, self.history
+        ):
+            print(
+                f"  num_tasks={arm}: avg_reward={q:.5f}, count={cnt}, history={history}"
+            )
+
 
 class WilsonSamplingBandit:
-    def __init__(self, arms, z_score=1.96):  # 1.96 corresponds to ~95% confidence interval
+    def __init__(
+        self, arms, z_score=1.96
+    ):  # 1.96 corresponds to ~95% confidence interval
         self.arms = arms
         self.q_values = [0] * len(arms)
         self.counts = [0] * len(arms)
@@ -187,7 +204,9 @@ class WilsonSamplingBandit:
         if sum(self.counts) == 0:
             return random.choice(range(len(self.arms)))
 
-        scores = [self._wilson_score(i, self.q_values[i]) for i in range(len(self.arms))]
+        scores = [
+            self._wilson_score(i, self.q_values[i]) for i in range(len(self.arms))
+        ]
         return scores.index(max(scores))
 
     def update(self, arm_index, reward, **kwargs):
@@ -202,11 +221,14 @@ class WilsonSamplingBandit:
         n = self.counts[arm_index]
         if n == 0:
             return 1.0
-        proportion = q_val 
-        factor = self.z_score ** 2 / (2 * n)
-        adj_factor = self.z_score / 2 * math.sqrt(
-            (proportion * (1 - proportion) + self.z_score ** 2 / (4 * n)) / n)
-        return (proportion + factor - adj_factor) / (1 + self.z_score ** 2 / n)
+        proportion = q_val
+        factor = self.z_score**2 / (2 * n)
+        adj_factor = (
+            self.z_score
+            / 2
+            * math.sqrt((proportion * (1 - proportion) + self.z_score**2 / (4 * n)) / n)
+        )
+        return (proportion + factor - adj_factor) / (1 + self.z_score**2 / n)
 
     def __repr__(self):
         return f"WilsonSamplingBandit(arms={self.arms}, z_score={self.z_score})"
@@ -216,14 +238,18 @@ class WilsonSamplingBandit:
         for arm, q, cnt in zip(self.arms, self.q_values, self.counts):
             print(f"  num_tasks={arm}: avg_reward={q:.5f}, count={cnt}")
 
+
 class ThompsonSamplingBandit:
     def __init__(self, arms):
         self.arms = arms
         self.alpha = [1] * len(arms)  # Number of successes + 1 (beta prior parameter)
-        self.beta = [1] * len(arms)   # Number of failures + 1 (beta prior parameter)
+        self.beta = [1] * len(arms)  # Number of failures + 1 (beta prior parameter)
 
     def select_arm(self):
-        sampled_means = [random.betavariate(self.alpha[i], self.beta[i]) for i in range(len(self.arms))]
+        sampled_means = [
+            random.betavariate(self.alpha[i], self.beta[i])
+            for i in range(len(self.arms))
+        ]
         return sampled_means.index(max(sampled_means))
 
     def update(self, arm_index, reward, success=1, failure=0, **kwargs):
@@ -237,28 +263,32 @@ class ThompsonSamplingBandit:
         print("Alpha and Beta values per arm (Beta distribution parameters):")
         for arm, a, b in zip(self.arms, self.alpha, self.beta):
             expected_reward = a / (a + b)
-            print(f"  num_tasks={arm}: alpha={a}, beta={b}, expected_reward={expected_reward:.5f}")
+            print(
+                f"  num_tasks={arm}: alpha={a}, beta={b}, expected_reward={expected_reward:.5f}"
+            )
 
 
 def simulate_fail_fraction(num_tasks):
     p = 0.07 + num_tasks / 300
     return p + random.uniform(-0.05, 0.05)
 
+
 def testing_simulation_function(num_tasks):
     successful_tasks = num_tasks * (1 - simulate_fail_fraction(num_tasks))
     failed_tasks = num_tasks - successful_tasks
     return successful_tasks, failed_tasks
 
+
 def deploy_bandit(
     bandit,
-    fun, 
+    fun,
     failure_threshold=0.1,
     default_wait_time=5,
     extra_wait_time=10,
     waiting_args=None,
     max_steps=500,
     verbose=False,
-    reward_factor=1e-6
+    reward_factor=1e-6,
 ):
     if waiting_args is None:
         raise ValueError("waiting_args must be provided")
@@ -274,23 +304,23 @@ def deploy_bandit(
     iterator = range(max_steps)
     if verbose:
         iterator = tqdm(range(max_steps))
-        
+
     for _ in iterator:
         if verbose:
             bandit.report()
-        
+
         if state == "ALIVE":
             current_arm_index = bandit.select_arm()
-            
+
             fun_args = bandit.arms[current_arm_index]
             if not (isinstance(fun_args, tuple) or isinstance(fun_args, list)):
                 fun_args = (fun_args,)
-            successful_tasks, failed_tasks = fun(*fun_args) 
+            successful_tasks, failed_tasks = fun(*fun_args)
             fail_fraction = failed_tasks / (successful_tasks + failed_tasks)
 
             time.sleep(default_wait_time)
             waiting_time += default_wait_time
-            
+
             if fail_fraction >= failure_threshold:
                 last_alive_successes = successful_tasks
                 last_arm_index = current_arm_index
@@ -305,7 +335,7 @@ def deploy_bandit(
             successful_tasks, failed_tasks = fun(*waiting_args)
             fail_fraction = failed_tasks / (successful_tasks + failed_tasks)
             waiting_steps += 1
-            
+
             time.sleep(default_wait_time + extra_wait_time)
             waiting_time += default_wait_time + extra_wait_time
 
@@ -338,5 +368,5 @@ if __name__ == "__main__":
         waiting_args=10,
         max_steps=10000,
         verbose=True,
-        reward_factor=1.0
+        reward_factor=1.0,
     )

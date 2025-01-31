@@ -6,6 +6,7 @@ import sys
 import random
 from bandit import EpsilonGreedyBandit, EpsilonDecreasingBandit, deploy_bandit
 
+
 def parse_arguments():
     parser = argparse.ArgumentParser(
         description="Manage scraping tasks based on failure rates."
@@ -47,7 +48,7 @@ def parse_arguments():
     parser.add_argument(
         "--num-processes",
         type=int,
-        default=20,
+        default=50,
         help="Number of processes to use (default: 20)",
     )
 
@@ -97,7 +98,7 @@ def run_scraping(num_processes, num_tasks):
             print(
                 f"[INFO] Completed scraping with {failed} failed tasks out of {num_tasks}."
             )
-            return num_tasks-failed, failed
+            return num_tasks - failed, failed
         else:
             print("[WARNING] Could not find 'Total failed results' in the output.")
             return 0, num_tasks
@@ -105,6 +106,7 @@ def run_scraping(num_processes, num_tasks):
     except subprocess.CalledProcessError as e:
         print(f"[ERROR] Scraping script failed with error:\n{e.stderr}")
         return 0, num_tasks
+
 
 def main():
     args = parse_arguments()
@@ -114,16 +116,21 @@ def main():
     extra_wait = args.extra_wait_time
     waiting_num_tasks = args.waiting_num_tasks
     num_processes = args.num_processes
-    
+
     initial_num_tasks = 50
     failed_cnt = 0
     while failed_cnt < 10:
         print(f"[INFO] Running initial scraping with {initial_num_tasks} tasks.")
         _, failed_cnt = run_scraping(num_processes, initial_num_tasks)
 
-    num_tasks_options = list(range(50, 510, 10))
+    num_tasks_options = list(range(200, 2000, 200))
     # num_tasks_options = list(range(350, 450, 10))
-    bandit = EpsilonDecreasingBandit(arms=num_tasks_options, initial_epsilon=1.0, limit_epsilon=0.05, half_decay_steps=300)
+    bandit = EpsilonDecreasingBandit(
+        arms=num_tasks_options,
+        initial_epsilon=1.0,
+        limit_epsilon=0.05,
+        half_decay_steps=300,
+    )
     # bandit = EpsilonGreedyBandit(arms=num_tasks_options, epsilon=0.1)
 
     deploy_bandit(
@@ -135,7 +142,7 @@ def main():
         waiting_args=waiting_num_tasks,
         max_steps=2000,
         reward_factor=1.0,
-        verbose=True
+        verbose=True,
     )
 
 

@@ -60,7 +60,9 @@ def parse_time_to_minutes(time_str: str) -> int:
     return total_minutes
 
 
-def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
+def get_total_minutes(
+    from_stop: str, to_stop: str, dt: datetime, provider="DPP"
+) -> int:
     """
     Sends a POST request to the specified URL using Webshare's rotating proxy and parses the response to extract time in minutes.
 
@@ -79,87 +81,147 @@ def get_total_minutes(from_stop: str, to_stop: str, dt: datetime) -> int:
 
     if from_stop == to_stop:
         return 0
-
-    day_abbreviations = {
-        0: "po",  # Monday -> po
-        1: "út",  # Tuesday -> út
-        2: "st",  # Wednesday -> st
-        3: "čt",  # Thursday -> čt
-        4: "pá",  # Friday -> pá
-        5: "so",  # Saturday -> so
-        6: "ne",  # Sunday -> ne
-    }
-
-    day = dt.day
-    month = dt.month
-    year = dt.year
-    weekday = dt.weekday()
-    abbreviation = day_abbreviations.get(weekday, "")
-    date_str = f"{day}.{month}.{year} {abbreviation}"
-    time_str = dt.strftime("%H:%M")
-
-    headers = {
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "accept-language": "en-US,en;q=0.9",
-        "cache-control": "max-age=0",
-        "content-type": "application/x-www-form-urlencoded",
-        "dnt": "1",
-        "origin": "https://idos.cz",
-        "priority": "u=0, i",
-        "referer": "https://idos.cz/pid/spojeni/",
-    }
-
-    data = [
-        ("From", from_stop),
-        ("positionACPosition", ""),
-        ("To", to_stop),
-        ("positionACPosition", ""),
-        ("AdvancedForm.Via[0]", ""),
-        ("AdvancedForm.ViaHidden[0]", ""),
-        ("Date", date_str),
-        ("Time", time_str),
-        ("IsArr", "True"),
-    ]
-
-    url = "https://idos.cz/pid/spojeni/"
-
+    
     proxy_domain = os.getenv("PROXY_DOMAIN")
     proxy_port = os.getenv("PROXY_PORT")
     proxy_username = os.getenv("PROXY_USERNAME")
     proxy_password = os.getenv("PROXY_PASSWORD")
 
-    proxy_url = f"http://{proxy_username}:{proxy_password}@{proxy_domain}:{proxy_port}"
+    proxy_url = (
+        f"http://{proxy_username}:{proxy_password}@{proxy_domain}:{proxy_port}"
+    )
 
     proxies = {
         "http": proxy_url,
         "https": proxy_url,
     }
 
-    try:
-        if proxy_domain is None:
-            response = requests.post(url, headers=headers, data=data, timeout=15)
-        else:
-            response = requests.post(
-                url, headers=headers, data=data, proxies=proxies, timeout=15
-            )
-        response.raise_for_status()
-    except requests.RequestException as e:
-        raise requests.HTTPError(f"Failed to retrieve data from {url}.") from e
+    if provider == "IDOS":
+        day_abbreviations = {
+            0: "po",  # Monday -> po
+            1: "út",  # Tuesday -> út
+            2: "st",  # Wednesday -> st
+            3: "čt",  # Thursday -> čt
+            4: "pá",  # Friday -> pá
+            5: "so",  # Saturday -> so
+            6: "ne",  # Sunday -> ne
+        }
+
+        day = dt.day
+        month = dt.month
+        year = dt.year
+        weekday = dt.weekday()
+        abbreviation = day_abbreviations.get(weekday, "")
+        date_str = f"{day}.{month}.{year} {abbreviation}"
+        time_str = dt.strftime("%H:%M")
+
+        headers = {
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "accept-language": "en-US,en;q=0.9",
+            "cache-control": "max-age=0",
+            "content-type": "application/x-www-form-urlencoded",
+            "dnt": "1",
+            "origin": "https://idos.cz",
+            "priority": "u=0, i",
+            "referer": "https://idos.cz/pid/spojeni/",
+        }
+
+        data = [
+            ("From", from_stop),
+            ("positionACPosition", ""),
+            ("To", to_stop),
+            ("positionACPosition", ""),
+            ("AdvancedForm.Via[0]", ""),
+            ("AdvancedForm.ViaHidden[0]", ""),
+            ("Date", date_str),
+            ("Time", time_str),
+            ("IsArr", "True"),
+        ]
+
+        url = "https://idos.cz/pid/spojeni/"
+
+        try:
+            if proxy_domain is None:
+                response = requests.post(url, headers=headers, data=data, timeout=15)
+            else:
+                response = requests.post(
+                    url, headers=headers, data=data, proxies=proxies, timeout=15
+                )
+            response.raise_for_status()
+        except requests.RequestException as e:
+            raise requests.HTTPError(f"Failed to retrieve data from {url}.") from e
+    elif provider == "DPP":
+        day = dt.day
+        month = dt.month
+        year = dt.year
+        weekday = dt.weekday()
+        date_str = f"{day}.{month}.{year}"
+        time_str = dt.strftime("%H:%M")
+
+        headers = {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Connection": "keep-alive",
+            # 'Cookie': 'consent_analytics_storage=granted; consent_is_set=true; consent_updated_at=2025-01-31T15:31:38.165Z',
+            "Referer": "https://www.dpp.cz/",
+        }
+
+        params = {
+            "res": "1",
+            "tom": "0",
+            "cl": "CS",
+            # 'csrf-token': 'Qk9YSZOiZLtm1U302U8U',
+            "f": from_stop,
+            # 'fvlc': 'Viktoria Žižkov|-1|-1|301003|7405',
+            "t": to_stop,
+            # 'tvlc': 'Anděl|-1|-1|301003|6',
+            "date": date_str,
+            "time": time_str,
+            "isdep": "0",
+            "f_time": time_str,
+        }
+        url = "https://spojeni.dpp.cz/"
+        try:
+            if proxy_domain is None:
+                response = requests.get(url, params=params, headers=headers, timeout=15)
+            else:
+                response = requests.get(
+                    url, params=params, headers=headers, proxies=proxies, timeout=15
+                )
+            response.raise_for_status()
+        except requests.RequestException as e:
+            raise requests.HTTPError(f"Failed to retrieve data from {url}.") from e
 
     soup = BeautifulSoup(response.content, "html.parser")
-    connection_head = soup.find(class_="connection-head")
+    
+    if provider == "IDOS":
+        connection_head = soup.find(class_="connection-head")
 
-    if not connection_head:
-        raise ValueError("No elements found with the class 'connection-head'.")
+        if not connection_head:
+            raise ValueError("No elements found with the class 'connection-head'.")
 
-    strong_tag = connection_head.find("strong")
+        strong_tag = connection_head.find("strong")
 
-    if not strong_tag:
-        raise ValueError(
-            "No <strong> tag found within the first 'connection-head' element."
-        )
+        if not strong_tag:
+            raise ValueError(
+                "No <strong> tag found within the first 'connection-head' element."
+            )
 
-    time_str_response = strong_tag.get_text(strip=True)
+        time_str_response = strong_tag.get_text(strip=True)
+    elif provider == "DPP":
+        with open("dpp.html", "w") as f:
+            f.write(response.text)
+            
+        spojeni_div = soup.select_one('div.Box-ticket.spojeni')
+        if spojeni_div:
+            strong_tag = spojeni_div.find_all('strong')[1]
+        else:
+            raise ValueError("No <div> tag found with the 'Box-ticket' class.")
+
+        if strong_tag:
+            time_str_response = strong_tag.get_text(strip=True)
+        else:
+            raise ValueError("No <strong> tag found within the 'Box-ticket' element.")
     total_minutes = parse_time_to_minutes(time_str_response)
     return total_minutes
 
