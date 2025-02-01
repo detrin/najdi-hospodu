@@ -123,8 +123,9 @@ def main():
         print(f"[INFO] Running initial scraping with {initial_num_tasks} tasks.")
         _, failed_cnt = run_scraping(num_processes, initial_num_tasks)
 
-    num_tasks_options = list(range(1500, 5000, 500))
+    # num_tasks_options = list(range(1500, 5000, 500))
     # num_tasks_options = list(range(350, 450, 10))
+    num_tasks_options = [5000, 10000, 25000, 50000]
     bandit = EpsilonDecreasingBandit(
         arms=num_tasks_options,
         initial_epsilon=1.0,

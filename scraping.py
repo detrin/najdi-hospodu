@@ -298,7 +298,7 @@ def process_pair(args):
         return None
 
     total_minutes = get_total_minutes_with_retries(
-        from_stop, to_stop, meetup_dt, max_retries=3
+        from_stop, to_stop, meetup_dt, max_retries=1
     )
 
     if total_minutes is not None:
