@@ -49,7 +49,7 @@ def parse_arguments():
         "--num-processes",
         type=int,
         default=50,
-        help="Number of processes to use (default: 20)",
+        help="Number of processes to use (default: 50)",
     )
 
     return parser.parse_args()
@@ -123,7 +123,7 @@ def main():
         print(f"[INFO] Running initial scraping with {initial_num_tasks} tasks.")
         _, failed_cnt = run_scraping(num_processes, initial_num_tasks)
 
-    num_tasks_options = list(range(200, 2000, 200))
+    num_tasks_options = list(range(1500, 5000, 500))
     # num_tasks_options = list(range(350, 450, 10))
     bandit = EpsilonDecreasingBandit(
         arms=num_tasks_options,
