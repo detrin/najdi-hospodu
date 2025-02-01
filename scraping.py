@@ -9,6 +9,7 @@ import random
 import argparse
 from tqdm import tqdm
 from multiprocessing import Pool
+from multiprocessing.pool import ThreadPool
 from itertools import product
 from dotenv import load_dotenv
 
@@ -209,9 +210,6 @@ def get_total_minutes(
 
         time_str_response = strong_tag.get_text(strip=True)
     elif provider == "DPP":
-        with open("dpp.html", "w") as f:
-            f.write(response.text)
-            
         spojeni_div = soup.select_one('div.Box-ticket.spojeni')
         if spojeni_div:
             strong_tag = spojeni_div.find_all('strong')[1]
@@ -300,7 +298,7 @@ def process_pair(args):
         return None
 
     total_minutes = get_total_minutes_with_retries(
-        from_stop, to_stop, meetup_dt, max_retries=1
+        from_stop, to_stop, meetup_dt, max_retries=3
     )
 
     if total_minutes is not None:
@@ -394,9 +392,18 @@ def main():
         print("No entries to process.")
         return
 
-    combined_results = correct_entries + error_entries
+    combined_results = correct_entries 
     new_results = []
-    with Pool(processes=num_processes) as pool:
+    # with Pool(processes=num_processes) as pool:
+    #     for result in tqdm(
+    #         pool.imap_unordered(process_pair, args_to_process),
+    #         total=len(args_to_process),
+    #         desc="Processing",
+    #     ):
+    #         if result is not None:
+    #             new_results.append(result)
+                
+    with ThreadPool(processes=num_processes) as pool:
         for result in tqdm(
             pool.imap_unordered(process_pair, args_to_process),
             total=len(args_to_process),

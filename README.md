@@ -37,8 +37,8 @@ python3.12 prepare_geo_data.py
 
 For scraping use the following. Repeast until you scrape all the ocmbinations. 
 ```
-python3.12 scraping.py --num_processes 50
-python3.12 manager.py
+python3.12 scraping.py --num-processes 50 --num-tasks 50
+python3.12 manager.py --threshold-error-rate 0.1
 jq '. | (length / 2138906) * 100' results.json
 ```
 
