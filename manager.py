@@ -48,8 +48,8 @@ def parse_arguments():
     parser.add_argument(
         "--num-processes",
         type=int,
-        default=50,
-        help="Number of processes to use (default: 50)",
+        default=30,
+        help="Number of processes to use (default: 30)",
     )
 
     return parser.parse_args()
@@ -117,11 +117,11 @@ def main():
     waiting_num_tasks = args.waiting_num_tasks
     num_processes = args.num_processes
 
-    initial_num_tasks = 50
-    failed_cnt = 0
-    while failed_cnt < 10:
-        print(f"[INFO] Running initial scraping with {initial_num_tasks} tasks.")
-        _, failed_cnt = run_scraping(num_processes, initial_num_tasks)
+    # initial_num_tasks = 50
+    # failed_cnt = 0
+    # while failed_cnt < 10:
+    #     print(f"[INFO] Running initial scraping with {initial_num_tasks} tasks.")
+    #     _, failed_cnt = run_scraping(num_processes, initial_num_tasks)
 
     # num_tasks_options = list(range(1500, 5000, 500))
     # num_tasks_options = list(range(350, 450, 10))

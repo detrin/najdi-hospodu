@@ -403,7 +403,7 @@ def main():
     #         if result is not None:
     #             new_results.append(result)
                 
-    with ThreadPool(processes=num_processes) as pool:
+    with Pool(processes=num_processes) as pool:
         for result in tqdm(
             pool.imap_unordered(process_pair, args_to_process),
             total=len(args_to_process),
