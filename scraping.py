@@ -357,22 +357,25 @@ def main():
     unique_pairs = [pair for pair in all_pairs if pair[0] != pair[1]]
     print(f"Total unique pairs to process: {len(unique_pairs)}")
 
-    processed_pairs_ids = {}
+    processed_pairs = set()
     correct_entries = []
     error_entries = []
     error_entries_to_process = []
     for entry in raw_results:
-        processed_pairs_ids.update({(entry["from"], entry["to"]): True})
+        key = (entry["from"], entry["to"])
+        processed_pairs.add(key)  # Faster than dictionary updates
         if "error" not in entry:
             correct_entries.append(entry)
         else:
             error_entries.append(entry)
             error_entries_to_process.append((entry["from"], entry["to"], meetup_dt))
 
-    missing_entries_to_process = []
-    for entry in tqdm(unique_pairs, desc="Checking"):
-        if entry not in processed_pairs_ids:
-            missing_entries_to_process.append((entry[0], entry[1], meetup_dt))
+    # Use set for O(1) lookups instead of dictionary keys
+    missing_entries_to_process = [
+        (entry[0], entry[1], meetup_dt)
+        for entry in tqdm(unique_pairs, desc="Checking")
+        if entry not in processed_pairs
+    ]
 
     print(f"Total correct entries: {len(correct_entries)}")
     print(f"Total entries with errors to retry: {len(error_entries_to_process)}")
