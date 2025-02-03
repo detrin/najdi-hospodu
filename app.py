@@ -22,7 +22,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def get_geo_optimal_stop(
     method: str, selected_stops: List[str], show_top: int = 20
-) -> pl.DataFrame:
+) -> List[str]:
     """
     Calculate and return the top optimal geographic stops based on a specified method.
 
@@ -32,7 +32,7 @@ def get_geo_optimal_stop(
         show_top (int, optional): Number of top results to return. Defaults to 20.
 
     Returns:
-        DataFrame: A DataFrame containing the top optimal stops with calculated distances.
+        List[str]: A list of the top optimal stops based on the selected method.
 
     Raises:
         ValueError: If the method is not recognized.
@@ -77,7 +77,103 @@ def get_geo_optimal_stop(
     elif method == "minimize-total":
         df = df.sort("total_km")
 
-    return df.head(show_top)
+    return df.head(show_top)["target_stop"].to_list()
+
+def get_time_optimal_stop(
+    method: str, selected_stops: List[str], show_top: int = 20
+) -> List[str]:
+    """
+    Calculate and return the top optimal geographic stops based on a specified method using total travel time.
+
+    Args:
+        method (str): Optimization method, either "minimize-worst-case" or "minimize-total".
+        selected_stops (List[str]): A list of selected stop identifiers.
+        show_top (int, optional): Number of top results to return. Defaults to 20.
+
+    Returns:
+        List[str]: A list of the top optimal stops based on the selected method
+
+    Raises:
+        ValueError: If the method is not recognized.
+
+    """
+    global DISTANCE_TABLE
+
+    dfs = []
+    for si, stop in tqdm(
+        enumerate(selected_stops),
+        desc="Calculating optimal stops",
+        total=len(selected_stops),
+    ):
+        df = (
+            DISTANCE_TABLE.filter(pl.col("from") == stop)
+            .drop("from")
+            .with_columns(
+                pl.col("to").alias("target_stop"),
+                pl.col("total_minutes").alias(f"total_minutes_{si}"),
+            )
+            .select("target_stop", f"total_minutes_{si}")
+        )
+        dfs.append(df)
+
+    print("Joining dataframes ...")
+    df = dfs[0]
+    for i in range(1, len(dfs)):
+        df = df.join(dfs[i], on="target_stop")
+
+    print("Finding optimal stops ...")
+    df = df.with_columns(
+        pl.max_horizontal(
+            *[f"total_minutes_{si}" for si in range(len(selected_stops))]
+        ).alias("worst_case_minutes"),
+        pl.sum_horizontal(
+            *[f"total_minutes_{si}" for si in range(len(selected_stops))]
+        ).alias("total_minutes"),
+    )
+
+    if method == "minimize-worst-case":
+        df = df.sort("worst_case_minutes")
+    elif method == "minimize-total":
+        df = df.sort("total_minutes")
+    else:
+        raise ValueError(f"Unknown method: {method}")
+
+    return df.head(show_top)["target_stop"].to_list()
+
+def get_optimal_stop(
+    method: str, selected_stops: List[str], show_top_geo: int = 20, show_top_time: int = 20
+) -> List[str]:
+    """
+    Calculate and return the top optimal geographic stops based on a specified method.
+
+    Args:
+        method (str): Optimization method, either "minimize-worst-case" or "minimize-total".
+        selected_stops (List[str]): A list of selected stop identifiers.
+        show_top_geo (int, optional): Number of top results to return for geographic optimization. Defaults to 20.
+        show_top_time (int, optional): Number of top results to return for time optimization. Defaults to 20.
+
+    Returns:
+        List[str]: A list of the top optimal stops based on the selected method.
+
+    Raises:
+        ValueError: If the method is not recognized.
+
+    """
+    global DISTANCE_TABLE
+
+    geo_optimal_stops = get_geo_optimal_stop(method, selected_stops, show_top_geo)
+    # print(geo_optimal_stops)
+    time_optimal_stops = get_time_optimal_stop(method, selected_stops, show_top_time)
+    # print(time_optimal_stops)
+    # print()
+    # print([s for s in geo_optimal_stops if s not in time_optimal_stops])
+    # print([s for s in time_optimal_stops if s not in geo_optimal_stops])
+    # print()
+    # print(list(set(geo_optimal_stops) & set(time_optimal_stops)))
+    # print(list(set(geo_optimal_stops) | set(time_optimal_stops)))
+    
+    
+    return list(set(geo_optimal_stops) | set(time_optimal_stops))
 
 
 def validate_date_time(date_str: str, time_str: str) -> Tuple[bool, str]:
@@ -331,7 +427,7 @@ def get_total_minutes_with_retries(
     return None
 
 
-def get_time_optimal_stop(
+def get_actual_time_optimal_stop(
     method: str,
     selected_stops: List[str],
     target_stops: List[str],
@@ -490,9 +586,9 @@ def cerate_app():
             except ValueError as e:
                 raise gr.Error(f"Error parsing date and time: {e}")
 
-            df_top = get_geo_optimal_stop(method, selected_stops, show_top=SHOW_TOP + 5)
-            target_stops = df_top["target_stop"].to_list()
-            df_times = get_time_optimal_stop(
+            target_stops = get_optimal_stop(method, selected_stops, show_top_geo=10, show_top_time=SHOW_TOP+10)
+            print(target_stops)
+            df_times = get_actual_time_optimal_stop(
                 method, selected_stops, target_stops, event_datetime, show_top=SHOW_TOP
             )
             df_times = df_times.with_row_index("#", offset=1)
@@ -527,24 +623,27 @@ def cerate_app():
     return app
 
 
-print("Loading time table file ...")
-prague_stops = pl.read_csv("Prague_stops_geo.csv")
-print("Calculating distances between stops ...")
-stops_geo_dist = (
-    prague_stops.join(prague_stops, how="cross")
-    .with_columns(
-        pl.struct(["lat", "lon", "lat_right", "lon_right"])
-        .map_elements(
-            lambda x: geopy.distance.geodesic(
-                (x["lat"], x["lon"]), (x["lat_right"], x["lon_right"])
-            ).km,
-            return_dtype=pl.Float64,
-        )
-        .alias("distance_in_km")
-    )
-    .rename({"name": "from", "name_right": "to"})
-    .select(["from", "to", "distance_in_km"])
-)
+# print("Loading time table file ...")
+# prague_stops = pl.read_csv("Prague_stops_geo.csv")
+# print("Calculating distances between stops ...")
+# stops_geo_dist = (
+#     prague_stops.join(prague_stops, how="cross")
+#     .with_columns(
+#         pl.struct(["lat", "lon", "lat_right", "lon_right"])
+#         .map_elements(
+#             lambda x: geopy.distance.geodesic(
+#                 (x["lat"], x["lon"]), (x["lat_right"], x["lon_right"])
+#             ).km,
+#             return_dtype=pl.Float64,
+#         )
+#         .alias("distance_in_km")
+#     )
+#     .rename({"name": "from", "name_right": "to"})
+#     .select(["from", "to", "distance_in_km"])
+# )
+
+stops_geo_dist = pl.read_parquet("Prague_stops_combinations.parquet")
+print(stops_geo_dist)
 DISTANCE_TABLE = stops_geo_dist
 from_stops = DISTANCE_TABLE["from"].unique().sort().to_list()
 to_stops = DISTANCE_TABLE["to"].unique().sort().to_list()
