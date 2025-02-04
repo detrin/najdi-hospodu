@@ -5,6 +5,16 @@ Find the optimal place where to meet with your friends in Prague.
 
 Try out the [Web demo](https://huggingface.co/spaces/hermanda/pub-finder), integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). 
 
+## How does it work?
+
+We have 1400+ stops in Prague. Given the set of `k` stops (e.g. Krymská, Anděl, Muzeum) we would like to find a stop (`target_stop`) that is closest to each of the stops. What is definition of "closest"? Let's define for now the distance function between stop `A` and stop `B` as `dist(A, B)`. We can consider case 
+1) where we minimize the maximum distance from `k` stops (e.g. `worst_case_dist = max(dist(target_stop, Krymská), dist(target_stop, Anděl), dist(target_stop, Muzeum))`)
+2) or the case where we minimize the total distance from `k` stops to `target_stop` (e.g. `total_dist = dist(target_stop, Krymská) + dist(target_stop, Anděl) + dist(target_stop, Muzeum)`).
+
+Now the simplest solution would be to use `dist()` function as true distance of the stops considering their GPS coordinates, but we can do better. Since the public transport has different speed of transport depending on the stops themselves I scraped almost all the combinations of the stops in both ways (around 2.1M). I scraped all with arrival date Friday 28.2.2025, 20:00. Now, the distance can be also in minutes that it takes to get from stop A to stop B.
+
+We can now iterate over all stops in Prague and for given list of `k` stops we can calculate `worst_case_dist` or `total_dist` and we can take the best cases. What I am actually doing is that I select top `10` target stops based on geo distance and top `25` target stops based on time distance. Then for all of them I scrape the actual time it takes given the date and time and update the table based on that. I select top `15` target stops and that is the end result.
+
 ## Usage
 
 ### Local
@@ -35,7 +45,7 @@ Prepare the geo data of stops scraped from PID.
 python3.12 prepare_geo_data.py 
 ```
 
-For scraping use the following. Repeast until you scrape all the ocmbinations. 
+For scraping use the following. Repeat until you scrape all the combinations. Internally you can swith between IDOS and DPP providers. DPP has slightly higher error rate
 ```
 python3.12 scraping.py --num-processes 50 --num-tasks 50
 python3.12 manager.py --threshold-error-rate 0.1
